@@ -72,7 +72,7 @@
           {% if show.work == page.key %}
            <tr>
                <td>{{ show.year }}</td>
-               <td>{{ show.name }}</td>
+               <td><a href="{{ show.link }}">{{ show.name }}.</a>{{show.venue}}</td>
            </tr>
            {% endif %}
            {% endfor %}
