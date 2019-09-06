@@ -55,19 +55,26 @@
 {% endif %}
 
 
-{% if page.shows %}
+{% assign shows = false %}
+{% for show in site.data.shows %}
+{% if show.work == page.key %}
+{% assign shows = true %}
+{% endif %}
+{% endfor %}
+
+{% if shows %}
 <section id="shows" class="container py-5">
    <h3 class="py-4">Selected shows:</h3>
    
    <table class="table table-borderless">
        <tbody>
-          {% assign lshows = page.shows | split: ";;;" %}
-          {% for show in lshows %}
-          {% assign data = show | split: "|" %}
+          {% for show in shows %}
+          {% if show.work == page.key %}
            <tr>
-               <td>{{ data[0] }}</td>
-               <td>{{ data[1] }}</td>
+               <td>{{ show.year }}</td>
+               <td>{{ show.name }}</td>
            </tr>
+           {% endif %}
            {% endfor %}
        </tbody>
    </table>
