@@ -61,8 +61,14 @@
       <div class="carousel-inner">
     
 {% assign imgs = page.images | split: "," %}
+
 {% for img in imgs %}
-        <div class="carousel-item active">
+       {% if imgs.first == img %}
+       {% assign active = "active" %}
+       {% else %}
+       {% assign active = "" %}
+       {% endif %}
+        <div class="carousel-item {{ active }}">
           <img src="{{ img }}" class="d-block w-100" alt="...">
         </div>
 {% endfor %}
