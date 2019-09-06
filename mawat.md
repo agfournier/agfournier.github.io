@@ -4,6 +4,7 @@ year: 2017
 media: Instalación. Ventiladores, aluminio, altavoces, madera, electrónica e impresión digital. Medidas variables
 main_image: images/tmp_DSC_0120.JPG
 vimeo_id: 332024823
+shows:2019|<a href="https://musac.es/#exposiciones/expo/sin-moldes">Sin moldes. Escultura en la Colección MUSAC.</a> Museo de La Rioja (Logroño);;;2018|<a href="https://www.dphuesca.es/actualidad/-/asset_publisher/29W50G40JfnW/content/la-memoria-del-territorio/maximized">La memoria del territorio.</a> VISIONA, Sala de exposiciones de la Diputación de Huesca (Huesca);;;2017|<a href="https://fundacioncerezalesantoninoycinia.org/actividad/region-los-relatos/">Región (Los relatos).</a> Fundación Cerezales Antoninio y Cinia, MUSAC (León)
 images: http://abelardogfournier.org/cms/files/cache/tmp_DSC_0340.800x600_0.jpg,http://abelardogfournier.org/cms/files/cache/PB291134.800x600_0.jpg,http://abelardogfournier.org/cms/files/cache/tmp_DSC_0230.800x600_0.jpg,http://abelardogfournier.org/cms/files/cache/tmp_DSC_0080.800x600_0.jpg
 ---
 

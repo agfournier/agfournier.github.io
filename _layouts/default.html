@@ -54,6 +54,27 @@
 </section>
 {% endif %}
 
+
+{% if page.shows %}
+<section id="shows" class="container py-5">
+   <h3 class="py-4">Selected shows:</h3>
+   
+   <table class="table table-borderless">
+       <tbody>
+          {% for show in page.shows %}
+          {% assign data = show | split: "|" %}
+           <tr>
+               <td>{{ data[0] }}</td>
+               <td>{{ data[1] }}</td>
+           </tr>
+           {% endfor %}
+       </tbody>
+   </table>
+
+</section>
+{% endif %}
+
+
 {% if page.images %}
 <section id="carousel-imgs" class="container py-5">
     
