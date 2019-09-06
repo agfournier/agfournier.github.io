@@ -61,7 +61,8 @@
    
    <table class="table table-borderless">
        <tbody>
-          {% for show in page.shows %}
+          {% assing lshows = page.shows | split: ";;;" %}
+          {% for show in lshows %}
           {% assign data = show | split: "|" %}
            <tr>
                <td>{{ data[0] }}</td>
