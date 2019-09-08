@@ -9,7 +9,7 @@ images: http://abelardogfournier.org/cms/files/cache/tmp_DSC_0340.800x600_0.jpg,
 ---
 
 
-<div class="esp">
+<div class="es">
         <p>Una ley de colonización agraria del Imperio turco-otomano designó con el nombre de mawat a los terrenos desocupados dentro de sus fronteras. Para demarcarlos, la ley proporcionaba un criterio sonoro: una zona pasaba a ser mawat si los sonidos y las voces de la población más cercana dejaban de ser audibles. Mawat –muerte, en árabe– devino de este modo la característica administrativa de las tierras sin voz.</p>
         <p>En la instalación, una retícula de ventiladores pone en circulación el aire de la sala. De forma periódica, el movimiento se detiene y la superficie pasa a funcionar como una estructura resonante. Viejas melodías del cancionero agrícola castellano llenan el espacio durante esos intervalos.</p>
         <p>Al igual que en el caso otomano, la transformación del paisaje llevada a cabo por el Instituto Nacional de la Colonización estuvo basada también en la identificación y renovación de terrenos improductivos. Significativamente, uno de los aspectos llamativos de esta renovación es que muchos de los nuevos poblados nacieron sin cementerio. En Mawat, este detalle es recogido por una secuencia de imágenes alrededor de la pieza central. Ausencia, movimiento y retorno caracterizan un espacio marcadamente espectral. El sonido, en Mawat, abre la superficie y apunta a un suelo: el silencio material de la memoria.</p>

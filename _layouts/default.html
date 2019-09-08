@@ -130,10 +130,10 @@
 
 <script type="application/javascript">
     $(document).ready(function() {
-        var esp = $(".esp");
+        var es = $(".es");
         var en = $(".en");
-        if (esp.length + en.length >= 2) {
-            esp.hide();
+        if (es.length + en.length >= 2) {
+            es.hide();
             console.log("both");
             $("#lang").html("<a href=# data-lang=es>Spanish</a>");
         }
@@ -146,13 +146,13 @@
             if (lang == "es") {
                 console.log("change");
                 en.hide();
-                esp.show();
+                es.show();
                 $("#lang").html("<a href=# data-lang=en>English</a>");
             }
             else if (lang == "en") {
                 console.log("change");
-                en.hide();
-                esp.show();
+                es.hide();
+                en.show();
                 $("#lang").html("<a href=# data-lang=es>Spanish</a>");
             }
         });
