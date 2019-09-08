@@ -133,8 +133,10 @@
     var en = $(".en");
     if (esp.length + en.length >= 2) {
         esp.hide();
+        console.log("both");
         $("#lang").write("Spanish");
     }
+    else console.log("only one");
 </script>
   
 </body>
