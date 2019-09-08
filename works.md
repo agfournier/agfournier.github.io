@@ -14,6 +14,6 @@ layout: list
         <h3 class="display-5 py-2"><a href="{{ work.url }}">{{ work.title }}</a></h3>
         <img src="{{ work.main_image }}" class="w-100">
     </article>
-<section>
+</section>
 
 {% endfor %}
