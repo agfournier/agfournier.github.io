@@ -135,13 +135,15 @@
     $(document).ready(function() {
         var es = $(".es");
         var en = $(".en");
+        $("#changeToEn").hide();
+        $("#changeToEs").hide();
+        
         if (es.length + en.length >= 2) {
             es.hide();
-            $("#changeToEn").hide();
+            $("#changeToEs").show();
             console.log("both");
         }
         else console.log("only one");
-        
         
         $("#changeToEs").click(function(event) {
             event.preventDefault();
