@@ -129,14 +129,28 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
 
 <script type="application/javascript">
-    var esp = $(".esp");
-    var en = $(".en");
-    if (esp.length + en.length >= 2) {
-        esp.hide();
-        console.log("both");
-        $("#lang").html("Spanish");
-    }
-    else console.log("only one");
+    $(document).ready(function() {
+        var esp = $(".esp");
+        var en = $(".en");
+        if (esp.length + en.length >= 2) {
+            esp.hide();
+            console.log("both");
+            $("#lang").html("<a href=# data-lang=esp>Spanish</a>");
+        }
+        else console.log("only one");
+        
+        $("#lang a").click(function() {
+            console.log("clicked");
+            var lang = this.dataset['lang'];
+            console.log("lang" + lang);
+            if (lang == "esp") {
+                console.log("change");
+                en.hide();
+                $("#lang").html("English");
+            }
+        });
+});
+    
 </script>
   
 </body>
