@@ -135,7 +135,7 @@
         if (esp.length + en.length >= 2) {
             esp.hide();
             console.log("both");
-            $("#lang").html("<a href=# data-lang=esp>Spanish</a>");
+            $("#lang").html("<a href=# data-lang=es>Spanish</a>");
         }
         else console.log("only one");
         
@@ -143,10 +143,17 @@
             console.log("clicked");
             var lang = this.dataset['lang'];
             console.log("lang" + lang);
-            if (lang == "esp") {
+            if (lang == "es") {
                 console.log("change");
                 en.hide();
-                $("#lang").html("English");
+                esp.show();
+                $("#lang").html("<a href=# data-lang=en>English</a>");
+            }
+            else if (lang == "en") {
+                console.log("change");
+                en.hide();
+                esp.show();
+                $("#lang").html("<a href=# data-lang=es>Spanish</a>");
             }
         });
 });
