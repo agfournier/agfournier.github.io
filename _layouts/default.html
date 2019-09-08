@@ -49,7 +49,10 @@
         {{content}}
         </div>
         <div class="col-md-2">
-            <div id="lang"></div>
+            <div id="lang">
+                <a href="#" id="changeToEs">Spanish</a>
+                <a href="#" id="changeToEn">English</a>
+            </div>
         </div>
 </section>
 
@@ -134,30 +137,28 @@
         var en = $(".en");
         if (es.length + en.length >= 2) {
             es.hide();
+            $("#changeToEn").hide();
             console.log("both");
-            $("#lang").html("<a href=# data-lang=es>Spanish</a>");
         }
         else console.log("only one");
         
         
-        $("#lang a").click(function(event) {
-            var es = $(".es");
-            var en = $(".en");
+        $("#changeToEs").click(function(event) {
+            event.preventDefault();
             console.log("clicked");
-            var lang = this.dataset['lang'];
-            console.log("lang" + lang);
-            if (lang == "es") {
-                console.log("change");
-                en.hide();
-                es.show();
-                $("#lang").replaceWith("<a href=# data-lang=en>English</a>");
-            }
-            else if (lang == "en") {
-                console.log("change");
-                es.hide();
-                en.show();
-                $("#lang").replaceWith("<a href=# data-lang=es>Spanish</a>");
-            }
+            en.hide();
+            es.show();
+            $("#changeToEs").hide();
+            $("#changeToEn").show();
+        });
+        
+        $("#changeToEn").click(function(event) {
+            event.preventDefault();
+            console.log("clicked");
+            es.hide();
+            en.show();
+            $("#changeToEn").hide();
+            $("#changeToEs").show();
         });
     });
 </script>
