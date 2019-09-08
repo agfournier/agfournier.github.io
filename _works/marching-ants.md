@@ -4,9 +4,10 @@ key: marching-ants
 year: 2017
 type: work
 media: Mixed media. Screen, paper, rock. Variable dimensions.
-main_image: images/composition-marching-ants.png
+main_image: /images/composition-marching-ants.png
 vimeo_id: 217894488
-images: images/20190703_123059-ed.jpg
+images: /images/20190703_123059-ed.jpg
+layout: default
 ---
 
 <div class="en">

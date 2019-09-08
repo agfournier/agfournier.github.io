@@ -4,7 +4,7 @@ key: mawat
 year: 2017
 type: work
 media: Instalación. Ventiladores, aluminio, altavoces, madera, electrónica e impresión digital. Medidas variables
-main_image: images/tmp_DSC_0120.JPG
+main_image: /images/tmp_DSC_0120.JPG
 vimeo_id: 332024823
 images: http://abelardogfournier.org/cms/files/cache/tmp_DSC_0340.800x600_0.jpg,http://abelardogfournier.org/cms/files/cache/PB291134.800x600_0.jpg,http://abelardogfournier.org/cms/files/cache/tmp_DSC_0230.800x600_0.jpg,http://abelardogfournier.org/cms/files/cache/tmp_DSC_0080.800x600_0.jpg
 layout: default
