@@ -150,13 +150,13 @@
                 console.log("change");
                 en.hide();
                 es.show();
-                $("#lang").html("<a href=# data-lang=en>English</a>");
+                $("#lang").replaceWith("<a href=# data-lang=en>English</a>");
             }
             else if (lang == "en") {
                 console.log("change");
                 es.hide();
                 en.show();
-                $("#lang").html("<a href=# data-lang=es>Spanish</a>");
+                $("#lang").replaceWith("<a href=# data-lang=es>Spanish</a>");
             }
         });
     });
