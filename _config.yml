@@ -1,3 +1,5 @@
 collections:
   works:
     output: true
+  workshops:
+    output: true
