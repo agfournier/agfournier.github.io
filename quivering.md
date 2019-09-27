@@ -2,10 +2,12 @@
 title: The Quivering of the Reed
 key: quivering
 year: 2019
+type: work
 media: Installation. Plant or tree, beamer, DC motor, spot light and paper screen. Variable dimensions.
-main_image: images/20190705_122039.jpg
+main_image: /images/20190705_122039.jpg
 vimeo_id: 317525838
 images: http://abelardogfournier.org/cms/files/projects/the-quivering-of-the-reed/quivering-cerezales-2-ed.project.jpg
+layout: default
 ---
 
 

@@ -2,10 +2,12 @@
 title: Reading Stones
 key: reading-stones
 year: 2016
+type: work
 media: Mixed media. Glass box, book, stones, paper labels.
-main_image: images/matadero-detail.jpg
+main_image: /images/matadero-detail.jpg
 vimeo_id: 331612500
-images: images/instructions.JPG
+images: /images/instructions.JPG
+layout: default
 ---
 
 
