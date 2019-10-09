@@ -1,5 +1,5 @@
 ---
-title: Out of the Sediment: Ecologies of Scale and Speculative Grids
+title: "Out of the Sediment: Ecologies of Scale and Speculative Grids"
 key: outofthesediment
 year: 2017
 type: workshop
