@@ -1,6 +1,6 @@
 ---
 title: "Reverberaciones materiales"
-key: reverberacionesmaterialies
+key: reverberacionesmateriales
 year: 2017
 type: workshop
 main_image: /images/reverberacion_web.jpg

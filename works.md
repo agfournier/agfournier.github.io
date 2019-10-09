@@ -16,7 +16,7 @@ layout: list
             <div class="py-md-3"></div>
         </div>   
     <div class="col-12 col-md-9">
-        <img src="{{ item.main_image }}" class="w-100">
+        <a href="{{ item.url }}"><img src="{{ item.main_image }}" class="w-100"></a>
     </div>
   </div>
 </article>
