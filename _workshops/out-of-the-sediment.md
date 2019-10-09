@@ -6,9 +6,7 @@ type: workshop
 main_image: /images/out-of-the-sediment-title.jpg
 layout: default
 ---
-
 Presentations and workshop by members of Archaeologies of Media and Technology Research Group (Winchester School of Art / University of Southampton): Jussi Parikka, Mihaela Brebenel and Yigit Soncul, Abelardo Gil-Fournier 
-
 
 Part of "Mediating Deep Space & Time": a three-part workshop series organised by the Screen and Audiovisual Research Unit (SARU), based at the Department of Media & Communications, at Goldsmiths University of London. The workshop took place in April, May and June 2017 respectively. Over these three half-day events, the aim is to facilitate extended discussion between academics and postgraduate/early career researchers. 
 
