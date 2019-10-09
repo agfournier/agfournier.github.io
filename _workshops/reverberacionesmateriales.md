@@ -4,9 +4,10 @@ key: reverberacionesmaterialies
 year: 2017
 type: workshop
 main_image: /images/reverberacion_web.jpg
+images: /images/reverberacion_1.jpg,/images/reverberacion_0.jpg
 layout: default
 ---
-Taller impartido por Abelardo Gil-Fournier y Maria Andueza
+Taller impartido por Abelardo Gil-Fournier y Maria Andueza. Coordinado por Araceli Corbo
 20 y 21 de octubre, 2017
 MUSAC · Museo de Arte Contemporáneo de Castilla y León
 
