@@ -4,7 +4,7 @@ key: quivering
 year: 2019
 type: work
 media: Installation. Plant or tree, beamer, DC motor, spot light and paper screen. Variable dimensions.
-main_image: /images/20190705_122039.jpg
+main_image: /images/quivering-948-5.jpg
 vimeo_id: 317525838
 images: /images/20190705_122039.jpg, /images/quivering-948-1.jpg, /images/quivering-948-2.jpg, /images/quivering-948-3.jpg, /images/quivering-948-4.jpg, /images/quivering-948-5.jpg
 layout: default
