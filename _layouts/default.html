@@ -81,7 +81,7 @@
     
     {% assign imgs = page.images | split: "," %}
     
-    <script>Console.log({{ imgs.size }})</script>
+    <script>console.log({{ imgs.size }})</script>
     
     {% assign num = imgs.size | divided_by: 3.0 | ceil %}
     
