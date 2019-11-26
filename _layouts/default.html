@@ -87,13 +87,18 @@
     
     <!-- column 1 -->
     <div class="masonry-column col-lg-4 col-md-6 col-sm-12 col-xs-12">
-        
-    {% for i in (0..num-1) %}
-            <script>console.log({{ i }})</script>
+    
+    {% assign n1 = 0 %}
+    {% assign n2 = num %}    
+    {% for i in (n1..n2) %}
+        {% if i == n2 %}
+        {% break %}
+        {% else %}
+        <script>console.log({{ i }})</script>
         <div class="item">
             <img src="{{ imgs[i] }}" class="d-block w-100" alt="...">
         </div>
-    
+        {% endif %}
     {% endfor %} 
         
     </div>    
@@ -101,12 +106,16 @@
         <!-- column 2 -->
     <div class="masonry-column col-lg-4 col-md-6 col-sm-12 col-xs-12">
         
-    {% for i in (num..num*2-1) %}
-    
+    {% assign n1 = num %}
+    {% assign n2 = num | times:2 %}     
+    {% for i in (n1..n2*) %}
+        {% if i == n1 %}
+        {% break %}
+        {% else %}    
         <div class="item">
             <img src="{{ imgs[i] }}" class="d-block w-100" alt="...">
         </div>
-    
+        {% endif %}
     {% endfor %} 
         
     </div>    
@@ -115,8 +124,9 @@
         <!-- column 3 -->
     <div class="masonry-column col-lg-4 col-md-6 col-sm-12 col-xs-12">
         
-    {% for i in (num*2..num*3-1) %}
-    
+    {% assign n1 = num | times:2 %}
+    {% assign n2 = num | times:3 %}         
+    {% for i in (n1..n2) %}
         {% if i == imgs.size %}
         {% break %}
         {% else %}
