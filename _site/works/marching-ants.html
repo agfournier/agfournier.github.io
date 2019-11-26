@@ -84,35 +84,76 @@
 
 
 
-
 <section id="carousel-imgs" class="container py-3">
     
-    <div id="carouselImgsControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
+    <div class="gamma-container gamma-loading" id="gamma-container">
+
+	<ul class="gamma-gallery">
+
+	
+
     
-
-
-
        
-        <div class="carousel-item active">
-          <img src="/images/20190703_123059-ed.jpg" class="d-block w-100" alt="...">
-        </div>
 
-   
-      </div>
-      <a class="carousel-control-prev" href="#carouselImgsControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselImgsControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>    
-</section>
+		<li>
+			<div data-alt="img01" data-max-width="1800" data-max-height="2400">
+				<div data-src="/images/20190703_123059-ed.jpg" data-min-width="140"></div>
+				<noscript>
+					<img src="/images/20190703_123059-ed.jpg" alt="img01"/>
+				</noscript>
+			</div>
+		</li>
+
+		
+
+	</ul>
+
+	<div class="gamma-overlay"></div>
+
+</div>
+
 
 
 </article>
+
+<script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+   <script src="/assets/js/imagesloaded.pkgd.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="/assets/js/masonry-v2-3-shim.js"></script>
+		<script src="/assets/js/jquery.history.js"></script>
+		<script src="/assets/js/js-url.min.js"></script>
+		<script src="/assets/js/jquerypp.custom.js"></script>
+		<script src="/assets/js/gamma.js"></script>
+		<script type="text/javascript">
+
+			$(function() {
+
+				var GammaSettings = {
+						// order is important!
+						viewport : [ {
+							width : 1200,
+							columns : 5
+						}, {
+							width : 900,
+							columns : 4
+						}, {
+							width : 500,
+							columns : 3
+						}, {
+							width : 320,
+							columns : 2
+						}, {
+							width : 0,
+							columns : 2
+						} ]
+				};
+
+				Gamma.init( GammaSettings );
+                
+            });
+
+		</script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
