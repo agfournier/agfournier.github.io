@@ -16,16 +16,16 @@ layout: list
 Abelardo Gil-Fournier is an artist and researcher whose work addresses the material interweaving between the contemporary image and the living surfaces of the planet. His practice is based on the elaboration of platforms -installations, devices and workshops- conceived as open mechanisms, where art, knowledge and politics intersect.
 </p>
 <p>
-His work has been shown and discussed in venues such as Transmediale (Berlin), Matadero Center of Art (Madrid), Galeria Millenium (Lisbon), MUSAC (León), Medialab Prado (Madrid), Laboral Center of Art (Gijón) as well as in Cultural Centers of Spain in Mexico, Nicaragua and El Salvador.
+His work has been shown and discussed in venues such as Transmediale, Matadero Center of Art, Galeria Millenium (Lisbon), MUSAC, Fundación Cerezales Antonino y Cinia, Medialab Prado, IKKM, Laboral Center of Art as well as in Cultural Centers of Spain in Mexico, Nicaragua and El Salvador.
 </p>
 <p>
 He is currently a postdoc researcher at FAMU Prague, part of AMT Archaeologies of Media and Technology and part time instructor at the European University of Madrid. He holds a PhD from the Winchester School of Art.
 </p>
 <p>
-email: croopier [at] gmail . com    
+croopier [at] gmail . com    
 </p>
 <p>
-tw: http://twitter.com/croopier   
+<a href="http://twitter.com/croopier">http://twitter.com/croopier</a>   
 </p>
         </div>
   </div>
