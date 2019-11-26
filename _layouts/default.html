@@ -108,8 +108,8 @@
         
     {% assign n1 = num %}
     {% assign n2 = num | times: 2 %}     
-    {% for i in (n1..n2*) %}
-        {% if i == n1 %}
+    {% for i in (n1..n2) %}
+        {% if i == n2 %}
         {% break %}
         {% else %}    
         <div class="item">
