@@ -44,71 +44,35 @@
 {% if page.images %}
 <section id="carousel-imgs" class="container py-3">
     
-    <div class="gamma-container gamma-loading" id="gamma-container">
+    <div id="carouselImgsControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+    
+{% assign imgs = page.images | split: "," %}
 
-	<ul class="gamma-gallery">
-
-	{% assign imgs = page.images | split: "," %}
-
-    {% for img in imgs %}
+{% for img in imgs %}
        {% if imgs.first == img %}
        {% assign active = "active" %}
        {% else %}
        {% assign active = "" %}
        {% endif %}
-
-		<li>
-			<div data-alt="img01" data-max-width="1800" data-max-height="2400">
-				<div data-src="{{ img }}" data-min-width="140"></div>
-				<noscript>
-					<img src="{{ img }}" alt="img01"/>
-				</noscript>
-			</div>
-		</li>
-
-		{% endfor %}
-
-	</ul>
-
-	<div class="gamma-overlay"></div>
-
-</div>
+        <div class="carousel-item {{ active }}">
+          <img src="{{ img }}" class="d-block w-100" alt="...">
+        </div>
+{% endfor %}
+   
+      </div>
+      <a class="carousel-control-prev" href="#carouselImgsControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselImgsControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>    
+</section>
 {% endif %}
 
-
 </article>
-
-<script src="/js/jquery.masonry.min.js"></script>
-		<script src="/js/jquery.history.js"></script>
-		<script src="/js/js-url.min.js"></script>
-		<script src="/js/jquerypp.custom.js"></script>
-		<script src="/js/gamma.js"></script>
-		<script type="text/javascript">
-
-			$(function() {
-
-				var GammaSettings = {
-						// order is important!
-						viewport : [ {
-							width : 1200,
-							columns : 5
-						}, {
-							width : 900,
-							columns : 4
-						}, {
-							width : 500,
-							columns : 3
-						}, {
-							width : 320,
-							columns : 2
-						}, {
-							width : 0,
-							columns : 2
-						} ]
-				};
-
-				Gamma.init( GammaSettings, fncallback );
-
-		</script>
 
 {% include footer.html %}
