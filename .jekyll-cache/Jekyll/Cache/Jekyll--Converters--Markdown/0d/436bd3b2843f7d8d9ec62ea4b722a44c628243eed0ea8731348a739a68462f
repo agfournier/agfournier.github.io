@@ -1,0 +1,83 @@
+I"3
+<main class="py-2">
+
+<article class="container py-1">
+    <div class="row align-items-end">
+        <div class="pt-5  col-12 col-md-3 text-center text-md-right">
+            <h7 class="font-weight-light"><a href="/works/quivering.html" class="text-dark">The Quivering of the Reed</a></h7>
+            <p class="font-weight-light font-smaller">2019</p>
+            <div class="py-md-3"></div>
+        </div>   
+    <div class="col-12 col-md-9">
+        <a href="/works/quivering.html"><img src="/images/20190705_122039.jpg" class="w-100" /></a>
+    </div>
+  </div>
+</article>
+
+<article class="container py-1">
+    <div class="row align-items-end">
+        <div class="pt-5  col-12 col-md-3 text-center text-md-right">
+            <h7 class="font-weight-light"><a href="/works/mawat.html" class="text-dark">Mawat</a></h7>
+            <p class="font-weight-light font-smaller">2017</p>
+            <div class="py-md-3"></div>
+        </div>   
+    <div class="col-12 col-md-9">
+        <a href="/works/mawat.html"><img src="/images/tmp_DSC_0120.JPG" class="w-100" /></a>
+    </div>
+  </div>
+</article>
+
+<article class="container py-1">
+    <div class="row align-items-end">
+        <div class="pt-5  col-12 col-md-3 text-center text-md-right">
+            <h7 class="font-weight-light"><a href="/works/marching-ants.html" class="text-dark">Marching Ants, Marching in Rows</a></h7>
+            <p class="font-weight-light font-smaller">2017</p>
+            <div class="py-md-3"></div>
+        </div>   
+    <div class="col-12 col-md-9">
+        <a href="/works/marching-ants.html"><img src="/images/composition-marching-ants.png" class="w-100" /></a>
+    </div>
+  </div>
+</article>
+
+<article class="container py-1">
+    <div class="row align-items-end">
+        <div class="pt-5  col-12 col-md-3 text-center text-md-right">
+            <h7 class="font-weight-light"><a href="/works/reading-stones.html" class="text-dark">Reading Stones</a></h7>
+            <p class="font-weight-light font-smaller">2016</p>
+            <div class="py-md-3"></div>
+        </div>   
+    <div class="col-12 col-md-9">
+        <a href="/works/reading-stones.html"><img src="/images/matadero-detail.jpg" class="w-100" /></a>
+    </div>
+  </div>
+</article>
+
+<article class="container py-1">
+    <div class="row align-items-end">
+        <div class="pt-5  col-12 col-md-3 text-center text-md-right">
+            <h7 class="font-weight-light"><a href="/works/mineralvision.html" class="text-dark">Mineral Vision</a></h7>
+            <p class="font-weight-light font-smaller">2015</p>
+            <div class="py-md-3"></div>
+        </div>   
+    <div class="col-12 col-md-9">
+        <a href="/works/mineralvision.html"><img src="/images/Vision-mineral-00.800x600_0.jpg" class="w-100" /></a>
+    </div>
+  </div>
+</article>
+
+<article class="container py-1">
+    <div class="row align-items-end">
+        <div class="pt-5  col-12 col-md-3 text-center text-md-right">
+            <h7 class="font-weight-light"><a href="/works/vividness.html" class="text-dark">Vividness</a></h7>
+            <p class="font-weight-light font-smaller">2013</p>
+            <div class="py-md-3"></div>
+        </div>   
+    <div class="col-12 col-md-9">
+        <a href="/works/vividness.html"><img src="/images/Vividness_New_York_culturehub.800x600_0.800x600_0.jpg" class="w-100" /></a>
+    </div>
+  </div>
+</article>
+
+</main>
+:ET

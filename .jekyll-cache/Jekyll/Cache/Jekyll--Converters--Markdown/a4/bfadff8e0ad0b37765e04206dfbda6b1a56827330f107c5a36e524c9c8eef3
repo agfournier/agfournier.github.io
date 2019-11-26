@@ -1,0 +1,89 @@
+I" 
+<main class="py-2">
+
+<article class="container py-1">
+    <div class="row align-items-end">
+        <div class="pt-5  col-12 col-md-3 text-center text-md-right">
+            <h7 class="font-weight-light"><a href="/workshops/outofthesediment.html" class="text-dark">Laboratorios de la escucha: El sonido del que eres cable</a></h7>
+            <div class="py-md-3"></div>
+        </div>   
+    <div class="col-12 col-md-9">
+        <a href="/workshops/outofthesediment.html"><img src="/images/workshop-laboratorio-de-la-escucha.png" class="w-100" /></a>
+    </div>
+  </div>
+</article>
+
+<article class="container py-1">
+    <div class="row align-items-end">
+        <div class="pt-5  col-12 col-md-3 text-center text-md-right">
+            <h7 class="font-weight-light"><a href="/workshops/earthology.html" class="text-dark">Landscape Prediction: An Earthology of Moving Landforms</a></h7>
+            <div class="py-md-3"></div>
+        </div>   
+    <div class="col-12 col-md-9">
+        <a href="/workshops/earthology.html"><img src="/images/meanders-orig-pred-opt.gif" class="w-100" /></a>
+    </div>
+  </div>
+</article>
+
+<article class="container py-1">
+    <div class="row align-items-end">
+        <div class="pt-5  col-12 col-md-3 text-center text-md-right">
+            <h7 class="font-weight-light"><a href="/workshops/reverberacionesmateriales.html" class="text-dark">Reverberaciones materiales</a></h7>
+            <div class="py-md-3"></div>
+        </div>   
+    <div class="col-12 col-md-9">
+        <a href="/workshops/reverberacionesmateriales.html"><img src="/images/reverberacion_web.jpg" class="w-100" /></a>
+    </div>
+  </div>
+</article>
+
+<article class="container py-1">
+    <div class="row align-items-end">
+        <div class="pt-5  col-12 col-md-3 text-center text-md-right">
+            <h7 class="font-weight-light"><a href="/workshops/laboratorioescucha.html" class="text-dark">Out of the Sediment: Ecologies of Scale and Speculative Grids</a></h7>
+            <div class="py-md-3"></div>
+        </div>   
+    <div class="col-12 col-md-9">
+        <a href="/workshops/laboratorioescucha.html"><img src="/images/out-of-the-sediment-title.jpg" class="w-100" /></a>
+    </div>
+  </div>
+</article>
+
+<article class="container py-1">
+    <div class="row align-items-end">
+        <div class="pt-5  col-12 col-md-3 text-center text-md-right">
+            <h7 class="font-weight-light"><a href="/workshops/algorithms.html" class="text-dark">Ephemeris. Unmaking the metric surface</a></h7>
+            <div class="py-md-3"></div>
+        </div>   
+    <div class="col-12 col-md-9">
+        <a href="/workshops/algorithms.html"><img src="/images/ephemeris-workshop-unmaking-the-metric-surface.800x600_0.jpg" class="w-100" /></a>
+    </div>
+  </div>
+</article>
+
+<article class="container py-1">
+    <div class="row align-items-end">
+        <div class="pt-5  col-12 col-md-3 text-center text-md-right">
+            <h7 class="font-weight-light"><a href="/workshops/ephemeris.html" class="text-dark">Algorithmes Cr√©atifs</a></h7>
+            <div class="py-md-3"></div>
+        </div>   
+    <div class="col-12 col-md-9">
+        <a href="/workshops/ephemeris.html"><img src="/images/graphs.800x600_0.jpg" class="w-100" /></a>
+    </div>
+  </div>
+</article>
+
+<article class="container py-1">
+    <div class="row align-items-end">
+        <div class="pt-5  col-12 col-md-3 text-center text-md-right">
+            <h7 class="font-weight-light"><a href="/workshops/stone.html" class="text-dark">Stone, Pixel, Plastic, Stone</a></h7>
+            <div class="py-md-3"></div>
+        </div>   
+    <div class="col-12 col-md-9">
+        <a href="/workshops/stone.html"><img src="/images/fabricacion.800x600_0.jpg" class="w-100" /></a>
+    </div>
+  </div>
+</article>
+
+</main>
+:ET

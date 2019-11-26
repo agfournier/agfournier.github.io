@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Laboratorios de la escucha: El sonido del que eres cable - Abelardo Gil-Fournier</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+
+    <a class="navbar-brand font-weight-light" href="/">Abelardo Gil-Fournier</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="/works" class="nav-link">Works</a></li>
+            <li class="nav-item"><a href="/workshops" class="nav-link">Workshops</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Texts</a></li>
+            <li class="nav-item"><a href="/posts" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="/bio" class="nav-link">Bio</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<article>
+
+
+<section id="titulo" class="container py-5">
+  <div class="row">
+      <div class="col-md-8 col-12 offset-md-2">
+        <h1 class="display-5 pt-5 pb-3">Laboratorios de la escucha: El sonido del que eres cable</h1>
+        <p class="text-muted font-weight-light">
+        <br>
+        2019
+        </p>
+      </div>
+  </div>
+
+</section>
+
+
+<section id="imagen" class="container-fluid py-2">
+    <img src="/images/workshop-laboratorio-de-la-escucha.png" class="w-100">
+</section>
+
+<section id="texto" class="container py-3">
+    <div class="row">
+        <div class="col-md-8 col-12 offset-md-2">
+        <p>Entre el 10 y el 14 de mayo estuve en Peñíscola trabajando con María Andueza en un taller, “El sonido del que eres cable”, en el C.E.I.P Jaime Sanz con alumando de 3º de Educación Primaria. Esta actividad se inscribía en los <a href="https://eduescuchactiva.net/">Laboratorios de la escucha</a> coordinados por <a href="https://weekendproms.org/">Weekend Proms</a> como parte del proyecto “Resistències artístiques. Producción artística en entornos educativos” financiado por el Consorci de Museus de la Comunitat Valenciana.</p>
+
+<p>El taller puso en marcha diferentes mecanismos de producción sonora colectiva en el aula atravesados por los cuerpos de las estudiantes que la habitan, que la conocen en detalle y la activan permanentemente.</p>
+
+<p>Otros agentes implicados en el programa Los laboratorios de la escucha:
+DJ Detweller (Berlin), Agnès Pe (Lleida), Montse Piñeiro (Santiago de Compostela), Dj Toner (Granada), Kursiva (Berlin), Juani Cash (Córdoba), Bromygo (Carcabuey), Elniñodelospeines (Lucena), Magda Labarga (Madrid), Nilo Gallego (Ponferrada), Mateo Mena (Santiago de Compostela), José Luis Espejo (Madrid), Sergio Lasuén (Zaragoza), Juan Matos Capote (Islas Canarias), Juan Cantizzani (Lucena), Horacio González (Galicia), Alex Mendizabal (Roma), Eli Gras (Barcelona).</p>
+
+
+        </div>
+        <div class="col-md-2">
+            <div id="lang">
+                <a href="#" id="changeToEs">Spanish</a>
+                <a href="#" id="changeToEn">English</a>
+            </div>
+        </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script type="application/javascript">
+    $(document).ready(function() {
+        var es = $(".es");
+        var en = $(".en");
+        $("#changeToEn").hide();
+        $("#changeToEs").hide();
+
+        if (es.length + en.length >= 2) {
+            es.hide();
+            $("#changeToEs").show();
+            console.log("both");
+        }
+        else console.log("only one");
+
+        $("#changeToEs").click(function(event) {
+            event.preventDefault();
+            console.log("clicked");
+            en.hide();
+            es.show();
+            $("#changeToEs").hide();
+            $("#changeToEn").show();
+        });
+
+        $("#changeToEn").click(function(event) {
+            event.preventDefault();
+            console.log("clicked");
+            es.hide();
+            en.show();
+            $("#changeToEn").hide();
+            $("#changeToEs").show();
+        });
+    });
+</script>
+
+</body>
+</html>

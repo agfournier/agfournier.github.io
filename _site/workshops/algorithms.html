@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ephemeris. Unmaking the metric surface - Abelardo Gil-Fournier</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+
+    <a class="navbar-brand font-weight-light" href="/">Abelardo Gil-Fournier</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="/works" class="nav-link">Works</a></li>
+            <li class="nav-item"><a href="/workshops" class="nav-link">Workshops</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Texts</a></li>
+            <li class="nav-item"><a href="/posts" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="/bio" class="nav-link">Bio</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<article>
+
+
+<section id="titulo" class="container py-5">
+  <div class="row">
+      <div class="col-md-8 col-12 offset-md-2">
+        <h1 class="display-5 pt-5 pb-3">Ephemeris. Unmaking the metric surface</h1>
+        <p class="text-muted font-weight-light">
+        <br>
+        2016
+        </p>
+      </div>
+  </div>
+
+</section>
+
+
+<section id="imagen" class="container-fluid py-2">
+    <img src="/images/ephemeris-workshop-unmaking-the-metric-surface.800x600_0.jpg" class="w-100">
+</section>
+
+<section id="texto" class="container py-3">
+    <div class="row">
+        <div class="col-md-8 col-12 offset-md-2">
+        <p>The Swedish Land Registry recently announced tests being conducted to put the country’s land registry system on blockchain [1]. This procedure encodes land by fragmenting it into blocks whose transactions -purchases, clearings, reclassifications, etc- are systematically traced, encrypted and recorded in chains stored in distributed databases, in analogy to the bitcoin operations.</p>
+
+<p>In the context of the digitalization of the surfaces of the Earth -through, among others, satellital images, aerial photogrammetry, sensor networks and GIS services- this decentralized protocol reinforces a topological approach to land, characteristic of infrastructural planning [2], which renders topography redundant: once locations are figured out from time delays in the communication with orbiting nodes (GPS), or addresses reinvented as algorithmic hashes (geohash, what3words), the old modern, metric-driven Earth is replaced by a different, database-like entity.</p>
+
+<p>This context, however, is not the result of a spontaneous transformation. The observation of the Earth through media has occurred along with the expansion of extractive industries, whose actions have resurfaced the planet itself, together with the humans inhabiting it [3]. A large amount of varied movements populates and reshapes the planet’s crust: irrigation systems, conveyor belts, leveling machines, water sluices, tractors, etc. complement the disciplined operations of the workers of the farms, mines and industries.</p>
+
+<p>This workshop proposes the use of these movements as a “physical diagramming” that recreates –and, by doing so, interferes with– the machinery through which this relation to the Earth is produced [4]. To do so, it will propose the use of obsolete metric tools -rulers, right triangles, compasses, protractors- as kinetic objects to be animated by simple electronic motors and basic mechanical components. An introduction to the needed programming and electronic skills will be provided, in order to be finally able to link data from the computer to the mechanical devices.</p>
+
+        </div>
+        <div class="col-md-2">
+            <div id="lang">
+                <a href="#" id="changeToEs">Spanish</a>
+                <a href="#" id="changeToEn">English</a>
+            </div>
+        </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script type="application/javascript">
+    $(document).ready(function() {
+        var es = $(".es");
+        var en = $(".en");
+        $("#changeToEn").hide();
+        $("#changeToEs").hide();
+
+        if (es.length + en.length >= 2) {
+            es.hide();
+            $("#changeToEs").show();
+            console.log("both");
+        }
+        else console.log("only one");
+
+        $("#changeToEs").click(function(event) {
+            event.preventDefault();
+            console.log("clicked");
+            en.hide();
+            es.show();
+            $("#changeToEs").hide();
+            $("#changeToEn").show();
+        });
+
+        $("#changeToEn").click(function(event) {
+            event.preventDefault();
+            console.log("clicked");
+            es.hide();
+            en.show();
+            $("#changeToEn").hide();
+            $("#changeToEs").show();
+        });
+    });
+</script>
+
+</body>
+</html>
