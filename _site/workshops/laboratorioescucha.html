@@ -103,43 +103,10 @@ Ani in conversation with Nat Muller. Available from:
 
 </article>
 
-<script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-   <script src="/assets/js/imagesloaded.pkgd.js"></script>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-    <script src="/assets/js/masonry-v2-3-shim.js"></script>
-		<script src="/assets/js/jquery.history.js"></script>
-		<script src="/assets/js/js-url.min.js"></script>
-		<script src="/assets/js/jquerypp.custom.js"></script>
-		<script src="/assets/js/gamma.js"></script>
+		<script src="/assets/js/simple-masonry.js"></script>
 		<script type="text/javascript">
-
-			$(function() {
-
-				var GammaSettings = {
-						// order is important!
-						viewport : [ {
-							width : 1200,
-							columns : 5
-						}, {
-							width : 900,
-							columns : 4
-						}, {
-							width : 500,
-							columns : 3
-						}, {
-							width : 320,
-							columns : 2
-						}, {
-							width : 0,
-							columns : 2
-						} ]
-				};
-
-				Gamma.init( GammaSettings );
-                
-            });
-
+            var simpleM = new SimpleMasonry();
+            simpleM.init();
 		</script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

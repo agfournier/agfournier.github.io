@@ -6,7 +6,7 @@ type: work
 media: Mixed media. Copper powder, wood, methacrylate, electronics.
 main_image: /images/Vision-mineral-00.800x600_0.jpg
 vimeo_id: 119040621
-images: /images/Vision-mineral-01.800x600_0.jpg,/images/Vision-mineral-02.800x600_0.jpg,/images/Vision-mineral-03.800x600_0.jpg,/images/Vision-mineral-04.800x600_0.jpg,/images/Vision-mineral-05.800x600_0.jpg,/images/Vision-mineral-06.800x600_0.jpg,/images/Vision-mineral-07.800x600_0.jpg,/images/Vision-mineral-08.800x600_0.jpg
+images: /images/Vision-mineral-01.800x600_0.jpg,/images/Vision-mineral-04.800x600_0.jpg,/images/Vision-mineral-05.800x600_0.jpg,/images/Vision-mineral-06.800x600_0.jpg,/images/Vision-mineral-02.800x600_0.jpg,/images/Vision-mineral-07.800x600_0.jpg,/images/Vision-mineral-08.800x600_0.jpg,/images/Vision-mineral-03.800x600_0.jpg
 layout: default
 ---
 
