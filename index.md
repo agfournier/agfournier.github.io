@@ -1,6 +1,6 @@
 ---
 title: 
-main_image: /images/20190705_122039.jpg
+main_image: /images/quivering-948-5.jpg
 layout: front
 ---
 
