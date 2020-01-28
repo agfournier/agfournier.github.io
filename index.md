@@ -1,6 +1,6 @@
 ---
 title: 
-main_image: /images/quivering-948-recorte.jpg
+main_image: /images/mawat-15musac.jpg
 layout: front
 ---
 
