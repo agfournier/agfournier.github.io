@@ -92,7 +92,7 @@
         {% if i == n2 %}
         {% break %}
         {% else %}
-            <img src="{{ imgs[i] }}" class="d-block w-100 p-1" alt="...">
+        <a href="{{ img }}"><img src="{{ imgs[i] }}" class="d-block w-100 p-1" alt="..."></a>
         {% endif %}
     {% endfor %} 
         
@@ -107,7 +107,7 @@
         {% if i == n2 %}
         {% break %}
         {% else %}    
-            <img src="{{ imgs[i] }}" class="d-block w-100 p-1" alt="...">
+        <a href="{{ img }}"><img src="{{ imgs[i] }}" class="d-block w-100 p-1" alt="..."></a>
         {% endif %}
     {% endfor %} 
         
@@ -123,7 +123,7 @@
         {% if i == imgs.size %}
         {% break %}
         {% else %}
-            <img src="{{ imgs[i] }}" class="d-block w-100 p-1" alt="...">
+        <a href="{{ img }}"><img src="{{ imgs[i] }}" class="d-block w-100 p-1" alt="..."></a>
        {% endif %}
     
     {% endfor %} 
