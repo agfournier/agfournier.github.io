@@ -1,6 +1,6 @@
 ---
-title: "lecture: Do Images Exhale Oxygen? Visual circuits, latent surfaces and earthial growth"
-main_image: /images/strelka.jpg
+title: "lecture: Strelka Institute, The Terraforming: Do Images Exhale Oxygen? "
+main_image: /images/strelka.png
 layout: post
 ---
 
