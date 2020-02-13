@@ -1,19 +1,25 @@
 ---
-title: The Quivering of the Reed
-key: quivering
+title: Bildung (The Growth of the I)
+key: bildung
 year: 2019
 type: work
-media: Installation. Plant or tree, beamer, DC motor, spot light and paper screen. Variable dimensions.
-main_image: /images/20190705_122039.jpg
-vimeo_id: 317525838
-images: /images/quivering-948-1.jpg,/images/quivering-948-5.jpg,/images/quivering-948-3.jpg,/images/quivering-948-4.jpg,/images/quivering-948-2.jpg
+media: Single channel video loop
+main_image: /images/bildung-still-web.jpg
+vimeo_id: 332023882
+images: /images/bildung-grid.jpg,/images/bildung-process-0.JPG,/images/bildung-as-spectrum-web.JPG
 layout: default
 ---
 
 
 
 <div class="en">
-        <p>The Quivering of the Reed is an installation that merges together experimental scientific practices with early moving image devices. A pot of cat-grass — a fast-growing assemblage of grass, soil nutrients and water, designed as a scaled down and domestic form of pasture — is placed on top of a rotating platform in between a source of light and a projection screen made of millimetric paper. The shadows produced by the rotating plants on the screen create an endless stream of ever-changing images.</p>
-        <p><em>Camera-less.</em> This material form of vegetal filmmaking is complemented by a sequence of subtitles. These take a sentence by Andrei Tarkovsky as a starting point: "Just as from the quivering of a reed you can tell what sort of current, what pressure there is in a river, in the same way we know the movement of time from the flow of the life-process reproduced in the shot". The projected text inverts, however, the filmmaker's statement: the movement of time in media shapes and transforms the living by measuring and creating new conditions of manipulation.</p>
-        <p><em>Film-less.</em> Devised as the encounter of three surfaces — the leaves of the plant, the millimetric paper and the projected subtitles — the installation exposes a very particular form of synchronisation: the plant occupies the position of the film reel, it registers light as well as it produces images. In rotation, it becomes a planetary diagram. An imaging planet, from the deep time of the moving images, facing the temporality of mechanical extractivity.</p>   
+<p>
+ Bildung presents an animation of the growth of a blade of grass. The sequence of the growth is repeated twice. Before each of the repetitions, two placards explain the process followed to build the sequence. First, each of the leaves of a pot full of grass were cut, and individually photographed. Then, all the resulting photographs were ordered following their length and shape. The ordered sequence of images was used finally to produce the animation. The resulting video, with the two placards, is reproduced in loop.   
+</p>
+<p>
+The process deals with two different circumstances at the same time: the impossibility of the existence of a grass of a single blade, on the one hand, and the mowing of the complete pot of grass to build the film of an individual leaf, on the other.    
+</p>
+<p>
+The work, then, addresses the genre of the time-lapse of growing plants in order to establish a relation between two different formations: first, the amplification of the domain of the eye thanks to the chronotechnical space of manipulations permitted by visual media; second, the notion of the individual subject implicit in the anthropomorphic accelerated vision of the growth of a plant. These two coalesce critically in the process of cutting the blades. In this regard, the work emphasises the moment of the physical cut. As the leaf grows in the image, the grass is reduced in the pot. Imaging is blended with its material counterpart.    
+</p>
 </div>
