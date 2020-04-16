@@ -1,6 +1,6 @@
 ---
 title: 
-main_image: /images/eclise-web.jpg
+main_image: /images/eclipse-web.jpg
 layout: front
 ---
 
