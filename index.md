@@ -1,6 +1,6 @@
 ---
 title: 
-main_image: /images/quivering-948-recorte.jpg
+main_image: /images/eclise-web.jpg
 layout: front
 ---
 
