@@ -5,8 +5,8 @@ year: 2013
 type: work
 media: Installation. Flowers, table, mirror, digital beamer.
 main_image: /images/vividness-grid.png
-vimeo_id: 71408579
-atencion_hay_otro_vimeo: 94442934
+vimeo_id: 417631500
+atencion_hay_otros_vimeo: 94442934-71408579
 images:  /images/Vividness_New_York_culturehub.800x600_0.800x600_0.jpg,/images/vividness-1s.800x600_0.jpg,/images/vividness-2s.800x600_0.jpg,/images/vividness-3s.800x600_0.jpg,/images/vividness-4s.800x600_0.jpg,/images/vividness-5s.800x600_0.jpg,/images/vividness-setup-0s.800x600_0.jpg
 layout: default
 ---
