@@ -4,9 +4,9 @@ key: seedimageground
 year: 2020
 type: work
 media: Single channel video or two channel video installation
-main_image: /images/capture-seedbombs.jpeg
+main_image: /images/capture-seedbombs-2.png
 vimeo_id: 
-images: 
+images: /images/capture-seedbombs.jpeg
 layout: default
 ---
 
