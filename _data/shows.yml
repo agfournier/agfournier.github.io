@@ -1,9 +1,20 @@
 - year: 2020
+  venue: NeMe Arts Center (Limassol, Cyprus)
+  name: Reprogramming Earth
+  link: http://www.neme.org/blog/reprogramming-earth-press
+  work: seedimageground
+
+- year: 2020
+  venue: Sala el Águila
+  name: IN-SONORA 11
+  link: https://in-sonora.org/festival/in-sonora-11/#programa
+  work: auroras
+
+- year: 2020
   venue: PROYECTOR 2020 / El Instante Fundación
   name: Naturalezas Desplazadas
   link: https://proyector.info/project/09-09-2020-1930h-el-instante-fundacion/
   work: quivering
-
 
 - year: 2020
   venue: Fotomuseum Winterthur
