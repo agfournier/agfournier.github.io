@@ -3,6 +3,7 @@ title: Events
 layout: list
 ---
 
+<!--
 <main class="py-2 d-flex align-content-start flex-wrap">
 {% for post in site.posts %}
 <article class="col-xl-3 col-lg-4 col-md-6 py-1">
@@ -22,3 +23,8 @@ layout: list
 </article>
 {% endfor %}
 </main>
+-->
+
+
+
+{% include posts.html %}

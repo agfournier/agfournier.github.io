@@ -5,7 +5,7 @@ layout: list
 ---
 
 
-<main class="py-2">
+<main class="py-2" style="height:70vh;display:flex;align-items:center;">
 
 <article class="container py-1">
     <div class="row align-items-end">
@@ -20,12 +20,6 @@ His work has been shown and discussed in venues such as Transmediale, Matadero C
 </p>
 <p>
 He is currently a postdoc researcher at FAMU Prague, part of AMT Archaeologies of Media and Technology and part time instructor at the European University of Madrid. He holds a PhD from the Winchester School of Art.
-</p>
-<p>
-croopier [at] gmail . com    
-</p>
-<p>
-<a href="http://twitter.com/croopier">http://twitter.com/croopier</a>   
 </p>
         </div>
   </div>
