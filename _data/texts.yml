@@ -7,14 +7,6 @@
   work: earthology
 
 - year: 2020
-  title: “Visual Hallucination of Probable Events”. On Environments of Images, Data, and Machine Learning
-  author: Abelardo Gil-Fournier, Jussi Parikka
-  publication: Big Data. A New Medium?, Routledge (London)
-  link: https://www.routledge.com/Big-DataA-New-Medium/Lushetich/p/book/9780367333843
-  file: 
-  work: earthology
-
-- year: 2020
   title: Ground truth to fake geographies. Machine vision and learning in visual practices
   author: Abelardo Gil-Fournier, Jussi Parikka
   publication: AI & Society (Special Issue, Ways of Machine Seeing)
@@ -39,12 +31,38 @@
   work: seedimageground
 
 - year: 2020
+  title: “Visual Hallucination of Probable Events”. On Environments of Images, Data, and Machine Learning
+  author: Abelardo Gil-Fournier, Jussi Parikka
+  publication: Big Data. A New Medium?, Routledge (London)
+  link: https://www.routledge.com/Big-DataA-New-Medium/Lushetich/p/book/9780367333843
+  file: 
+  work: earthology
+
+- year: 2020
   title: Digging Deep—Mud as Medium. Playful Encounters with the Soil
   author: Léa Perraudin
   publication: Playful Participatory Practices, SpringerLink (NY)
   link: https://doi.org/10.17658/issn.2058-5462/issue-18/conversation
   file: 
   work: mineralvision
+
+- year: 2020
+  title: Media Theory for The Terraforming
+  author: Jussi Parikka, Yulia Gromova
+  publication: Strelka Mag
+  link: https://strelkamag.com/en/article/media-theory-for-terraforming-by-jussi-parikka
+  file: 
+  work: mawat
+
+  
+
+- year: 2019
+  title: El Instituto Nacional de la Colonización y la violencia infraestructural
+  author: Abelardo Gil-Fournier
+  publication: Soberanía Alimentaria 36. Extrema derecha, agricultura y medio rural 
+  link: https://www.soberaniaalimentaria.info/numeros-publicados/71-numero-36/703-instituto-nacional-colonizacion
+  file: 
+  work: colonos
 
 - year: 2019
   title: Visuelle Halluzination von möglischen Ereignissen oder Über Umweltbilder und Maschinelles Lernen
@@ -56,7 +74,7 @@
 
 - year: 2018
   title: La memoria del territorio
-  author: 
+  author: Pedro Vicente (ed.)
   publication: Diputación Provincial de Huesca. Exhibition Catalogue
   link: https://www.dphuesca.es/publicaciones/-/asset_publisher/Wz1IU6ehMoSr/content/la-memoria-del-territor-2
   file: 
@@ -109,6 +127,22 @@
   link: https://www.sternberg-press.com/product/a-slow-contemporary-violence-damaged-environments-of-technological-culture/
   file: 
   work: mineralvision
+
+- year: 2016
+  title: ​Unspoken dialogues​
+  author: Ana Moutinho, Ana Teresa Vicente, Helena Ferreira (eds.)
+  publication: Faculdade de Bellas-Artes da Universidade de Lisboa
+  link: https://www.academia.edu/32995817/Unspoken_Dialogues
+  file:
+  work: mineralvision
+
+- year: 2016
+  title: ​Colonizaciones interiores
+  author: Fernando Broncano
+  publication: El laberinto de la identidad
+  link: http://laberintodelaidentidad.blogspot.com/2016/01/colonizaciones-interiores.html
+  file:
+  work: reading-stones
 
 - year: 2015
   title: The Alchemic Digital, The Planetary Elemental
