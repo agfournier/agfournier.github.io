@@ -4,9 +4,9 @@ key: mawat
 year: 2017
 type: work
 media: Instalación. Ventiladores, aluminio, altavoces, madera, electrónica e impresión digital. Medidas variables
-main_image: /images/tmp_DSC_0120-w.JPG
+main_image: /images/070_EXPO_DPH_LaMemoriadelTerritorio_fotoJavierBroto-w.jpg
 vimeo_id: 332024823
-images: /images/tmp_DSC_0340-w.JPG, /images/tmp_DSC_0230-w.JPG, /images/tmp_DSC_0080-w.JPG, /images/detalle-DSC_0307-w.JPG, /images/070_EXPO_DPH_LaMemoriadelTerritorio_fotoJavierBroto-w.jpg
+images: /images/tmp_DSC_0340-w.JPG, /images/tmp_DSC_0230-w.JPG, /images/tmp_DSC_0080-w.JPG, /images/detalle-DSC_0307-w.JPG, /images/tmp_DSC_0120-w.JPG
 layout: default
 ---
 

@@ -6,10 +6,10 @@ layout: list
 
 {% assign items = site.works | sort: 'year' | reverse %}
 
-<main class="py-2">
+<main class="py-2 mt-5">
 {% for item in items %}
 <article class="container py-1">
-    <div class="row align-items-end">
+    <div class="row align-items-end my-4">
         <div class="pt-5  col-12 col-md-3 text-center text-md-right">
             <h7 class="font-weight-light"><a href="{{ item.url }}" class="text-dark">{{ item.title }}</a></h7>
             <p class="font-weight-light font-smaller">{{ item.year }}</p>
