@@ -74,6 +74,42 @@
 </section>
 {% endif %}
 
+{% assign texts = false %}
+{% for text in site.data.texts %}
+{% if text.work == page.key %}
+{% assign texts = true %}
+{% endif %}
+{% endfor %}
+
+{% if texts %}
+<section id="texts" class="container py-3">
+  <div class="row">
+      <div class="col-md-8 col-12 offset-md-2">  
+  
+       <h4 class="py-4">Selected texts:</h3>
+       <table class="table table-borderless">
+           <tbody>
+              {% for text in site.data.texts %}
+              {% if text.work == page.key %}
+               <tr>
+                   <td>{{ text.year }}</td>
+                   <td>
+                   {% if page.vimeo_id %} 
+                   {{ text.author }},
+                   {% endif %}
+                   <a href="{{ text.link }}" class="text-dark">{{ text.title }}</a> <em>{{ text.publication }}</em>
+                   </td>
+               </tr>
+               {% endif %}
+               {% endfor %}
+           </tbody>
+       </table>
+      </div>
+    </div>
+
+</section>
+{% endif %}
+
 {% if page.images %}
 <section id="carousel-imgs" class="container py-3">
     
