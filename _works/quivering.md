@@ -13,9 +13,10 @@ layout: default
 
 
 <div class="en">
-<p>The Quivering of the Reed is an installation that combines early 20th century scientific practices with the first moving image devices. The central element is a tree that rotates continuously between a source of light on one side and a translucent paper sheet on the other. To the eyes of the viewer, the leaves of the tree generate on the screen a film made up of shadows, lights and blur.</p>
-<p>A projector closes the circuit by adding subtitles to the screen. They take a quote from Andrei Tarkovsky as a starting point: “Just as from the quivering of a reed you can tell what sort of current, what pressure there is in a river, in the same way we know the movement of time from the flow of the life-process reproduced in the shot”. However, the projected text reverses the initial meaning of the quote and suggests instead a time that travels from the image to the world.</p>
-<p>In The Quivering of the Reed, image and plant formation intertwine in the experience of the beholder. And they do so by emphasizing the importance of the elemental mechanisms that have made the proliferation and circulation of images possible. Mechanisms such as automatic rotation, which is at the base of the cinematic image. Does the image reproduce the vital process of things, or is it rather the time of the image that is projected to the world outside of it?</p>
+<p>A tree on a rotating platform is the central element of The Quivering of the Reed. Standing between a source of light and a translucent paper sheet, the leaves of the rotating tree generate a film made up of shadows, lights and blur. In the installation, light keeps the tree alive, while it generates an ever-changing cinematic experience of moving images.
+</p>	
+<p>A sequence of subtitles is projected on the screen. They describe the images as if they had been filmed on a river, while recalling a quote by Andrei Tarkovsky: “Just as from the quivering of a reed you can tell what sort of current there is in a river, in the same way we know the movement of time in the shot”. The subtitles, however, suggest another double bind: the moving plant becomes the image, the moving image becomes the plant.</p>
+<p>In the installation, 20th-century scientific practices meet early moving image cultures. The image-plant stands for an environmental entanglement: the living and the animated, surfacing as a mutual breath.</p>
 </div>
 
 <div class="es">
