@@ -13,7 +13,7 @@ layout: default
 
 
 <div class="en">
-<p>A tree on a rotating platform is the central element of The Quivering of the Reed. Standing between a source of light and a translucent paper sheet, the leaves of the rotating tree generate a film made up of shadows, lights and blur. In the installation, light sustains tree, while it generates an ever-changing cinematic experience of moving images.
+<p>A tree on a rotating platform is the central element of The Quivering of the Reed. Standing between a source of light and a translucent paper sheet, the leaves of the rotating tree generate a film made up of shadows, lights and blur. In the installation, light sustains the tree, while it generates an ever-changing cinematic experience of moving images.
 </p>	
 <p>A sequence of subtitles is projected on the screen. They describe the images as if they had been filmed on a river, while recalling a quote by Andrei Tarkovsky: “Just as from the quivering of a reed you can tell what sort of current there is in a river, in the same way we know the movement of time in the shot”. The subtitles, however, suggest another double bind: the moving plant becomes the image, the moving image becomes the plant.</p>
 <p>In the installation, 20th-century scientific practices meet early moving image cultures. The image-plant stands for an environmental entanglement: the living and the animated, surfacing as a mutual breath.</p>
