@@ -6,7 +6,7 @@ type: work
 media: Installation. Plant or tree, beamer, DC motor, spot light and paper screen. Variable dimensions.
 main_image: /images/DSC_1187.JPG
 vimeo_id: 477339537
-images: /images/quivering-948-1.jpg,/images/quivering-948-5.jpg,/images/quivering-948-3.jpg,/images/quivering-948-4.jpg,/images/quivering-948-2.jpg, /images/20190705_122039.jpg
+images: /images/earthlings-prague-0-web.jpg, /images/earthlings-prague-1-web.jpg, /images/earthlings-prague-2-web.jpg, /images/AGF-The_Quivering_of_the_Reed-vertical2-ElInstanteFundacion-Madrid-September-2020-web.JPG, /images/AGF-The_Quivering_of_the_Reed-sequence-ElInstanteFundacion-Madrid-September-2020.jpg, /images/AGF-The_Quivering_of_the_Reed-rear-ElInstanteFundacion-Madrid-September-2020-web.JPG, /images/AGF-The_Quivering_of_the_Reed-verticalgreen-ElInstanteFundacion-Madrid-September-2020-web.JPG, /images/quivering-948-1.jpg,/images/quivering-948-5.jpg,/images/quivering-948-3.jpg,/images/quivering-948-4.jpg,/images/quivering-948-2.jpg, /images/20190705_122039.jpg
 layout: default
 ---
 
