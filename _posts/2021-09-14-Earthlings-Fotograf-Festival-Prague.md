@@ -4,7 +4,7 @@ main_image: /images/fotograf-festival-earthlings-metabolic-perspective.jpg
 layout: post
 ---
 
-<a href="http://abelardogfournier.org/works/quivering.html">The Quivering of the Reed</a> is part of the exhibition <a href="https://fotografestival.cz/2021/en/event/metabolic-view/">The Metabolic Perspective</a>, which is part of this year's edition of the Fotograf Festival, <a href="https://fotografestival.cz/2021/">Earthlings</a>, curated by Lukáš Likavčan.
+<a href="http://abelardogfournier.org/works/quivering.html">The Quivering of the Reed</a> is part of the exhibition <a href="https://fotografestival.cz/2021/en/event/metabolic-view/">The Metabolic Perspective</a>, which is part of this year's edition of the <a href="https://fotografestival.cz/2021/">Fotograf Festival, Earthlings</a>, curated by Lukáš Likavčan.
 
 Artists: Světlana Malinová, Anežka Horová, Marina Hendrychová, Abelardo Gil Fournier, Matěj Martinec, František Fekete, Daniel Burda, Aleš Zůbek
 
