@@ -19,7 +19,7 @@ layout: default
 
 <p>A través de un muestrario de alteraciones de documentos, herramientas y vestigios, el proyecto trata de atravesar estas mutaciones industriales del paisaje como un espacio de forja de lenguajes, procesos de lectura y escritura, formas de mirar e invisibilizar y, en última instancia, de devenir memoria o resto.</p>
 
-<p>La colonización interior es un laboratorio abierto que, adicionalmente, ha sido recorrido y expandido durante la residencia en El Ranchito por otros artistas como <a href="https://joseaotero.com/">José Otero<a>, <a href="https://www.acantilado.es/persona/sandra-santana/">Sandra Santana</a> y <a href="https://mariaandueza.org/">María Andueza</a>, desplegándolo con aportaciones específicamente realizadas para el proyecto.</p>
+<p>La colonización interior es un laboratorio abierto que, adicionalmente, ha sido recorrido y expandido durante la residencia en El Ranchito por otros artistas como <a href="https://joseaotero.com/">José Otero</a>, <a href="https://www.acantilado.es/persona/sandra-santana/">Sandra Santana</a> y <a href="https://mariaandueza.org/">María Andueza</a>, desplegándolo con aportaciones específicamente realizadas para el proyecto.</p>
 
 <p><a href="http://lacolonizacioninterior.tumblr.com">Inner Colonization project's archive</a></p>
   
