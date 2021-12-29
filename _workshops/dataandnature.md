@@ -1,5 +1,5 @@
 ---
-title: "Data and Nature
+title: "Data and Nature"
 key: dataandnature
 year: 2021
 type: workshop
