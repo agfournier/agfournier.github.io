@@ -1,6 +1,6 @@
 ---
 title: "Conversation: Tecnologías audiovisuales contemporáneas y estéticas ecológicas"
-main_image: /images/2021-play-festival-video-arte.jpg
+main_image: /images/ParikkayFournier-30novIG.jpg
 layout: post
 ---
 
