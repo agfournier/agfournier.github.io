@@ -1,18 +1,10 @@
 - year: 2021
-  title: " Transferencias del software libre a la esfera cultural"
-  author: Abelardo Gil-Fournier; Marcos García, Laura Fernández, María Ptqk (eds.)
-  publication: Laboratorios Ciudadanos. Una Aproximación a Medialab-Prado
-  link: https://www.medialab-matadero.es/sites/default/files/multimedia/documentos/2021-06/Laboratorios_ciudadanos._Una_aproximacion_a_Medialab_Prado_ESP.pdf
+  title: Data is Beautiful. From data visualisation to data poetry
+  author: Bernabé Sauvage
+  publication: Image and Imagery
+  link: 
   file: 
-  work: 
-
-- year: 2021
-  title: "Vibrating Clouds. Exhibition Catalogue"
-  author: Yixuan Cai
-  publication: Design Society. Curating Design Plan. Shenzhen.
-  link: https://www.conversazione.org/_files/ugd/405c26_f256bfd3627844bf941d4b1f1acf0bec.pdf
-  file: 
-  work: seedimageground
+  work: earthology
 
 - year: 2021
   title: "Eine Ökoästhetik pflanzlicher Oberflächen. Über den Videoessay Seed, Image, Ground und digitale Ökologie"
@@ -20,15 +12,7 @@
   publication: Springerin, Heft 3/2021 "Digital Ecology"
   link: https://www.springerin.at/130/
   file: 
-  work: seedimageground
-
-- year: 2021
-  title: "An ecoaesthetic of vegetal surfaces: on Seed, Image, Ground as soft montage"
-  author: Jussi Parikka, Abelardo Gil-Fournier
-  publication: Journal of Visual Art Practice
-  link: https://www.tandfonline.com/doi/abs/10.1080/14702029.2021.1917858?scroll=top&needAccess=true&journalCode=rjvp20
-  file: 
-  work: seedimageground
+  work: seedimageground  
 
 - year: 2021
   title: From Planetary Depth to Surface Measure, or How to Read the Future from an Image
@@ -39,12 +23,28 @@
   work: earthology
 
 - year: 2021
-  title: Data is Beautiful. From data visualisation to data poetry
-  author: Bernabé Sauvage
-  publication: Image and Imagery
-  link: 
+  title: "Vibrating Clouds. Exhibition Catalogue"
+  author: Yixuan Cai
+  publication: Design Society. Curating Design Plan. Shenzhen.
+  link: https://www.conversazione.org/_files/ugd/405c26_f256bfd3627844bf941d4b1f1acf0bec.pdf
   file: 
-  work: earthology
+  work: seedimageground
+
+- year: 2021
+  title: " Transferencias del software libre a la esfera cultural"
+  author: Abelardo Gil-Fournier; Marcos García, Laura Fernández, María Ptqk (eds.)
+  publication: Laboratorios Ciudadanos. Una Aproximación a Medialab-Prado
+  link: https://www.medialab-matadero.es/sites/default/files/multimedia/documentos/2021-06/Laboratorios_ciudadanos._Una_aproximacion_a_Medialab_Prado_ESP.pdf
+  file: 
+  work: 
+
+- year: 2021
+  title: "An ecoaesthetic of vegetal surfaces: on Seed, Image, Ground as soft montage"
+  author: Jussi Parikka, Abelardo Gil-Fournier
+  publication: Journal of Visual Art Practice
+  link: https://www.tandfonline.com/doi/abs/10.1080/14702029.2021.1917858?scroll=top&needAccess=true&journalCode=rjvp20
+  file: 
+  work: seedimageground
 
 - year: 2020
   title: Ground truth to fake geographies. Machine vision and learning in visual practices
