@@ -1,6 +1,6 @@
 ---
-title: "New research for a solo show at the FCAYC announced"
-main_image: /images/anuncio-fcayc-agf-2023-2024.jpg
+title: "Commission for a solo show at the FCAYC announced"
+main_image: /images/fundacion-cerezales-frontal.jpg
 layout: post
 ---
 
