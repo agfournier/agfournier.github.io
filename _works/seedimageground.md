@@ -6,7 +6,7 @@ type: work
 media: Single channel video or two channel video installation
 main_image: /images/capture-seedbombs-2.png
 vimeo_id: 
-images: /images/capture-seedbombs.jpeg, /images/grounding-st-petersburg-SIG-0.jpg, /images/grounding-st-petersburg-SIG-1.jpg, /images/grounding-st-petersburg-SIG-2.jpg, /images/grounding-st-petersburg-SIG-3.jpg
+images: /images/cineteca-matadero-medios-sintientes-web.jpg, /images/SIG-Onassis-Weather-Engines-by-Stelios-Tzetzias-web.jpeg, /images/SIG-Onassis-Weather-Engines-web.jpg, /images/capture-seedbombs.jpeg, /images/grounding-st-petersburg-SIG-0.jpg, /images/grounding-st-petersburg-SIG-1.jpg, /images/grounding-st-petersburg-SIG-2.jpg, /images/grounding-st-petersburg-SIG-3.jpg
 layout: default
 ---
 
