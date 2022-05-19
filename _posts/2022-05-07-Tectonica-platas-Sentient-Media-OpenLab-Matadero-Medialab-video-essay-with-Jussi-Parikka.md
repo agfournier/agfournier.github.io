@@ -1,6 +1,6 @@
 ---
 title: "Tectónica de platas. A preview of a work in progress with Jussi Parikka"
-main_image: /images/tectonica-de-platas/medialab-matadero-medios-sintientes/tectonica-de-platas-medialab-matadero-medios-sintientes.jpeg
+main_image: /images/tectonica-de-platas-medialab-matadero-medios-sintientes.jpeg
 layout: post
 ---
 

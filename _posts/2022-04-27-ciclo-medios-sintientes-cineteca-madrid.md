@@ -1,6 +1,6 @@
 ---
 title: "Ciclo Medios Sintientes en Cineteca Madrid"
-main_image: /images/cineteca-matadero-medios-sintientes-web.jpg
+main_image: /images/cineteca-matadero-medios-sintientes-2-web.jpg
 layout: post
 ---
 
