@@ -1,6 +1,6 @@
 ---
-title: Texts
-key: texts
+title: Publications
+key: publications
 layout: list
 ---
 
