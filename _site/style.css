@@ -2,19 +2,34 @@
     --font-family-serif:"Georgia";
 }
 
-body, .card {
-    background-color: rgb(243 255 206 / 75%); /*f0f0f0;*/
+body {
+    font-family: "Roboto";
+    background-color: #90b1a6; /*f0f0f0;*/
+    color:  #0a3a3c;
+    font-size: 18px;
+}
+
+.card {
+    background-color: #fff;
 }
 
 #titulo h1 {
-  font-family: "Georgia";
+  font-family: "Roboto";
+}
+
+h6 {
+    font-weight:  bold;
+}
+
+.text-muted {
+    color: #4a6763 !important;
 }
 
 #imagen {
 }
 
 #wrapper {
-    background-color: rgb(243 255 206 / 75%);
+    background-color: rgb(144 177 166 / 75%);
     padding-top:  56px;
     margin-top: -56px;
     position: relative;
@@ -30,7 +45,7 @@ h1 a, h2 a, h3 a, nav a {
 }
 
 a.navbar-brand {
-    font-family: "Helvetica";
+    color:  #fff;
 }
 
 .esp {
@@ -38,7 +53,7 @@ a.navbar-brand {
 }
 
 .navbar-light {
-    background-color: rgb(243 255 206 / 75%);
+    background-color: rgb(144 177 166 / 75%);
 }
 
 @media (max-width: 992px) {
