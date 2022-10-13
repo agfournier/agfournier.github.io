@@ -5,7 +5,7 @@
   link: http://openhumanitiespress.org/books/download/Rocha-Snelting_2021_Volumetric-Regimes.pdf
   file:
   work: inner-colonisation
-  
+
 - year: 2022
   title: Fundir el espejo y esculpir la imagen. Tarkovsky, agricultura y la transformación del paisaje
   author: Abelardo Gil-Fournier
@@ -13,6 +13,14 @@
   link: https://revistaaisthesis.uc.cl/index.php/RAIT
   file:
   work: 
+
+- year: 2022
+  title: "Soil, Water, and Light: Aerial Photography and Agriculture in Spain"
+  author: Tatjana Gajić
+  publication: "Companion to Spanish Environmental Cultural Studies (Suffolk: Tamesis) edited by Luis I Prádanos"
+  link: https://boydellandbrewer.com/9781800108684/a-companion-to-spanish-environmental-cultural-studies/
+  file:
+  work: inner-colonisation, seedimageground
 
 - year: 2021
   title: Photography Off the Scale. Technologies and Theories of the Mass Image
