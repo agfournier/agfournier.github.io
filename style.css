@@ -2,8 +2,12 @@
     --font-family-serif:"Georgia";
 }
 
-body, .card {
+body {
     background-color: rgb(243 255 206 / 75%); /*f0f0f0;*/
+}
+
+.card {
+    background-color: #fff;
 }
 
 #titulo h1 {
