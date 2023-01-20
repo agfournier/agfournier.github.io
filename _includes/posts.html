@@ -1,16 +1,18 @@
-<div class="row mx-md-5 mt-5">
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mx-md-5 mt-5">
 
 {% for post in site.posts %}
-<div class="col-lg-4 col-md-6 col-sm-12">
-  <div class="card border-0">
-      <div class="card-body">
+<div class="col"><!--</div><div class="col-lg-4 col-md-6 col-sm-12">-->
+  <div class="card border-0 my-5 mx-4">
+      <div class="card-body p-0">
         <a href="{{ site.baseurl }}{{ post.url }}"><img class="card-img-top" src="{{ post.main_image }}" alt="" style="box-shadow: #999 0px 0px 10px"></a>    
+        <div class="p-2">
         <p class="card-text"><small class="text-muted">{{ post.date | date: '%B %d, %Y'}}</small></p>
         <h6 class="card-title">{{ post.title }}</h6>
         <p class="card-text">{{ post.excerpt }}</p>
         {% if post.excerpt != post.content %}
           <a href="{{ site.baseurl }}{{ post.url }}" class="card-link">Read more</a>
         {% endif %}
+        </div>
       </div>
   </div>
 </div>  
