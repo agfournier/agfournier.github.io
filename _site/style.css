@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: "Roboto";
+    font-family: "Hanken Grotesk", "Roboto";
     background-color: var(--white);/*#90b1a6; f0f0f0;*/
     color:  #111;
     font-size: 18px;
@@ -18,7 +18,11 @@ footer a, footer {
 }
 
 #titulo h1 {
-  font-family: "Roboto";
+  font-family: "Hanken Grotesk", "Roboto";
+}
+
+h4 {font-size:1.75rem;}
+h4 a {text-decoration:none;}
 }
 
 h6 {
@@ -40,7 +44,7 @@ h6 {
     position: relative;
 }
 
-a {
+a, a:hover {
     color: #111;
     text-decoration: underline;
 }
