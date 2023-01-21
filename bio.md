@@ -5,7 +5,7 @@ layout: list
 ---
 
 
-<main class="py-2" style="height:70vh;display:flex;align-items:center;">
+<main class="py-2" style="height:70vh;display:flex;align-items:center;margin-top:100px;">
 
 <article class="container py-1">
     <div class="row align-items-end">
