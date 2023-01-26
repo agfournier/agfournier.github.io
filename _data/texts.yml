@@ -6,7 +6,6 @@
   file:
   work: inner-colonisation
  
-
 - year: 2022
   title: "Soil, Water, and Light: Aerial Photography and Agriculture in Spain"
   author: Tatjana Gajić
@@ -15,13 +14,13 @@
   file:
   work: inner-colonisation, seedimageground
 
-  - year: 2022
+- year: 2022
   title: "Fundir el espejo y esculpir la imagen. Tarkovsky, agricultura y la transformación del paisaje"
   author: Abelardo Gil-Fournier
   publication: "AISTHESIS: Revista Chilena de Investigaciones Estéticas"
   link: https://revistaaisthesis.uc.cl/index.php/RAIT/article/view/49331
   file:
-  work: inner-colonisation, seedimageground
+  work: inner-colonisation, seedimageground, mawat
 
 - year: 2021
   title: Photography Off the Scale. Technologies and Theories of the Mass Image
