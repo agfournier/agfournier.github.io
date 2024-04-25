@@ -6,6 +6,7 @@ layout: list
 {% assign items = site.works | sort: 'year' | reverse %}
 {% assign cuenta = 0 %}
 <main class="py-2 mt-5">
+    <p class="text-center">To be updated soon</p>
 {% for item in items %}
 {% assign calc = cuenta | modulo: 2 %}
 <article class="container py-1">
