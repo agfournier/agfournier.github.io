@@ -37,31 +37,34 @@
 
 
 <article>
-<!--
+
 <section class="container-fluid">
 <section id="titulo" class="container py-5">
   <div class="row">
       <div class="col-md-8 col-12 offset-md-2">
-        <h1 class="display-5 pt-5 pb-3">Fundir el espejo y esculpir la imagen</h1>
+        <h1 class="display-5 pt-5 pb-3">Living Surfaces book pre-order</h1>
         <p class="text-muted font-weight-light">
-        Aisthesis: Revista chilena de investigaciones estéticas 72 (Diciembre 2022), 54-71<br>
-        <a href="https://revistaaisthesis.uc.cl/index.php/RAIT/article/view/49331">Leer aquí</a>
+        The pre-order period of our book Living Surfaces is open. Cover and blurbs already released!<br>
+        <a href="http://abelardogfournier.org/2024/04/17/Pre-order-living-surfaces-blurbs-Jimena-Canales-Susan-Schuppli.html">Read more</a>
         </p>
       </div>
   </div>
    
 </section>
 </section>
-
-<section class="container-fluid mx-0 mt-0 px-0" style="height:100vh;position:relative;background-color:var(--bg-color);">
-	<section id="imagen-bg" class="container-fluid" style="background-image: url(/images/earthology-imaged-futures-out-of-imaged-pasts.jpg);	background-size:cover;background-position:center;height:95vh;position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);"></section>
-	<section id="imagen" class="container-fluid" style="background-image: url(/images/earthology-imaged-futures-out-of-imaged-pasts.jpg);background-size:cover;background-position:center;height:95vh;position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);"></section>
-</section>
 -->
+<section class="container-fluid mx-0 mt-0 px-0" style="height:100vh;position:relative;background-color:var(--bg-color);">
+	<section id="imagen-bg" class="container-fluid" style="background-image: url(/images/la-balsa-1.jpg);	background-size:cover;background-position:center;height:95vh;position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);">
+    </section>
+	<section id="imagen" class="container-fluid d-flex align-items-end" style="background-image: url(/images/la-balsa-1.jpg);background-size:cover;background-position:center;height:95vh;position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);">
+     <p id="image-caption"class="bg-light pb-3 px-3" style="font-size:0.9rem"></p>        
+    </section>
+</section>
+
 
 <!--
-<section id="imagen-bg" class="container-fluid mx-0 px-0" style="background-image: url(/images/earthology-imaged-futures-out-of-imaged-pasts.jpg);background-size:cover;background-position:center;height:100vh;">
-<section id="imagen" class="container-fluid mx-0 px-0" style="background-image: url(/images/earthology-imaged-futures-out-of-imaged-pasts.jpg);background-size:cover;background-position:center;height:100vh;">
+<section id="imagen-bg" class="container-fluid mx-0 px-0" style="background-image: url(/images/la-balsa-1.jpg);background-size:cover;background-position:center;height:100vh;">
+<section id="imagen" class="container-fluid mx-0 px-0" style="background-image: url(/images/la-balsa-1.jpg);background-size:cover;background-position:center;height:100vh;">
 </section>
 -->
 </article>
@@ -1466,21 +1469,44 @@ Conversation with José Luis Puerto and Javier Martínez de Orueta at the Fundac
    $(function () {
             var arrayOfPartenaires = [
             
-            "/images/earthology-imaged-futures-out-of-imaged-pasts.jpg",
+            "/images/la-balsa-1.jpg",
             
-            " /images/mawat-cementerios.jpg",
+            "/images/la-balsa-2.jpg",
             
-            " /images/Vision-mineral-crean-un-desierto-y-lo-llaman-paz.jpg",
+            "/images/la-balsa-3.jpg",
             
-            " /images/reading-stones-matadero-detalle.jpg",
+            "/images/la-balsa-5.jpg",
             
-            " /images/reading-stones-caillois-quote.jpg",
+            "/images/apories-4.jpg",
             
-            " /images/seed-image-ground-images-within-images.jpg",
+            "/images/apories-2.jpg",
             
-            " /images/quivering-prague-invisible-moments-water.jpg",
+            "/images/20210914_145351.jpg",
             
-            " /images/bildung-growth-of-the-i.jpg",
+            "/images/mawat-javier-broto-1-low.jpg",
+            
+            "/images/la-balsa-6.jpg",
+            
+            ];
+            var captions = [
+            
+            "La balsa. Tres actos para una intemperie - Fundación Cerezales Antonino y Cinia. Imagen: Juan Baraja",
+            
+            "La balsa. Tres actos para una intemperie - Fundación Cerezales Antonino y Cinia. Imagen: Juan Baraja",
+            
+            "La balsa. Tres actos para una intemperie - Fundación Cerezales Antonino y Cinia. Imagen: Juan Baraja",
+            
+            "La balsa. Tres actos para una intemperie - Fundación Cerezales Antonino y Cinia. Imagen: María Andueza",
+            
+            "Apories sobre l'aire - Bòlit Centre d'Art Contemporani. Imagen: Carles Palacio",
+            
+            "Apories sobre l'aire - Bòlit Centre d'Art Contemporani. Imagen: Carles Palacio",
+            
+            "Fotograf Festival / Earthlings / The Metabolic Perspective. Gallery AMU in Prague.",
+            
+            "La memoria del territorio. VISIONA / Diputación de Huesca. Imagen: Javier Broto",
+            
+            "La balsa. Tres actos para una intemperie - Fundación Cerezales Antonino y Cinia. Imágenes: Juan Baraja",
             
             ];
             console.log(arrayOfPartenaires);
@@ -1488,8 +1514,12 @@ Conversation with José Luis Puerto and Javier Martínez de Orueta at the Fundac
             var old_element = arrayOfPartenaires[0];
             function cycleImages() {
                 var element = arrayOfPartenaires[loaders];
+                var caption = captions[loaders];
                 $("#imagen-bg").css({ 'background-image': 'url(' + old_element + ')' });
-                $("#imagen").css({ 'background-image': 'url(' + element + ')' }).animate({ opacity: 1 }).hide().fadeIn("slow");
+                $("#imagen").css({ 'background-image': 'url(' + element + ')' }).animate({ opacity: 1 }).hide();
+                $("#image-caption").text(caption).animate({ opacity: 1 });
+                //$("#imagen").css({ 'background-image': 'url(' + element + ')' }).animate({ opacity: 1 }).hide().fadeIn("slow");
+                //$("#image-caption").text(caption).animate({ opacity: 1 }).hide().fadeIn("slow");
                 if (loaders < arrayOfPartenaires.length) {
                     old_element = element;
                     loaders = loaders + 1;

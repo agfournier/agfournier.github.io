@@ -8,13 +8,18 @@
 
 
 
-{% assign imgs = page.images | split: "," %}
+{% assign figs = site.data.figures %}
 
 <script>
    $(function () {
             var arrayOfPartenaires = [
-            {% for image in imgs %}
-            "{{image}}",
+            {% for fig in figs %}
+            "{{ fig.image }}",
+            {% endfor %}
+            ];
+            var captions = [
+            {% for fig in figs %}
+            "{{ fig.caption }}",
             {% endfor %}
             ];
             console.log(arrayOfPartenaires);
@@ -22,8 +27,12 @@
             var old_element = arrayOfPartenaires[0];
             function cycleImages() {
                 var element = arrayOfPartenaires[loaders];
+                var caption = captions[loaders];
                 $("#imagen-bg").css({ 'background-image': 'url(' + old_element + ')' });
-                $("#imagen").css({ 'background-image': 'url(' + element + ')' }).animate({ opacity: 1 }).hide().fadeIn("slow");
+                $("#imagen").css({ 'background-image': 'url(' + element + ')' }).animate({ opacity: 1 }).hide();
+                $("#image-caption").text(caption).animate({ opacity: 1 });
+                //$("#imagen").css({ 'background-image': 'url(' + element + ')' }).animate({ opacity: 1 }).hide().fadeIn("slow");
+                //$("#image-caption").text(caption).animate({ opacity: 1 }).hide().fadeIn("slow");
                 if (loaders < arrayOfPartenaires.length) {
                     old_element = element;
                     loaders = loaders + 1;
