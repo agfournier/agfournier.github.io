@@ -1,6 +1,6 @@
 ---
 title: "La balsa. Tres actos para una intemperie - Clausura"
-main_image: /images/clausura-la-balsa-fundacion-cerezales-antonino-y-cinia.jpeg
+main_image: /images/clausura-la-balsa-fundacion-cerezales-antonino-y-cinia-2.jpeg
 layout: post
 ---
 
