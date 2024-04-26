@@ -5,6 +5,7 @@
   link: https://www.artforum.com/events/juan-jose-santos-mateo-abelardo-gil-fournier-fundacion-cerezales-2024-549901/
   file:
   work:     
+  image: /images/Artforum-March2024_1_800px-p-cover.jpg
 
 - year: 2024
   title: "Living Surfaces. Images, Plants and Environments of Media"
@@ -13,6 +14,7 @@
   link: https://mitpress.mit.edu/9780262547956/living-surfaces/
   file:
   work: 
+  image: /images/living-surfaces-cover.jpg
 
 - year: 2023
   title: "Dalla verità di terra alle geografie false: visione artificiale e apprendimento nelle pratiche visive"
@@ -21,14 +23,16 @@
   link: https://www.donzelli.it/libro/9788855224772
   file:
   work: 
+  image: /images/earthscapes-book-cover.jpg
 
 - year: 2023
   title: "Operational Images: From the Visual to the Invisual"
   author: Jussi Parikka 
   publication: University of Minnesota Press
   link: https://www.upress.umn.edu/book-division/books/operational-images
-  file:
+  file: 
   work: earthology
+  image: /images/parikka-operational-images-book-cover.jpeg
 
 - year: 2023
   title: "La superficie vegetal de la imagen"
@@ -37,6 +41,7 @@
   link: https://www.accioncultural.es/es/anuario-ac/e-de-cultura-digital-2023
   file: 
   work: seedimageground
+  image: /images/anuario-ace-2023-cover.png
 
 - year: 2023
   title: "The Raft. Three Acts for an Exposure to the Elements"
@@ -45,6 +50,7 @@
   link: https://fundacioncerezalesantoninoycinia.org/wp-content/uploads/La-balsa-Tres-Actos-maqueta-en.pdf
   file:
   work:
+  image: /images/libreto-la-balsa-cover-en.jpg
 
 - year: 2023
   title: "La balsa. Tres actos para una intemperie"
@@ -53,6 +59,7 @@
   link: https://fundacioncerezalesantoninoycinia.org/wp-content/uploads/La-balsa-Tres-Actos-maqueta-es.pdf
   file:
   work:    
+  image: /images/libreto-la-balsa-cover.jpg
 
 - year: 2022
   title: "Volumetric Regimes: material cultures of quantified presence"
@@ -61,6 +68,7 @@
   link: http://openhumanitiespress.org/books/download/Rocha-Snelting_2021_Volumetric-Regimes.pdf
   file:
   work: inner-colonisation
+  image: /images/volumetric-regimes_cover_200x300.png
  
 - year: 2022
   title: "Soil, Water, and Light: Aerial Photography and Agriculture in Spain"
@@ -69,6 +77,7 @@
   link: https://boydellandbrewer.com/9781800108684/a-companion-to-spanish-environmental-cultural-studies/
   file:
   work: inner-colonisation, seedimageground
+  image: /images/companion-spanish-environmental-studies-2022-cover.jpg
 
 - year: 2022
   title: "Fundir el espejo y esculpir la imagen. Tarkovsky, agricultura y la transformación del paisaje"
@@ -77,6 +86,7 @@
   link: https://revistaaisthesis.uc.cl/index.php/RAIT/article/view/49331
   file:
   work: inner-colonisation, seedimageground, mawat
+  image: /images/aisthesis-72-cover.jpg
 
 - year: 2021
   title: Photography Off the Scale. Technologies and Theories of the Mass Image
@@ -85,14 +95,16 @@
   link: https://edinburghuniversitypress.com/book-photography-off-the-scale.html
   file: 
   work: bildung
+  image: /images/photography-off-the-scale-cover.jpg
 
 - year: 2021
   title: Data is Beautiful. From data visualisation to data poetry
-  author: Bernabé Sauvage
+  author: Barnabé Sauvage
   publication: Image and Imagery
   link: 
   file: 
   work: earthology
+  image: /images/image-and-imagery-2021-cover.jpg
 
 - year: 2021
   title: "Eine Ökoästhetik pflanzlicher Oberflächen. Über den Videoessay Seed, Image, Ground und digitale Ökologie"
@@ -101,6 +113,7 @@
   link: https://www.springerin.at/130/
   file: 
   work: seedimageground  
+  image: /images/Cover_Kapusta_3.21.large.jpg
 
 - year: 2021
   title: From Planetary Depth to Surface Measure, or How to Read the Future from an Image
@@ -109,6 +122,7 @@
   link: https://www.upress.umn.edu/book-division/books/deep-mediations
   file: 
   work: earthology
+  image: /images/deep-mediations-book-cover.jpg
 
 - year: 2021
   title: "Vibrating Clouds. Exhibition Catalogue"
@@ -117,14 +131,16 @@
   link: https://www.conversazione.org/_files/ugd/405c26_f256bfd3627844bf941d4b1f1acf0bec.pdf
   file: 
   work: seedimageground
+  image: /images/vibrating-clouds-exhibition-catalogue-cover.jpg
 
 - year: 2021
-  title: " Transferencias del software libre a la esfera cultural"
+  title: "Transferencias del software libre a la esfera cultural"
   author: Abelardo Gil-Fournier; Marcos García, Laura Fernández, María Ptqk (eds.)
   publication: Laboratorios Ciudadanos. Una Aproximación a Medialab-Prado
   link: https://www.medialab-matadero.es/sites/default/files/multimedia/documentos/2021-06/Laboratorios_ciudadanos._Una_aproximacion_a_Medialab_Prado_ESP.pdf
   file: 
   work: 
+  image: /images/laboratorios-ciudadanos-medialab-prado-cover.png
 
 - year: 2021
   title: "An ecoaesthetic of vegetal surfaces: on Seed, Image, Ground as soft montage"
@@ -133,6 +149,7 @@
   link: https://www.tandfonline.com/doi/abs/10.1080/14702029.2021.1917858?scroll=top&needAccess=true&journalCode=rjvp20
   file: 
   work: seedimageground
+  image: /images/jvap-2.jpg
 
 - year: 2020
   title: Ground truth to fake geographies. Machine vision and learning in visual practices
@@ -141,6 +158,7 @@
   link: https://doi.org/10.1007/s00146-020-01062-3
   file: 
   work: 
+  image: /images/ai-and-society-2020-cover.jpg
 
 - year: 2020
   title: La vibración de los juncos. Imagen, tiempo y terraformación
@@ -149,6 +167,7 @@
   link: https://www.accesos.info/abelardo-gil-fournier
   file: 
   work: quivering
+  image: /images/accesos-3-cover.jpg
 
 - year: 2020
   title: The Arts, Environmental Justice, and the Ecological Crisis
@@ -157,6 +176,7 @@
   link: https://doi.org/10.17658/issn.2058-5462/issue-18/conversation
   file: 
   work: seedimageground
+  image: /images/british-art-studies-2020-cover.jpg
 
 - year: 2020
   title: “Visual Hallucination of Probable Events”. On Environments of Images, Data, and Machine Learning
@@ -165,6 +185,7 @@
   link: https://www.routledge.com/Big-DataA-New-Medium/Lushetich/p/book/9780367333843
   file: 
   work: earthology
+  image: /images/bigdata-a-new-medium-book.jpg
 
 - year: 2020
   title: Digging Deep—Mud as Medium. Playful Encounters with the Soil
@@ -173,6 +194,7 @@
   link: https://doi.org/10.17658/issn.2058-5462/issue-18/conversation
   file: 
   work: mineralvision
+  image: /images/playful-participatory-practices-book-cover.jpg
 
 - year: 2020
   title: Media Theory for The Terraforming
@@ -181,7 +203,7 @@
   link: https://strelkamag.com/en/article/media-theory-for-terraforming-by-jussi-parikka
   file: 
   work: mawat
-
+  image: /images/strelka-mag-logo.jpg
   
 
 - year: 2019
@@ -191,6 +213,7 @@
   link: https://www.soberaniaalimentaria.info/numeros-publicados/71-numero-36/703-instituto-nacional-colonizacion
   file: 
   work: colonos
+  image: /images/sabc_36-portada.jpg
 
 - year: 2019
   title: Visuelle Halluzination von möglischen Ereignissen oder Über Umweltbilder und Maschinelles Lernen
@@ -199,6 +222,7 @@
   link: 
   file: 
   work: earthology
+  image: /images/9783770564170.jpg
 
 - year: 2018
   title: La memoria del territorio

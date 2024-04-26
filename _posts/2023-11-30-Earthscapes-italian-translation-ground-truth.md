@@ -1,6 +1,6 @@
 ---
 title: "Earthscapes. Le conseguenze della visione della Terra dallo spazio. "
-main_image: /images/earthscapes-book.jpg
+main_image: /images/earthscapes-book-cover.jpg
 layout: post
 ---
 
