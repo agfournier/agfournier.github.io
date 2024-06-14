@@ -7,6 +7,7 @@ body {
     background-color: var(--white);/*#90b1a6; f0f0f0;*/
     color:  #111;
     font-size: 18px;
+    padding-top:37px; /* para compensar el navbar con fixed-top */
 }
 
 footer a, footer {
