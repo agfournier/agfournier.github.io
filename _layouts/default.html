@@ -48,7 +48,7 @@
 
 {% assign shows = false %}
 {% for show in site.data.shows %}
-{% if show.work == page.key %}
+{% if show.work contains page.key %}
 {% assign shows = true %}
 {% endif %}
 {% endfor %}
@@ -62,7 +62,7 @@
        <table class="table table-borderless">
            <tbody>
               {% for show in site.data.shows %}
-              {% if show.work == page.key %}
+              {% if show.work contains page.key %}
                <tr>
                    <td>{{ show.year }}</td>
                    <td><a href="{{ show.link }}" class="text-dark">{{ show.name }}.</a> {{show.venue}}</td>
@@ -79,7 +79,7 @@
 
 {% assign texts = false %}
 {% for text in site.data.texts %}
-{% if text.work == page.key %}
+{% if text.work contains page.key %}
 {% assign texts = true %}
 {% endif %}
 {% endfor %}
@@ -93,7 +93,7 @@
        <table class="table table-borderless">
            <tbody>
               {% for text in site.data.texts %}
-              {% if text.work == page.key %}
+              {% if text.work contains page.key %}
                <tr>
                    <td>{{ text.year }}</td>
                    <td>
