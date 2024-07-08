@@ -33,5 +33,5 @@ Dr J.R. Carpenter & Dr Jules Rawlinson
 
 5.30 – 6.30pm Drinks
 
-Information: https://jhg.art/events/weather-reports/
+Information: <a href="https://jhg.art/events/weather-reports/">https://jhg.art/events/weather-reports/</a>
 
