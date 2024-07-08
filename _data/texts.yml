@@ -4,8 +4,17 @@
   publication: Artforum (March)
   link: https://www.artforum.com/events/juan-jose-santos-mateo-abelardo-gil-fournier-fundacion-cerezales-2024-549901/
   file:
-  work: schlieren, codec    
+  work: schlieren, codec, hacendera 
   image: /images/Artforum-March2024_1_800px-p-cover.jpg
+
+  - year: 2024
+  title: "La balsa. Abelardo Gil-Fournier en conversación con Alfredo Puente"
+  author: Abelardo Gil-Fournier, Alfredo Puente
+  publication: Revista Concreta 23. La composición activa de la presencia. Eds. Jara Rocha & Nicolas Malevé
+  link: https://editorialconcreta.org/revista-concreta/concreta-23/editorial-concreta-23-la-composicion-activa-de-la-presencia-jara-rocha-nicolas-maleve/
+  file:
+  work: schlieren, codec, hacendera    
+  image: /images/revista-concreta-23-portada.jpg
 
 - year: 2024
   title: "Living Surfaces. Images, Plants and Environments of Media"
