@@ -21,7 +21,7 @@ His practice addresses the entwining of knowledge and the surfaces of the planet
 </p>
 
 <p>
-His work has been exhibited and discussed in international spaces such as Transmediale (Berlin), Fundación Cerezales Antonino y Cinia (León), Fotomuseum Winterthur (Switzerland), Le Bal (Paris), Fotocolectania (Barcelona), Galeria Millenium (Lisbon), Medialab Prado (Madrid), Strelka Institute (Moscow), MUSAC (León), NeMe Center of Art (Cyprus), Centro de arte Matadero (Madrid), Laboral centro de arte (Gijón) as well as in Spanish Cultural Centres in Mexico, Nicaragua and El Salvador.
+His work has been exhibited and discussed internationally, including venues such as Transmediale (Berlin), Fundación Cerezales Antonino y Cinia (León), Fotomuseum Winterthur (Switzerland), Fotocolectania (Barcelona) or Strelka Institute (Moscow).
 </p>
 
 <p>
