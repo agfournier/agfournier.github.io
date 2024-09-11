@@ -1,6 +1,6 @@
 ---
 title: Hacendera
-key: vasijas
+key: hacendera
 year: 2023
 type: work
 media: "Installation. Mixed media: Terracotta pots, potter wheels, motors and electronics. Variable dimensions"
