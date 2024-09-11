@@ -17,7 +17,7 @@ Abelardo Gil-Fournier (Spain, 1979) is an artist and researcher, born in Rabat (
 </p>
 
 <p>
-His practice addresses the entwining of knowledge and the surfaces of the planet. His projects involve different techniques, spanning from sound and video installations to computational processes where living matter or other so-called natural phenomena conflate with their animate mediations.
+His practice addresses the entwining of media with the surfaces of the planet. His projects involve different techniques, spanning from sound and video installations to computational processes where living matter or other so-called natural phenomena conflate with their animate mediations.
 </p>
 
 <p>
