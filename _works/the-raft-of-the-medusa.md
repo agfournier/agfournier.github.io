@@ -11,7 +11,7 @@ layout: default
 
 <div class="en">
 <p><em>The Raft of the Medusa</em> consists of a series of oil on canvases. Each canvas in the
-series, using a selection of seascapes by mainly nineteenth-century artists,
+series, a selection of seascapes by mainly nineteenth-century artists,
 reproduces only the horizon line from the original painting. The line of the horizon
 is doubled, however. Two parallel lines, separated by a barely noticeable
 distance—below one milimeter—refer to the impact that a 3-degree planetary
