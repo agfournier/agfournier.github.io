@@ -17,5 +17,5 @@ layout: default
 
 <p>The making and unmaking of stabilized forms and movement is at play in the installation. <em>Hacendera</em>, an old Spanish word from the rural context that names the communal work involved in the provision of common services, refers to the tension between matter and form through processes of making, sedimentation and maintenance.</p>
 
-<p><span style="font-style: italic;">The installation was produced with the help of the Hacendera Abierta group (Mónica Castro de Lera, Javier Rodríguez, Carlos María Rodríguez Trigueros, Almudena López, Miguel Ángel Llamas, Iván Valbuena, Alipio Muñiz de Gorostiza, Amado Nogueras and Ángel Juárez), which gathers together every two weeks at the Foundación Cerezales Antonino y Cinia in Cerezales del Condado (León, Spain).</span></p>
+<p>The installation was produced with the help of the Hacendera Abierta group (Mónica Castro de Lera, Javier Rodríguez, Carlos María Rodríguez Trigueros, Almudena López, Miguel Ángel Llamas, Iván Valbuena, Alipio Muñiz de Gorostiza, Amado Nogueras and Ángel Juárez), which gathers together every two weeks at the Foundación Cerezales Antonino y Cinia in Cerezales del Condado (León, Spain).</p>
 </div>
