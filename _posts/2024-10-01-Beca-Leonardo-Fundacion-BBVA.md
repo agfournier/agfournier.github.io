@@ -1,6 +1,6 @@
 ---
 title: "Beca Leonardo - Fundación BBVA"
-main_image: /images/abelardo-gil-fournier_beca-leonardo-2024-artes-plasticas.jpg
+main_image: /images/logo-becas-red-leonardo-fbbva.png
 layout: post
 ---
 
