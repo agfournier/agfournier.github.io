@@ -1,7 +1,7 @@
 ---
 title: LUMI (in collaboration with Jussi Parikka)
 key: lumi
-year: 2025
+year: 2024
 type: work
 media: "Single channel video with stereo sound. Available as well as 3-channel video"
 main_image: /images/01-LUMI.jpg
