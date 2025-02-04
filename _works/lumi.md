@@ -1,5 +1,5 @@
 ---
-title: LUMI (in collaboration with Jussi Parikka)
+title: "LUMI (in collaboration with Jussi Parikka)"
 key: lumi
 year: 2024
 type: work
