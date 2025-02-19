@@ -11,7 +11,7 @@ layout: default
 ---
 
 <div class="en">
-<p><em>Hacendera</em> is a chorus of rotating vessels whose continuous rotation produces a slow transformation of the clay that makes them up. On the one hand, in sound: the small collisions between one and another give rise to a continuous resonance of their interior spaces that spreads to the space of the room. On the other hand, in dust: friction erodes the clay surfaces of the vessels, leaving contact circles on their surface and producing a slow sedimentation of clay around their bases.</p>
+<p><em>Hacendera</em> is a chorus of rotating vessels whose continuous rotation produces a slow transformation of the clay that makes them up. On the one hand, into sound: the small collisions between one and another give rise to a continuous resonance of their interior spaces that spreads to the space of the room. On the other hand, into dust: friction erodes the clay surfaces of the vessels, leaving contact circles on their surface and producing a slow sedimentation of clay around their bases.</p>
 
 <p>Each of <em>Hacendera</em>'s pots rests on a potter's wheel. Every second wheel is connected to a small motor that drives its rotation. The pots, which are handmade and therefore slightly irregular, rub against each other and cause their neighbors to rotate. These small frictions propagate and communicate the rotation to the whole ensemble. And with the collisions, their sound and with it, the slow erosion of the clay into dust.</p>
 
