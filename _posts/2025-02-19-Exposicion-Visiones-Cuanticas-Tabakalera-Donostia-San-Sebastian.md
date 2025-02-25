@@ -1,6 +1,6 @@
 ---
 title: "Exposición Visiones Cuánticas - Tabakalera Donostia/San Sebastián"
-main_image: /images/visiones_web_1920x1080px.jpg
+main_image: /images/visiones-cuanticas-cartel-sala-exposiciones-web.jpg
 layout: post
 ---
 

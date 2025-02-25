@@ -1,6 +1,6 @@
 ---
 title: "transmediale 2025 - LUMI screening and conversation with Jussi Parikka and Marco Ferrari"
-main_image: /images/transmediale-2025.jpg
+main_image: /images/mirkapflueger_Transmediale-Lumi_DSC3307.jpg
 layout: post
 ---
 
