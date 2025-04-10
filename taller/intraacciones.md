@@ -4,7 +4,11 @@ key:
 layout: talleres
 ---
 
-# Intra-acciones. Entrelazamientos y reconfiguraciones
+
+<br>
+<br>
+
+# INTRA-ACCIONES<br>Entrelazamientos y reconfiguraciones
 Tabakalera medialab 10,11/4/25
 
 
