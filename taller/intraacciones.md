@@ -1,3 +1,9 @@
+---
+title: "Taller: Intra-acciones. Entrelazamientos y reconfiguraciones"
+key: 
+layout: talleres
+---
+
 # Intra-acciones. Entrelazamientos y reconfiguraciones
 
 

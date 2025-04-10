@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Taller: Intra-acciones. Entrelazamientos y reconfiguraciones - Abelardo Gil-Fournier</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="/github-markdown-light.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<h1 id="intra-acciones-entrelazamientos-y-reconfiguraciones">Intra-acciones. Entrelazamientos y reconfiguraciones</h1>
+
+<p><br />
+<br /></p>
+
+<h2 id="instalación-de-arduino">Instalación de Arduino</h2>
+<p><a href="https://www.arduino.cc/en/software">Descarga Arduino IDE</a></p>
+
+<p><br />
+<br /></p>
+
+<h2 id="sensor-de-luz-ldr">Sensor de luz, LDR</h2>
+
+<p><br /></p>
+
+<p><img src="/taller/images/ldr.jpg" alt="esquema ldr" /></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">setup</span><span class="o">()</span> <span class="o">{</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="no">A0</span><span class="o">,</span> <span class="no">INPUT</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">begin</span><span class="o">(</span><span class="mi">9600</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="o">()</span> <span class="o">{</span>
+ <span class="kt">int</span> <span class="n">valor</span> <span class="o">=</span> <span class="n">analogRead</span><span class="o">(</span><span class="no">A0</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">valor</span><span class="o">);</span>
+ <span class="n">delay</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<blockquote>
+  <p><strong><em>Serial Monitor:</em></strong>  La herramienta con la que recibir los datos que Arduino envía.</p>
+</blockquote>
+
+<p><br />
+<br /></p>
+
+<h2 id="añadimos-un-altavoz">Añadimos un altavoz</h2>
+
+<p><br /></p>
+
+<p><img src="/taller/images/altavoz.png" alt="esquema ldr" /></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">setup</span><span class="o">()</span> <span class="o">{</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="no">A0</span><span class="o">,</span> <span class="no">INPUT</span><span class="o">);</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="no">OUTPUT</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">begin</span><span class="o">(</span><span class="mi">9600</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="o">()</span> <span class="o">{</span>
+ <span class="kt">int</span> <span class="n">valor</span> <span class="o">=</span> <span class="n">analogRead</span><span class="o">(</span><span class="no">A0</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">valor</span><span class="o">);</span>
+ <span class="n">delay</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+
+ <span class="k">if</span> <span class="o">(</span><span class="n">valor</span> <span class="o">&lt;</span> <span class="mi">400</span><span class="o">)</span> <span class="n">tone</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="mi">440</span><span class="o">);</span> <span class="c1">// intra-accion: definimos un umbral</span>
+ <span class="k">else</span> <span class="nf">noTone</span><span class="o">(</span><span class="mi">3</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p><br /></p>
+
+<p>O que cuando salgas de una zona con un rango de luz determinado, el altavoz pite:</p>
+
+<p><br /></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">setup</span><span class="o">()</span> <span class="o">{</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="no">A0</span><span class="o">,</span> <span class="no">INPUT</span><span class="o">);</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="no">OUTPUT</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">begin</span><span class="o">(</span><span class="mi">9600</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="o">()</span> <span class="o">{</span>
+ <span class="kt">int</span> <span class="n">valor</span> <span class="o">=</span> <span class="n">analogRead</span><span class="o">(</span><span class="no">A0</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">valor</span><span class="o">);</span>
+
+ <span class="k">if</span> <span class="o">(</span><span class="n">valor</span> <span class="o">&gt;</span> <span class="mi">300</span> <span class="o">&amp;&amp;</span> <span class="n">valor</span> <span class="o">&lt;</span> <span class="mi">600</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// intra-accion: sistema de Zonas, Anselm Adams</span>
+   <span class="n">noTone</span><span class="o">(</span><span class="mi">3</span><span class="o">);</span>
+ <span class="o">}</span>
+ <span class="k">else</span> <span class="nf">tone</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="mi">440</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p><img src="/taller/images/adams-zone-system.png" alt="" /></p>
+
+<p><br /></p>
+
+<p>versión Theremin:</p>
+
+<p><br /></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">setup</span><span class="o">()</span> <span class="o">{</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="no">A0</span><span class="o">,</span> <span class="no">INPUT</span><span class="o">);</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="no">OUTPUT</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">begin</span><span class="o">(</span><span class="mi">9600</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="o">()</span> <span class="o">{</span>
+ <span class="kt">int</span> <span class="n">valor</span> <span class="o">=</span> <span class="n">analogRead</span><span class="o">(</span><span class="no">A0</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">valor</span><span class="o">);</span>
+
+ <span class="k">if</span> <span class="o">(</span><span class="n">valor</span> <span class="o">&gt;</span> <span class="mi">300</span> <span class="o">&amp;&amp;</span> <span class="n">valor</span> <span class="o">&lt;</span> <span class="mi">400</span><span class="o">)</span> <span class="o">{</span>
+   <span class="n">tone</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="n">map</span><span class="o">(</span><span class="n">valor</span><span class="o">,</span> <span class="mi">300</span><span class="o">,</span> <span class="mi">400</span><span class="o">,</span> <span class="mi">440</span><span class="o">,</span> <span class="mi">880</span><span class="o">));</span>
+ <span class="o">}</span>
+ <span class="k">else</span> <span class="nf">noTone</span><span class="o">(</span><span class="mi">3</span><span class="o">);</span>
+<span class="o">}</span>
+ 
+</code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="qué-pasa-si-pegamos-el-sensor-a-la-pantalla">¿Qué pasa si pegamos el sensor a la pantalla?</h2>
+
+<p><br /></p>
+
+<p>Imágenes como sensores. <em>Environments of images</em>. Monitorización y circulación.</p>
+
+<p><br /></p>
+
+<h4 id="1-dejar-que-el-sensor-acompañe-un-rato-a-la-pantalla">1. Dejar que el sensor acompañe un rato a la pantalla</h4>
+
+<p><br /></p>
+
+<h4 id="2-con-un-vídeo">2. Con un vídeo</h4>
+
+<p>P. ej. <a href="https://www.youtube.com/embed/uYr_SvIKKuI">este fragmento de Michael Snow, <em>La Region Centrale</em></a>
+<br /></p>
+<iframe width="1000" height="750" src="https://www.youtube.com/embed/uYr_SvIKKuI" title="Michael Snow - La Région Centrale (1971)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+<p><br /></p>
+
+<p><br /></p>
+
+<h4 id="3-con-imágenes-satélite">3. Con imágenes satélite</h4>
+
+<p>Por ejemplo: <a href="https://www.google.com/maps/@30.6689607,7.1025301,3280m/data=!3m1!1e3!5m1!1e4?entry=ttu&amp;g_ep=EgoyMDI1MDQwNi4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D">aquí</a><br /></p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d17266.273229289323!2d7.102573015344233!3d30.667594919693702!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1744238745594!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<p><br />
+<br /></p>
+
+<h2 id="sound-sensor">Sound sensor</h2>
+
+<p><br /></p>
+
+<p><img src="/taller/images/arduino-sound-sensor-digital.jpg" alt="esquema sound sensor digital" /></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// pin 4 sensor sonido</span>
+<span class="c1">// pin 3 altavoz</span>
+<span class="c1">// pin 13 led</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="o">()</span> <span class="o">{</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">begin</span><span class="o">(</span><span class="mi">9600</span><span class="o">);</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="no">OUTPUT</span><span class="o">);</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="mi">4</span><span class="o">,</span> <span class="no">INPUT</span><span class="o">);</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="mi">13</span><span class="o">,</span> <span class="no">OUTPUT</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="o">()</span> <span class="o">{</span>
+ <span class="kt">int</span> <span class="n">valorSensor</span> <span class="o">=</span> <span class="n">digitalRead</span><span class="o">(</span><span class="mi">4</span><span class="o">);</span>
+ <span class="k">if</span> <span class="o">(</span><span class="n">valorSensor</span> <span class="o">==</span> <span class="no">HIGH</span><span class="o">)</span> <span class="o">{</span>
+   <span class="n">digitalWrite</span><span class="o">(</span><span class="mi">13</span><span class="o">,</span> <span class="no">HIGH</span><span class="o">);</span>
+   <span class="n">tone</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="mi">440</span><span class="o">);</span>
+ <span class="o">}</span>
+ <span class="k">else</span> <span class="o">{</span>
+   <span class="n">digitalWrite</span><span class="o">(</span><span class="mi">13</span><span class="o">,</span> <span class="no">LOW</span><span class="o">);</span>
+   <span class="n">noTone</span><span class="o">(</span><span class="mi">3</span><span class="o">);</span>
+ <span class="o">}</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">valorSensor</span><span class="o">);</span>
+ <span class="n">delay</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<blockquote>
+  <p><strong><em>APENAS ESCUCHA</em></strong>  Sirve para detectar sonidos por encima de un umbral… Pero también la respiración! (–&gt; Stern-Gerlach)</p>
+</blockquote>
+
+<p><br /></p>
+
+<p><img src="/taller/images/stern-gerlach.jpg" alt="" />
+<img src="/taller/images/stern-gerlach-resultado.png" alt="" /></p>
+
+<p><br />
+<br /></p>
+
+<h2 id="sound-sensor-como-analógico-para-suavizar-la-señal">Sound Sensor como analógico para suavizar la señal</h2>
+
+<p><br /></p>
+
+<p><img src="/taller/images/arduino-sound-sensor-analog.jpg" alt="esquema sound sensor analógico" /></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// pin 4 sensor sonido</span>
+<span class="c1">// pin 3 altavoz</span>
+<span class="c1">// pin 13 led</span>
+<span class="kt">int</span> <span class="n">valor</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="o">()</span> <span class="o">{</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">begin</span><span class="o">(</span><span class="mi">9600</span><span class="o">);</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="no">OUTPUT</span><span class="o">);</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="no">A1</span><span class="o">,</span> <span class="no">INPUT</span><span class="o">);</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="mi">13</span><span class="o">,</span> <span class="no">OUTPUT</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="o">()</span> <span class="o">{</span>
+ <span class="kt">int</span> <span class="n">valorSensor</span> <span class="o">=</span> <span class="n">analogRead</span><span class="o">(</span><span class="no">A1</span><span class="o">);</span>
+ <span class="n">valor</span> <span class="o">=</span> <span class="n">valor</span> <span class="o">+</span> <span class="mf">0.1</span> <span class="o">*</span> <span class="o">(</span> <span class="n">valorSensor</span> <span class="o">-</span> <span class="n">valor</span> <span class="o">);</span>
+  <span class="k">if</span> <span class="o">(</span><span class="n">valor</span> <span class="o">&gt;</span> <span class="mi">500</span><span class="o">)</span> <span class="o">{</span>
+   <span class="n">digitalWrite</span><span class="o">(</span><span class="mi">13</span><span class="o">,</span> <span class="no">HIGH</span><span class="o">);</span>
+   <span class="n">tone</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span><span class="mi">440</span><span class="o">);</span>
+ <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+   <span class="n">digitalWrite</span><span class="o">(</span><span class="mi">13</span><span class="o">,</span> <span class="no">LOW</span><span class="o">);</span>
+   <span class="n">noTone</span><span class="o">(</span><span class="mi">3</span><span class="o">);</span>
+ <span class="o">}</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">valor</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="bluetooth">Bluetooth</h2>
+
+<p><br /></p>
+
+<p><img src="/taller/images/bluetooth.jpg" alt="esquema bluetooth" /></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// pin A0 sensor sonido</span>
+<span class="c1">// pin 3 altavoz</span>
+<span class="c1">// pin 13 led</span>
+<span class="c1">// pines 10 11 RX,TX</span>
+<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="nc">SoftwareSerial</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+<span class="nc">SoftwareSerial</span> <span class="nf">BTserial</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="mi">11</span><span class="o">);</span>  <span class="c1">// RX | TX</span>
+<span class="kd">const</span> <span class="kt">long</span> <span class="n">baudRate</span> <span class="o">=</span> <span class="mi">38400</span><span class="o">;</span>
+
+<span class="kt">int</span> <span class="n">valor</span><span class="o">;</span>
+<span class="kt">long</span> <span class="n">last</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="o">()</span> <span class="o">{</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">begin</span><span class="o">(</span><span class="mi">9600</span><span class="o">);</span>
+
+ <span class="nc">BTserial</span><span class="o">.</span><span class="na">begin</span><span class="o">(</span><span class="n">baudRate</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"BTserial started at "</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">baudRate</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" "</span><span class="o">);</span>
+
+ <span class="n">pinMode</span><span class="o">(</span><span class="no">A0</span><span class="o">,</span> <span class="no">INPUT</span><span class="o">);</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="no">OUTPUT</span><span class="o">);</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="mi">13</span><span class="o">,</span> <span class="no">OUTPUT</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="o">()</span> <span class="o">{</span>
+ <span class="kt">int</span> <span class="n">valorSensor</span> <span class="o">=</span> <span class="n">analogRead</span><span class="o">(</span><span class="no">A1</span><span class="o">);</span>
+ <span class="n">valor</span> <span class="o">=</span> <span class="n">valor</span> <span class="o">+</span> <span class="mf">0.1</span> <span class="o">*</span> <span class="o">(</span><span class="n">valorSensor</span> <span class="o">-</span> <span class="n">valor</span><span class="o">);</span>
+
+ <span class="kt">int</span> <span class="n">enviado</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+ <span class="k">if</span> <span class="o">(</span><span class="n">valor</span> <span class="o">&gt;</span> <span class="mi">500</span><span class="o">)</span> <span class="n">enviado</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+ <span class="k">else</span> <span class="n">enviado</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+ <span class="k">if</span> <span class="o">(</span><span class="n">millis</span><span class="o">()</span> <span class="o">-</span> <span class="n">last</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="o">)</span> <span class="o">{</span>
+   <span class="nc">BTserial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">enviado</span><span class="o">);</span>
+   <span class="n">last</span> <span class="o">=</span> <span class="n">millis</span><span class="o">();</span>
+ <span class="o">}</span>
+
+ <span class="c1">// Recibe datos de bluetooth</span>
+ <span class="nc">String</span> <span class="n">inString</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
+ <span class="k">while</span> <span class="o">(</span><span class="nc">BTserial</span><span class="o">.</span><span class="na">available</span><span class="o">())</span> <span class="o">{</span>
+   <span class="n">inString</span> <span class="o">=</span> <span class="nc">BTserial</span><span class="o">.</span><span class="na">readStringUntil</span><span class="o">(</span><span class="sc">'\n'</span><span class="o">);</span>
+ <span class="o">}</span>
+ <span class="k">if</span> <span class="o">(</span><span class="n">inString</span> <span class="o">!=</span> <span class="s">""</span><span class="o">)</span> <span class="o">{</span>
+   <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">inString</span><span class="o">);</span>
+   <span class="kt">int</span> <span class="n">recibido</span> <span class="o">=</span> <span class="n">inString</span><span class="o">.</span><span class="na">toInt</span><span class="o">();</span>
+   <span class="k">if</span> <span class="o">(</span><span class="n">recibido</span> <span class="o">==</span> <span class="mi">1</span><span class="o">)</span> <span class="n">tone</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="mi">440</span><span class="o">);</span>
+   <span class="k">else</span> <span class="nf">noTone</span><span class="o">(</span><span class="mi">3</span><span class="o">);</span>
+ <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>Invertimos lógica:</p>
+
+<p><br /></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+ <span class="kt">int</span> <span class="n">enviado</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+ <span class="k">if</span> <span class="o">(</span><span class="n">valor</span> <span class="o">&lt;</span> <span class="mi">500</span><span class="o">)</span> <span class="n">enviado</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+ <span class="k">else</span> <span class="n">enviado</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+</code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="display-oled">Display OLED</h2>
+
+<p><br /></p>
+
+<p><img src="/taller/images/oled.jpg" alt="esquema oled" /></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// pin A0 sensor sonido</span>
+<span class="c1">// pin 3 altavoz</span>
+<span class="c1">// pin 13 led</span>
+<span class="c1">// pines 10 11 RX,TX</span>
+<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="nc">SoftwareSerial</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+<span class="nc">SoftwareSerial</span> <span class="nf">BTserial</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="mi">11</span><span class="o">);</span>  <span class="c1">// RX | TX</span>
+<span class="kd">const</span> <span class="kt">long</span> <span class="n">baudRate</span> <span class="o">=</span> <span class="mi">38400</span><span class="o">;</span>
+
+<span class="kt">int</span> <span class="n">valor</span><span class="o">;</span>
+<span class="kt">long</span> <span class="n">last</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+<span class="c1">//GND - GND</span>
+<span class="c1">//VCC - VCC</span>
+<span class="c1">//SDA - Pin A4</span>
+<span class="c1">//SCL - Pin A5</span>
+<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">Adafruit_GFX</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">Adafruit_SSD1306</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">math</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+
+<span class="c1">// Definir constantes</span>
+<span class="err">#</span><span class="n">define</span> <span class="no">ANCHO_PANTALLA</span> <span class="mi">128</span>  <span class="c1">// ancho pantalla OLED</span>
+<span class="err">#</span><span class="n">define</span> <span class="no">ALTO_PANTALLA</span> <span class="mi">64</span>    <span class="c1">// alto pantalla OLED</span>
+
+<span class="c1">// Objeto de la clase Adafruit_SSD1306</span>
+<span class="n">Adafruit_SSD1306</span> <span class="nf">display</span><span class="o">(</span><span class="no">ANCHO_PANTALLA</span><span class="o">,</span> <span class="no">ALTO_PANTALLA</span><span class="o">,</span> <span class="o">&amp;</span><span class="nc">Wire</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">);</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="o">()</span> <span class="o">{</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">begin</span><span class="o">(</span><span class="mi">9600</span><span class="o">);</span>
+ <span class="nc">BTserial</span><span class="o">.</span><span class="na">begin</span><span class="o">(</span><span class="n">baudRate</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"BTserial started at "</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">baudRate</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" "</span><span class="o">);</span>
+
+ <span class="n">pinMode</span><span class="o">(</span><span class="no">A0</span><span class="o">,</span> <span class="no">INPUT</span><span class="o">);</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="no">OUTPUT</span><span class="o">);</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="mi">13</span><span class="o">,</span> <span class="no">OUTPUT</span><span class="o">);</span>
+
+ <span class="c1">// Iniciar pantalla OLED en la dirección 0x3C</span>
+ <span class="k">if</span> <span class="o">(!</span><span class="n">display</span><span class="o">.</span><span class="na">begin</span><span class="o">(</span><span class="no">SSD1306_SWITCHCAPVCC</span><span class="o">,</span> <span class="mh">0x3C</span><span class="o">))</span> <span class="o">{</span>
+   <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"No se encuentra la pantalla OLED"</span><span class="o">);</span>
+ <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="o">()</span> <span class="o">{</span>
+ <span class="kt">int</span> <span class="n">valorSensor</span> <span class="o">=</span> <span class="n">analogRead</span><span class="o">(</span><span class="no">A1</span><span class="o">);</span>
+ <span class="n">valor</span> <span class="o">=</span> <span class="n">valor</span> <span class="o">+</span> <span class="mf">0.1</span> <span class="o">*</span> <span class="o">(</span><span class="n">valorSensor</span> <span class="o">-</span> <span class="n">valor</span><span class="o">);</span>
+
+ <span class="c1">// DISPLAY</span>
+ <span class="n">display</span><span class="o">.</span><span class="na">clearDisplay</span><span class="o">();</span>  <span class="c1">// Limpiar buffer</span>
+
+ <span class="n">display</span><span class="o">.</span><span class="na">setTextSize</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>               <span class="c1">// Tamaño del texto</span>
+ <span class="n">display</span><span class="o">.</span><span class="na">setTextColor</span><span class="o">(</span><span class="no">SSD1306_WHITE</span><span class="o">);</span>  <span class="c1">// Color del texto</span>
+ <span class="n">display</span><span class="o">.</span><span class="na">setCursor</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>              <span class="c1">// Posición del texto</span>
+ <span class="n">display</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">valorSensor</span><span class="o">);</span>         <span class="c1">// Escribir texto</span>
+
+ <span class="n">display</span><span class="o">.</span><span class="na">setTextSize</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>               <span class="c1">// Tamaño del texto</span>
+ <span class="n">display</span><span class="o">.</span><span class="na">setTextColor</span><span class="o">(</span><span class="no">SSD1306_WHITE</span><span class="o">);</span>  <span class="c1">// Color del texto</span>
+ <span class="n">display</span><span class="o">.</span><span class="na">setCursor</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="mi">20</span><span class="o">);</span>            <span class="c1">// Posición del texto</span>
+ <span class="n">display</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">valor</span><span class="o">);</span>               <span class="c1">// Escribir texto</span>
+
+ <span class="c1">// Enviar a pantalla</span>
+ <span class="n">display</span><span class="o">.</span><span class="na">display</span><span class="o">();</span>
+<span class="o">}</span>
+
+</code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="giroscopio">Giroscopio</h2>
+
+<p><br /></p>
+
+<p><img src="/taller/images/MPU-6050.jpg" alt="esquema giroscopio" /></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">math</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+
+<span class="c1">// Display</span>
+<span class="c1">//GND - GND</span>
+<span class="c1">//VCC - VCC</span>
+<span class="c1">//SDA - Pin A4</span>
+<span class="c1">//SCL - Pin A5</span>
+<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">Adafruit_GFX</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">Adafruit_SSD1306</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+<span class="err">#</span><span class="n">define</span> <span class="no">ANCHO_PANTALLA</span> <span class="mi">128</span>  <span class="c1">// ancho pantalla OLED</span>
+<span class="err">#</span><span class="n">define</span> <span class="no">ALTO_PANTALLA</span> <span class="mi">64</span>    <span class="c1">// alto pantalla OLED</span>
+<span class="n">Adafruit_SSD1306</span> <span class="nf">display</span><span class="o">(</span><span class="no">ANCHO_PANTALLA</span><span class="o">,</span> <span class="no">ALTO_PANTALLA</span><span class="o">,</span> <span class="o">&amp;</span><span class="nc">Wire</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">);</span>
+
+<span class="c1">// Bluetooth</span>
+<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="nc">SoftwareSerial</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+<span class="nc">SoftwareSerial</span> <span class="nf">BTserial</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="mi">11</span><span class="o">);</span>  <span class="c1">// RX | TX</span>
+<span class="kd">const</span> <span class="kt">long</span> <span class="n">baudRate</span> <span class="o">=</span> <span class="mi">38400</span><span class="o">;</span>
+<span class="kt">long</span> <span class="n">last</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+<span class="c1">// Giroscopio</span>
+<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="no">SPI</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="nc">Wire</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+<span class="err">#</span><span class="n">include</span> <span class="s">"I2Cdev.h"</span>
+<span class="err">#</span><span class="n">include</span> <span class="s">"MPU6050.h"</span>
+<span class="kd">const</span> <span class="kt">int</span> <span class="n">mpuAddress</span> <span class="o">=</span> <span class="mh">0x68</span><span class="o">;</span>  <span class="c1">// Puede ser 0x68 o 0x69</span>
+<span class="no">MPU6050</span> <span class="nf">mpu</span><span class="o">(</span><span class="n">mpuAddress</span><span class="o">);</span>
+<span class="kt">int</span> <span class="n">ax</span><span class="o">,</span> <span class="n">ay</span><span class="o">,</span> <span class="n">az</span><span class="o">;</span>
+<span class="kt">int</span> <span class="n">gx</span><span class="o">,</span> <span class="n">gy</span><span class="o">,</span> <span class="n">gz</span><span class="o">;</span>
+
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="o">()</span> <span class="o">{</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">begin</span><span class="o">(</span><span class="mi">9600</span><span class="o">);</span>
+  <span class="c1">// DISPLAY</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Iniciando pantalla OLED"</span><span class="o">);</span>
+ <span class="k">if</span> <span class="o">(!</span><span class="n">display</span><span class="o">.</span><span class="na">begin</span><span class="o">(</span><span class="no">SSD1306_SWITCHCAPVCC</span><span class="o">,</span> <span class="mh">0x3C</span><span class="o">))</span> <span class="o">{</span>
+   <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"No se encuentra la pantalla OLED"</span><span class="o">);</span>
+ <span class="o">}</span>
+
+ <span class="c1">// MICROFONO, ALTAVOZ, LED</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="no">A0</span><span class="o">,</span> <span class="no">INPUT</span><span class="o">);</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="no">OUTPUT</span><span class="o">);</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="mi">13</span><span class="o">,</span> <span class="no">OUTPUT</span><span class="o">);</span>
+  
+ <span class="c1">// GIROSCOPIO</span>
+ <span class="nc">Wire</span><span class="o">.</span><span class="na">begin</span><span class="o">();</span>
+ <span class="n">mpu</span><span class="o">.</span><span class="na">initialize</span><span class="o">();</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">mpu</span><span class="o">.</span><span class="na">testConnection</span><span class="o">()</span> <span class="o">?</span> <span class="no">F</span><span class="o">(</span><span class="s">"IMU iniciado correctamente"</span><span class="o">)</span> <span class="o">:</span> <span class="no">F</span><span class="o">(</span><span class="s">"Error al iniciar IMU"</span><span class="o">));</span>
+
+ <span class="c1">// BLUETOOTH</span>
+ <span class="nc">BTserial</span><span class="o">.</span><span class="na">begin</span><span class="o">(</span><span class="n">baudRate</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"BTserial started at "</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">baudRate</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" "</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="o">()</span> <span class="o">{</span>
+ <span class="c1">// Leer las aceleraciones</span>
+ <span class="n">mpu</span><span class="o">.</span><span class="na">getAcceleration</span><span class="o">(&amp;</span><span class="n">ax</span><span class="o">,</span> <span class="o">&amp;</span><span class="n">ay</span><span class="o">,</span> <span class="o">&amp;</span><span class="n">az</span><span class="o">);</span>
+
+ <span class="c1">//Calcular los angulos de inclinacion</span>
+ <span class="kt">float</span> <span class="n">accel_ang_x</span> <span class="o">=</span> <span class="n">atan</span><span class="o">(</span><span class="n">ax</span> <span class="o">/</span> <span class="n">sqrt</span><span class="o">(</span><span class="n">pow</span><span class="o">(</span><span class="n">ay</span><span class="o">,</span> <span class="mi">2</span><span class="o">)</span> <span class="o">+</span> <span class="n">pow</span><span class="o">(</span><span class="n">az</span><span class="o">,</span> <span class="mi">2</span><span class="o">)))</span> <span class="o">*</span> <span class="o">(</span><span class="mf">180.0</span> <span class="o">/</span> <span class="mf">3.14</span><span class="o">);</span>
+ <span class="kt">float</span> <span class="n">accel_ang_y</span> <span class="o">=</span> <span class="n">atan</span><span class="o">(</span><span class="n">ay</span> <span class="o">/</span> <span class="n">sqrt</span><span class="o">(</span><span class="n">pow</span><span class="o">(</span><span class="n">ax</span><span class="o">,</span> <span class="mi">2</span><span class="o">)</span> <span class="o">+</span> <span class="n">pow</span><span class="o">(</span><span class="n">az</span><span class="o">,</span> <span class="mi">2</span><span class="o">)))</span> <span class="o">*</span> <span class="o">(</span><span class="mf">180.0</span> <span class="o">/</span> <span class="mf">3.14</span><span class="o">);</span>
+
+ <span class="c1">// DISPLAY</span>
+ <span class="n">display</span><span class="o">.</span><span class="na">clearDisplay</span><span class="o">();</span>  <span class="c1">// Limpiar buffer</span>
+
+ <span class="n">display</span><span class="o">.</span><span class="na">setTextSize</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>               <span class="c1">// Tamaño del texto</span>
+ <span class="n">display</span><span class="o">.</span><span class="na">setTextColor</span><span class="o">(</span><span class="no">SSD1306_WHITE</span><span class="o">);</span>  <span class="c1">// Color del texto</span>
+
+ <span class="n">display</span><span class="o">.</span><span class="na">setCursor</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>              <span class="c1">// Posición del texto</span>
+ <span class="n">display</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">accel_ang_y</span><span class="o">);</span>  <span class="c1">// Escribir texto</span>
+
+ <span class="n">display</span><span class="o">.</span><span class="na">setCursor</span><span class="o">(</span><span class="mi">50</span><span class="o">,</span> <span class="mi">20</span><span class="o">);</span>         <span class="c1">// Posición del texto</span>
+ <span class="n">display</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">accel_ang_x</span><span class="o">);</span>  <span class="c1">// Escribir texto</span>
+
+ <span class="c1">// Enviar a pantalla</span>
+ <span class="n">display</span><span class="o">.</span><span class="na">display</span><span class="o">();</span>
+
+ <span class="n">delay</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="giroscopio-y-bluetooth">Giroscopio y bluetooth</h2>
+
+<p><br /></p>
+
+<p><img src="/taller/images/oled--MPU-6050.jpg" alt="esquema oled giroscopio" /></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">Adafruit_GFX</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">Adafruit_SSD1306</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+
+<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">math</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+
+<span class="c1">// Definir constantes</span>
+<span class="err">#</span><span class="n">define</span> <span class="no">ANCHO_PANTALLA</span> <span class="mi">128</span>  <span class="c1">// ancho pantalla OLED</span>
+<span class="err">#</span><span class="n">define</span> <span class="no">ALTO_PANTALLA</span> <span class="mi">64</span>    <span class="c1">// alto pantalla OLED</span>
+
+<span class="c1">// Objeto de la clase Adafruit_SSD1306</span>
+<span class="c1">//GND - GND</span>
+<span class="c1">//VCC - VCC</span>
+<span class="c1">//SDA - Pin A4</span>
+<span class="c1">//SCL - Pin A5</span>
+<span class="n">Adafruit_SSD1306</span> <span class="nf">display</span><span class="o">(</span><span class="no">ANCHO_PANTALLA</span><span class="o">,</span> <span class="no">ALTO_PANTALLA</span><span class="o">,</span> <span class="o">&amp;</span><span class="nc">Wire</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">);</span>
+<span class="nc">String</span> <span class="n">stringDisplayed</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
+
+<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="nc">SoftwareSerial</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+<span class="nc">SoftwareSerial</span> <span class="nf">BTserial</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="mi">11</span><span class="o">);</span>  <span class="c1">// RX | TX</span>
+<span class="kd">const</span> <span class="kt">long</span> <span class="n">baudRate</span> <span class="o">=</span> <span class="mi">38400</span><span class="o">;</span>
+<span class="kt">long</span> <span class="n">last</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="no">SPI</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="nc">Wire</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
+<span class="err">#</span><span class="n">include</span> <span class="s">"I2Cdev.h"</span>
+<span class="err">#</span><span class="n">include</span> <span class="s">"MPU6050.h"</span>
+
+<span class="kd">const</span> <span class="kt">int</span> <span class="n">mpuAddress</span> <span class="o">=</span> <span class="mh">0x68</span><span class="o">;</span>  <span class="c1">// Puede ser 0x68 o 0x69</span>
+<span class="no">MPU6050</span> <span class="nf">mpu</span><span class="o">(</span><span class="n">mpuAddress</span><span class="o">);</span>
+<span class="kt">int</span> <span class="n">ax</span><span class="o">,</span> <span class="n">ay</span><span class="o">,</span> <span class="n">az</span><span class="o">;</span>
+<span class="kt">int</span> <span class="n">gx</span><span class="o">,</span> <span class="n">gy</span><span class="o">,</span> <span class="n">gz</span><span class="o">;</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="o">()</span> <span class="o">{</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">begin</span><span class="o">(</span><span class="mi">9600</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Iniciando pantalla OLED"</span><span class="o">);</span>
+
+ <span class="c1">// Iniciar pantalla OLED en la dirección 0x3C</span>
+ <span class="k">if</span> <span class="o">(!</span><span class="n">display</span><span class="o">.</span><span class="na">begin</span><span class="o">(</span><span class="no">SSD1306_SWITCHCAPVCC</span><span class="o">,</span> <span class="mh">0x3C</span><span class="o">))</span> <span class="o">{</span>
+   <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"No se encuentra la pantalla OLED"</span><span class="o">);</span>
+ <span class="o">}</span>
+
+ <span class="n">pinMode</span><span class="o">(</span><span class="no">A0</span><span class="o">,</span> <span class="no">INPUT</span><span class="o">);</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="no">OUTPUT</span><span class="o">);</span>
+ <span class="n">pinMode</span><span class="o">(</span><span class="mi">13</span><span class="o">,</span> <span class="no">OUTPUT</span><span class="o">);</span>
+  
+ <span class="c1">// GIROSCOPIO</span>
+ <span class="nc">Wire</span><span class="o">.</span><span class="na">begin</span><span class="o">();</span>
+ <span class="n">mpu</span><span class="o">.</span><span class="na">initialize</span><span class="o">();</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">mpu</span><span class="o">.</span><span class="na">testConnection</span><span class="o">()</span> <span class="o">?</span> <span class="no">F</span><span class="o">(</span><span class="s">"IMU iniciado correctamente"</span><span class="o">)</span> <span class="o">:</span> <span class="no">F</span><span class="o">(</span><span class="s">"Error al iniciar IMU"</span><span class="o">));</span>
+
+ <span class="nc">BTserial</span><span class="o">.</span><span class="na">begin</span><span class="o">(</span><span class="n">baudRate</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"BTserial started at "</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">baudRate</span><span class="o">);</span>
+ <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" "</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="o">()</span> <span class="o">{</span>
+ <span class="c1">// Leer las aceleraciones</span>
+ <span class="n">mpu</span><span class="o">.</span><span class="na">getAcceleration</span><span class="o">(&amp;</span><span class="n">ax</span><span class="o">,</span> <span class="o">&amp;</span><span class="n">ay</span><span class="o">,</span> <span class="o">&amp;</span><span class="n">az</span><span class="o">);</span>
+
+ <span class="c1">//Calcular los angulos de inclinacion</span>
+ <span class="kt">float</span> <span class="n">accel_ang_x</span> <span class="o">=</span> <span class="n">atan</span><span class="o">(</span><span class="n">ax</span> <span class="o">/</span> <span class="n">sqrt</span><span class="o">(</span><span class="n">pow</span><span class="o">(</span><span class="n">ay</span><span class="o">,</span> <span class="mi">2</span><span class="o">)</span> <span class="o">+</span> <span class="n">pow</span><span class="o">(</span><span class="n">az</span><span class="o">,</span> <span class="mi">2</span><span class="o">)))</span> <span class="o">*</span> <span class="o">(</span><span class="mf">180.0</span> <span class="o">/</span> <span class="mf">3.14</span><span class="o">);</span>
+ <span class="kt">float</span> <span class="n">accel_ang_y</span> <span class="o">=</span> <span class="n">atan</span><span class="o">(</span><span class="n">ay</span> <span class="o">/</span> <span class="n">sqrt</span><span class="o">(</span><span class="n">pow</span><span class="o">(</span><span class="n">ax</span><span class="o">,</span> <span class="mi">2</span><span class="o">)</span> <span class="o">+</span> <span class="n">pow</span><span class="o">(</span><span class="n">az</span><span class="o">,</span> <span class="mi">2</span><span class="o">)))</span> <span class="o">*</span> <span class="o">(</span><span class="mf">180.0</span> <span class="o">/</span> <span class="mf">3.14</span><span class="o">);</span>
+
+ <span class="k">if</span> <span class="o">(</span><span class="n">millis</span><span class="o">()</span> <span class="o">-</span> <span class="n">last</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="o">)</span> <span class="o">{</span>
+   <span class="n">last</span> <span class="o">=</span> <span class="n">millis</span><span class="o">();</span>
+   <span class="nc">BTserial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">round</span><span class="o">(</span><span class="n">accel_ang_x</span><span class="o">));</span>
+ <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+
+   <span class="nc">String</span> <span class="n">inString</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
+   <span class="k">while</span> <span class="o">(</span><span class="nc">BTserial</span><span class="o">.</span><span class="na">available</span><span class="o">())</span> <span class="o">{</span>
+     <span class="n">inString</span> <span class="o">=</span> <span class="nc">BTserial</span><span class="o">.</span><span class="na">readStringUntil</span><span class="o">(</span><span class="sc">'\n'</span><span class="o">);</span>
+   <span class="o">}</span>
+   <span class="k">if</span> <span class="o">(</span><span class="n">inString</span> <span class="o">!=</span> <span class="s">""</span><span class="o">)</span> <span class="o">{</span>
+     <span class="n">stringDisplayed</span> <span class="o">=</span> <span class="n">inString</span><span class="o">;</span>
+   <span class="o">}</span>
+ <span class="o">}</span>
+
+ <span class="n">display</span><span class="o">.</span><span class="na">clearDisplay</span><span class="o">();</span>  <span class="c1">// Limpiar buffer</span>
+
+ <span class="n">display</span><span class="o">.</span><span class="na">setTextSize</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>               <span class="c1">// Tamaño del texto</span>
+ <span class="n">display</span><span class="o">.</span><span class="na">setTextColor</span><span class="o">(</span><span class="no">SSD1306_WHITE</span><span class="o">);</span>  <span class="c1">// Color del texto</span>
+
+ <span class="n">display</span><span class="o">.</span><span class="na">setCursor</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>              <span class="c1">// Posición del texto</span>
+ <span class="n">display</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">round</span><span class="o">(</span><span class="n">accel_ang_x</span><span class="o">));</span>  <span class="c1">// Escribir texto</span>
+
+ <span class="n">display</span><span class="o">.</span><span class="na">setCursor</span><span class="o">(</span><span class="mi">50</span><span class="o">,</span> <span class="mi">20</span><span class="o">);</span>         <span class="c1">// Posición del texto</span>
+ <span class="n">display</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">stringDisplayed</span><span class="o">);</span>  <span class="c1">// Escribir texto</span>
+
+ <span class="c1">// Enviar a pantalla</span>
+ <span class="n">display</span><span class="o">.</span><span class="na">display</span><span class="o">();</span>
+
+ <span class="k">if</span> <span class="o">(</span><span class="n">abs</span><span class="o">(</span><span class="n">stringDisplayed</span><span class="o">.</span><span class="na">toFloat</span><span class="o">()</span> <span class="o">-</span> <span class="n">round</span><span class="o">(</span><span class="n">accel_ang_x</span><span class="o">))</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="o">)</span> <span class="n">tone</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="mi">440</span><span class="o">);</span>
+ <span class="k">else</span> <span class="nf">noTone</span><span class="o">(</span><span class="mi">3</span><span class="o">);</span>
+
+ <span class="n">delay</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+
+<footer class="container-fluid  d-flex justify-content-center align-items-center mt-5" style="height:150px;">
+    <div class="mr-5 nav-item">croopier [at] gmail . com</div>
+    <div ><a href="http://instagram.com/abelardogfournier" style="text-decoration:none;">instagram</a></div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="/assets/js/lightbox.js"></script>
+
+<script type="application/javascript">
+    $(document).ready(function() {
+        var es = $(".es");
+        var en = $(".en");
+        $("#changeToEn").hide();
+        $("#changeToEs").hide();
+        
+        if (es.length + en.length >= 2) {
+            es.hide();
+            $("#changeToEs").show();
+            console.log("both");
+        }
+        else console.log("only one");
+        
+        $("#changeToEs").click(function(event) {
+            event.preventDefault();
+            console.log("clicked");
+            en.hide();
+            es.show();
+            $("#changeToEs").hide();
+            $("#changeToEn").show();
+        });
+        
+        $("#changeToEn").click(function(event) {
+            event.preventDefault();
+            console.log("clicked");
+            es.hide();
+            en.show();
+            $("#changeToEn").hide();
+            $("#changeToEs").show();
+        });
+    });
+</script>
+  
+</body>
+</html>
