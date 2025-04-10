@@ -14,11 +14,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
+    <style>
+        body {font-size: 28px; }
+    </style>
+
 </head>
 
 <body>
 
 <h1 id="intra-acciones-entrelazamientos-y-reconfiguraciones">Intra-acciones. Entrelazamientos y reconfiguraciones</h1>
+<p>Tabakalera medialab 10,11/4/25</p>
 
 <p><br />
 <br /></p>
@@ -585,8 +590,6 @@
 
 
 <footer class="container-fluid  d-flex justify-content-center align-items-center mt-5" style="height:150px;">
-    <div class="mr-5 nav-item">croopier [at] gmail . com</div>
-    <div ><a href="http://instagram.com/abelardogfournier" style="text-decoration:none;">instagram</a></div>
 </footer>
 
 
@@ -596,7 +599,41 @@
 <script type="text/javascript" src="/assets/js/lightbox.js"></script>
 
 <script type="application/javascript">
-    $(document).ready(function() {
+
+    $(document).ready(function() {      
+
+        let blocks = document.querySelectorAll("pre:has(code)");
+        let copyButtonLabel = "Copy Code";
+
+
+        blocks.forEach((block) => {
+          // only add button if browser supports Clipboard API
+          if (navigator.clipboard) {
+            let button = document.createElement("button");
+
+            button.innerText = copyButtonLabel;
+            block.appendChild(button);
+
+            button.addEventListener("click", async () => {
+              await copyCode(block, button);
+            });
+          }
+        });
+
+        async function copyCode(block, button) {
+          let code = block.querySelector("code");
+          let text = code.innerText;
+          await navigator.clipboard.writeText(text);
+          // visual feedback that task is completed
+          button.innerText = "Code Copied";
+
+          setTimeout(() => {
+            button.innerText = copyButtonLabel;
+          }, 700);
+        }    
+
+
+
         var es = $(".es");
         var en = $(".en");
         $("#changeToEn").hide();

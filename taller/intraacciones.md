@@ -5,6 +5,7 @@ layout: talleres
 ---
 
 # Intra-acciones. Entrelazamientos y reconfiguraciones
+Tabakalera medialab 10,11/4/25
 
 
 <br>
