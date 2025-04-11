@@ -508,7 +508,7 @@ void loop() {
  while (BTserial.available()) {
    stringDisplayed = BTserial.readStringUntil('\n');
  }
- if (inString != "") {
+ if (stringDisplayed != "") {
    Serial.println(stringDisplayed);
    int recibido = stringDisplayed.toInt();
  }

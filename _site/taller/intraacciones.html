@@ -517,7 +517,7 @@
  <span class="k">while</span> <span class="o">(</span><span class="nc">BTserial</span><span class="o">.</span><span class="na">available</span><span class="o">())</span> <span class="o">{</span>
    <span class="n">stringDisplayed</span> <span class="o">=</span> <span class="nc">BTserial</span><span class="o">.</span><span class="na">readStringUntil</span><span class="o">(</span><span class="sc">'\n'</span><span class="o">);</span>
  <span class="o">}</span>
- <span class="k">if</span> <span class="o">(</span><span class="n">inString</span> <span class="o">!=</span> <span class="s">""</span><span class="o">)</span> <span class="o">{</span>
+ <span class="k">if</span> <span class="o">(</span><span class="n">stringDisplayed</span> <span class="o">!=</span> <span class="s">""</span><span class="o">)</span> <span class="o">{</span>
    <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">stringDisplayed</span><span class="o">);</span>
    <span class="kt">int</span> <span class="n">recibido</span> <span class="o">=</span> <span class="n">stringDisplayed</span><span class="o">.</span><span class="na">toInt</span><span class="o">();</span>
  <span class="o">}</span>
