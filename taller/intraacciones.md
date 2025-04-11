@@ -138,7 +138,11 @@ Imágenes como sensores. *Environments of images*. Monitorización y circulació
 
 <br>
 
-#### 2. Con un vídeo 
+#### 2. Webcam
+
+<br>
+
+#### 3. Con un vídeo 
 
 P. ej. [este fragmento de Michael Snow, *La Region Centrale*](https://www.youtube.com/embed/uYr_SvIKKuI)
 <br>
@@ -146,7 +150,7 @@ P. ej. [este fragmento de Michael Snow, *La Region Centrale*](https://www.youtub
 
 <br>
 
-#### 3. Con imágenes satélite
+#### 4. Con imágenes satélite
 
 Por ejemplo: [aquí](https://www.google.com/maps/@30.6689607,7.1025301,3280m/data=!3m1!1e3!5m1!1e4?entry=ttu&g_ep=EgoyMDI1MDQwNi4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D)<br>
 <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d17266.273229289323!2d7.102573015344233!3d30.667594919693702!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1744238745594!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -158,7 +162,7 @@ Por ejemplo: [aquí](https://www.google.com/maps/@30.6689607,7.1025301,3280m/dat
 
 <br>
 
-![esquema sound sensor digital](images/arduino-sound-sensor-digital.jpg)
+![esquema sound sensor](images/soundsensor.jpg)
 
 ```java
 // pin 4 sensor sonido
@@ -168,13 +172,13 @@ Por ejemplo: [aquí](https://www.google.com/maps/@30.6689607,7.1025301,3280m/dat
 void setup() {
  Serial.begin(9600);
  pinMode(3, OUTPUT);
- pinMode(4, INPUT);
+ pinMode(A0, INPUT);
  pinMode(13, OUTPUT);
 }
 
 void loop() {
- int valorSensor = digitalRead(4);
- if (valorSensor == HIGH) {
+ int valorSensor = analogRead(A0);
+ if (valorSensor > 500) {
    digitalWrite(13, HIGH);
    tone(3, 440);
  }
@@ -200,14 +204,17 @@ void loop() {
 <br>
 
 
-## Sound Sensor como analógico para suavizar la señal
+## Sound Sensor: suavizamos la señal
 
 <br>
 
-![esquema sound sensor analógico](images/arduino-sound-sensor-analog.jpg)
+
+![](images/easing-algoritmo.jpg)
+
+<br>
 
 ```java
-// pin 4 sensor sonido
+// pin A0 sensor sonido
 // pin 3 altavoz
 // pin 13 led
 int valor = 0;
@@ -215,12 +222,12 @@ int valor = 0;
 void setup() {
  Serial.begin(9600);
  pinMode(3, OUTPUT);
- pinMode(A1, INPUT);
+ pinMode(A0, INPUT);
  pinMode(13, OUTPUT);
 }
 
 void loop() {
- int valorSensor = analogRead(A1);
+ int valorSensor = analogRead(A0);
  valor = valor + 0.1 * ( valorSensor - valor );
   if (valor > 500) {
    digitalWrite(13, HIGH);
@@ -234,79 +241,10 @@ void loop() {
 ```
 
 <br>
-<br>
 
-## Bluetooth
-
-<br>
-
-![esquema bluetooth](images/bluetooth.jpg)
-
-```java
-// pin A0 sensor sonido
-// pin 3 altavoz
-// pin 13 led
-// pines 10 11 RX,TX
-#include <SoftwareSerial.h>
-SoftwareSerial BTserial(10, 11);  // RX | TX
-const long baudRate = 38400;
-
-int valor;
-long last = 0;
-
-void setup() {
- Serial.begin(9600);
-
- BTserial.begin(baudRate);
- Serial.print("BTserial started at ");
- Serial.println(baudRate);
- Serial.println(" ");
-
- pinMode(A0, INPUT);
- pinMode(3, OUTPUT);
- pinMode(13, OUTPUT);
-}
-
-void loop() {
- int valorSensor = analogRead(A1);
- valor = valor + 0.1 * (valorSensor - valor);
-
- int enviado = 0;
- if (valor > 500) enviado = 1;
- else enviado = 0;
-
- if (millis() - last > 100) {
-   BTserial.println(enviado);
-   last = millis();
- }
-
- // Recibe datos de bluetooth
- String inString = "";
- while (BTserial.available()) {
-   inString = BTserial.readStringUntil('\n');
- }
- if (inString != "") {
-   Serial.println(inString);
-   int recibido = inString.toInt();
-   if (recibido == 1) tone(3, 440);
-   else noTone(3);
- }
-}
-```
+> **_INTRA-ACCION?_**  Cambiamos el signo de la condición: **if (valor < 500)** En cierto sentido (experiencia médica acumulada?) el dispositivo puede interpretarse como que te indica cuándo respirar. Cuando pita/se enciende, tienes que aspirar. Soplas y se calla/se apaga. Vuelve a pitar/encenderse ...
 
 <br>
-
-Invertimos lógica:
-
-<br>
-
-```java
-
- int enviado = 0;
- if (valor < 500) enviado = 1;
- else enviado = 0;
-
-```
 
 <br>
 <br>
@@ -315,85 +253,19 @@ Invertimos lógica:
 
 <br>
 
+Una pantalla pequeña que nos va a servir para lo que haremos a continuación...
+
+<br>
+
 ![esquema oled](images/oled.jpg)
 
 ```java
+
 // pin A0 sensor sonido
 // pin 3 altavoz
 // pin 13 led
-// pines 10 11 RX,TX
-#include <SoftwareSerial.h>
-SoftwareSerial BTserial(10, 11);  // RX | TX
-const long baudRate = 38400;
+// pines A4 A5 OLED
 
-int valor;
-long last = 0;
-
-//GND - GND
-//VCC - VCC
-//SDA - Pin A4
-//SCL - Pin A5
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
-#include <math.h>
-
-// Definir constantes
-#define ANCHO_PANTALLA 128  // ancho pantalla OLED
-#define ALTO_PANTALLA 64    // alto pantalla OLED
-
-// Objeto de la clase Adafruit_SSD1306
-Adafruit_SSD1306 display(ANCHO_PANTALLA, ALTO_PANTALLA, &Wire, -1);
-
-void setup() {
- Serial.begin(9600);
- BTserial.begin(baudRate);
- Serial.print("BTserial started at ");
- Serial.println(baudRate);
- Serial.println(" ");
-
- pinMode(A0, INPUT);
- pinMode(3, OUTPUT);
- pinMode(13, OUTPUT);
-
- // Iniciar pantalla OLED en la dirección 0x3C
- if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
-   Serial.println("No se encuentra la pantalla OLED");
- }
-}
-
-void loop() {
- int valorSensor = analogRead(A1);
- valor = valor + 0.1 * (valorSensor - valor);
-
- // DISPLAY
- display.clearDisplay();  // Limpiar buffer
-
- display.setTextSize(1);               // Tamaño del texto
- display.setTextColor(SSD1306_WHITE);  // Color del texto
- display.setCursor(0, 0);              // Posición del texto
- display.println(valorSensor);         // Escribir texto
-
- display.setTextSize(2);               // Tamaño del texto
- display.setTextColor(SSD1306_WHITE);  // Color del texto
- display.setCursor(10, 20);            // Posición del texto
- display.println(valor);               // Escribir texto
-
- // Enviar a pantalla
- display.display();
-}
-
-```
-
-<br>
-<br>
-
-## Giroscopio
-
-<br>
-
-![esquema giroscopio](images/MPU-6050.jpg)
-
-```java
 #include <math.h>
 
 // Display
@@ -407,26 +279,12 @@ void loop() {
 #define ALTO_PANTALLA 64    // alto pantalla OLED
 Adafruit_SSD1306 display(ANCHO_PANTALLA, ALTO_PANTALLA, &Wire, -1);
 
-// Bluetooth
-#include <SoftwareSerial.h>
-SoftwareSerial BTserial(10, 11);  // RX | TX
-const long baudRate = 38400;
-long last = 0;
-
-// Giroscopio
-#include <SPI.h>
-#include <Wire.h>
-#include "I2Cdev.h"
-#include "MPU6050.h"
-const int mpuAddress = 0x68;  // Puede ser 0x68 o 0x69
-MPU6050 mpu(mpuAddress);
-int ax, ay, az;
-int gx, gy, gz;
-
+int valor = 0;
 
 void setup() {
  Serial.begin(9600);
-  // DISPLAY
+ 
+ // DISPLAY
  Serial.println("Iniciando pantalla OLED");
  if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
    Serial.println("No se encuentra la pantalla OLED");
@@ -436,11 +294,85 @@ void setup() {
  pinMode(A0, INPUT);
  pinMode(3, OUTPUT);
  pinMode(13, OUTPUT);
-  
- // GIROSCOPIO
- Wire.begin();
- mpu.initialize();
- Serial.println(mpu.testConnection() ? F("IMU iniciado correctamente") : F("Error al iniciar IMU"));
+}
+
+void loop() {
+
+ // MICROFONO 
+ int valorSensor = analogRead(A0);
+ valor = valor + 0.1 * (valorSensor - valor);
+  if (valor > 500) {
+   digitalWrite(13, HIGH);
+   tone(3,440);
+ } else {
+   digitalWrite(13, LOW);
+   noTone(3);
+ }
+ Serial.println(valor); 
+
+ // DISPLAY
+ display.clearDisplay();               // Limpiar buffer
+ display.setTextSize(2);               // Tamaño del texto
+ display.setTextColor(SSD1306_WHITE);  // Color del texto
+ display.setCursor(10, 20);              // Posición del texto
+ display.println( valor );             // Escribir texto
+ display.display();                    // Enviar a pantalla
+}
+```
+
+<br>
+<br>
+
+
+## Bluetooth
+
+<br>
+
+![esquema bluetooth](images/bluetooth-sonido-oled.jpg)
+
+```java
+#include <math.h>
+
+// pin A0 sensor sonido
+// pin 3 altavoz
+// pin 13 led
+// pines A4 A5 OLED
+// pines 10 11 RX,TX BLUETOOTH
+
+//BLUETOOTH
+#include <SoftwareSerial.h>
+SoftwareSerial BTserial(10, 11);  // RX | TX
+const long baudRate = 38400;
+
+
+// Display
+//GND - GND
+//VCC - VCC
+//SDA - Pin A4
+//SCL - Pin A5
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+#define ANCHO_PANTALLA 128  // ancho pantalla OLED
+#define ALTO_PANTALLA 64    // alto pantalla OLED
+Adafruit_SSD1306 display(ANCHO_PANTALLA, ALTO_PANTALLA, &Wire, -1);
+String stringDisplayed = "";
+
+int valor = 0;
+long last = 0;
+
+void setup() {
+ Serial.begin(9600);
+ 
+ // DISPLAY
+ Serial.println("Iniciando pantalla OLED");
+ if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
+   Serial.println("No se encuentra la pantalla OLED");
+ }
+
+ // MICROFONO, ALTAVOZ, LED
+ pinMode(A0, INPUT);
+ pinMode(3, OUTPUT);
+ pinMode(13, OUTPUT);
 
  // BLUETOOTH
  BTserial.begin(baudRate);
@@ -450,92 +382,106 @@ void setup() {
 }
 
 void loop() {
- // Leer las aceleraciones
- mpu.getAcceleration(&ax, &ay, &az);
 
- //Calcular los angulos de inclinacion
- float accel_ang_x = atan(ax / sqrt(pow(ay, 2) + pow(az, 2))) * (180.0 / 3.14);
- float accel_ang_y = atan(ay / sqrt(pow(ax, 2) + pow(az, 2))) * (180.0 / 3.14);
+ // MICROFONO //////////////////////////////////////////
+ int valorSensor = analogRead(A0);
+ valor = valor + 0.1 * (valorSensor - valor);
+  if (valor > 500) {
+   digitalWrite(13, HIGH);
+   tone(3,440);
+ } else {
+   digitalWrite(13, LOW);
+   noTone(3);
+ }
+ Serial.println(valor); 
 
- // DISPLAY
- display.clearDisplay();  // Limpiar buffer
+ // MENSAJE PARA ENVIAR POR BLUETOOTH AL OTRO ARDUINO ///
+ int enviado = 0;
+ if (valor > 500) enviado = 1;
 
+ if (millis() - last > 100) {
+   BTserial.println(enviado);
+   last = millis();
+ }
+
+ // RECIBE DATOS DE BLUETOOTH ///////////////////////////
+ while (BTserial.available()) {
+   stringDisplayed = BTserial.readStringUntil('\n');
+ }
+ if (inString != "") {
+   Serial.println(stringDisplayed);
+   int recibido = stringDisplayed.toInt();
+ }
+
+ // DISPLAY /////////////////////////////////////////////
+ display.clearDisplay();               // Limpiar buffer
  display.setTextSize(2);               // Tamaño del texto
  display.setTextColor(SSD1306_WHITE);  // Color del texto
-
- display.setCursor(0, 0);              // Posición del texto
- display.println(accel_ang_y);  // Escribir texto
-
- display.setCursor(50, 20);         // Posición del texto
- display.println(accel_ang_x);  // Escribir texto
-
- // Enviar a pantalla
- display.display();
-
- delay(10);
+ display.setCursor(10, 20);              // Posición del texto
+ display.println( stringDisplayed );   // Escribir texto
+ display.display();                    // Enviar a pantalla
 }
+
 ```
 
 <br>
+
+¿Y si hacemos ahora que suene / ilumine si la otra persona respira?
+
+1) Tenemos que quitar la lógica anterior del sonido / led. El if (valor > 500) digitalWrite y tone.
+
+2) Tenemos que añadir esta otra lógica:
+- Si el mensaje recibido es 1, que el altavoz suene ("tone()") y el led se encienda ("digitalWrite(.. HIGH)")
+- Si es cero, "noTone", "digitalWrite(.. LOW)"
+
 <br>
 
-## Giroscopio y bluetooth
-
-<br>
-
-![esquema oled giroscopio](images/oled--MPU-6050.jpg)
 
 ```java
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
-
 #include <math.h>
 
-// Definir constantes
-#define ANCHO_PANTALLA 128  // ancho pantalla OLED
-#define ALTO_PANTALLA 64    // alto pantalla OLED
+// pin A0 sensor sonido
+// pin 3 altavoz
+// pin 13 led
+// pines A4 A5 OLED
+// pines 10 11 RX,TX BLUETOOTH
 
-// Objeto de la clase Adafruit_SSD1306
+//BLUETOOTH
+#include <SoftwareSerial.h>
+SoftwareSerial BTserial(10, 11);  // RX | TX
+const long baudRate = 38400;
+
+
+// Display
 //GND - GND
 //VCC - VCC
 //SDA - Pin A4
 //SCL - Pin A5
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+#define ANCHO_PANTALLA 128  // ancho pantalla OLED
+#define ALTO_PANTALLA 64    // alto pantalla OLED
 Adafruit_SSD1306 display(ANCHO_PANTALLA, ALTO_PANTALLA, &Wire, -1);
 String stringDisplayed = "";
 
-#include <SoftwareSerial.h>
-SoftwareSerial BTserial(10, 11);  // RX | TX
-const long baudRate = 38400;
+int valor = 0;
 long last = 0;
-
-#include <SPI.h>
-#include <Wire.h>
-#include "I2Cdev.h"
-#include "MPU6050.h"
-
-const int mpuAddress = 0x68;  // Puede ser 0x68 o 0x69
-MPU6050 mpu(mpuAddress);
-int ax, ay, az;
-int gx, gy, gz;
 
 void setup() {
  Serial.begin(9600);
+ 
+ // DISPLAY
  Serial.println("Iniciando pantalla OLED");
-
- // Iniciar pantalla OLED en la dirección 0x3C
  if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
    Serial.println("No se encuentra la pantalla OLED");
  }
 
+ // MICROFONO, ALTAVOZ, LED
  pinMode(A0, INPUT);
  pinMode(3, OUTPUT);
  pinMode(13, OUTPUT);
-  
- // GIROSCOPIO
- Wire.begin();
- mpu.initialize();
- Serial.println(mpu.testConnection() ? F("IMU iniciado correctamente") : F("Error al iniciar IMU"));
 
+ // BLUETOOTH
  BTserial.begin(baudRate);
  Serial.print("BTserial started at ");
  Serial.println(baudRate);
@@ -543,18 +489,157 @@ void setup() {
 }
 
 void loop() {
- // Leer las aceleraciones
+
+ // MICROFONO //////////////////////////////////////////
+ int valorSensor = analogRead(A0);
+ valor = valor + 0.1 * (valorSensor - valor);
+ Serial.println(valor); 
+
+ // MENSAJE PARA ENVIAR POR BLUETOOTH AL OTRO ARDUINO ///
+ int enviado = 0;
+ if (valor > 500) enviado = 1;
+
+ if (millis() - last > 100) {
+   BTserial.println(enviado);
+   last = millis();
+ }
+
+ // RECIBE DATOS DE BLUETOOTH ///////////////////////////
+ while (BTserial.available()) {
+   stringDisplayed = BTserial.readStringUntil('\n');
+ }
+ if (inString != "") {
+   Serial.println(stringDisplayed);
+   int recibido = stringDisplayed.toInt();
+ }
+
+  if (recibido == 1) {
+   digitalWrite(13, HIGH);
+   tone(3,440);
+ } else {
+   digitalWrite(13, LOW);
+   noTone(3);
+ }
+
+ // DISPLAY /////////////////////////////////////////////
+ display.clearDisplay();               // Limpiar buffer
+ display.setTextSize(2);               // Tamaño del texto
+ display.setTextColor(SSD1306_WHITE);  // Color del texto
+ display.setCursor(10, 20);              // Posición del texto
+ display.println( stringDisplayed );   // Escribir texto
+ display.display();                    // Enviar a pantalla
+}
+
+```
+
+<br>
+
+> **_INTRA-ACCION?_**  Dos respiraciones acopladas por un espacio previo de diseño.
+
+<br>
+
+¿Qué pasa si se invierte la lógica? if (valor < 500)
+
+```java
+
+ int enviado = 0;
+ if (valor < 500) enviado = 1;
+
+```
+
+<br>
+<br>
+
+
+## Giroscopio
+
+<br>
+
+![esquema giroscopio](images/giroscopio-bluetooth-oled.jpg)
+
+```java
+#include <math.h>
+
+// pin A0 sensor sonido
+// pin 3 altavoz
+// pin 13 led
+// pines A4 A5 OLED
+// pines 10 11 RX,TX BLUETOOTH
+
+//BLUETOOTH
+#include <SoftwareSerial.h>
+SoftwareSerial BTserial(10, 11);  // RX | TX
+const long baudRate = 38400;
+
+
+// Display
+//GND - GND
+//VCC - VCC
+//SDA - Pin A4
+//SCL - Pin A5
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+#define ANCHO_PANTALLA 128  // ancho pantalla OLED
+#define ALTO_PANTALLA 64    // alto pantalla OLED
+Adafruit_SSD1306 display(ANCHO_PANTALLA, ALTO_PANTALLA, &Wire, -1);
+String stringDisplayed = "";
+
+// GIROSCOPIO
+#include <SPI.h>
+#include <Wire.h>
+#include "I2Cdev.h"
+#include "MPU6050.h"
+const int mpuAddress = 0x68;  // Puede ser 0x68 o 0x69
+MPU6050 mpu(mpuAddress);
+int ax, ay, az;
+int gx, gy, gz;
+
+
+int valor = 0;
+long last = 0;
+
+void setup() {
+ Serial.begin(9600);
+ 
+ // DISPLAY
+ Serial.println("Iniciando pantalla OLED");
+ if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
+   Serial.println("No se encuentra la pantalla OLED");
+ }
+
+ // MICROFONO, ALTAVOZ, LED
+ pinMode(A0, INPUT);
+ pinMode(3, OUTPUT);
+ pinMode(13, OUTPUT);
+
+ // BLUETOOTH
+ BTserial.begin(baudRate);
+ Serial.print("BTserial started at ");
+ Serial.println(baudRate);
+ Serial.println(" ");
+
+ // GIROSCOPIO
+ Wire.begin();
+ mpu.initialize();
+ Serial.println(mpu.testConnection() ? F("IMU iniciado correctamente") : F("Error al iniciar IMU"));
+
+}
+
+void loop() {
+
+  // GIROSCOPIO: lee las aceleraciones
  mpu.getAcceleration(&ax, &ay, &az);
 
- //Calcular los angulos de inclinacion
+ // GIROSCOPIO: Calcula los angulos de inclinacion
  float accel_ang_x = atan(ax / sqrt(pow(ay, 2) + pow(az, 2))) * (180.0 / 3.14);
  float accel_ang_y = atan(ay / sqrt(pow(ax, 2) + pow(az, 2))) * (180.0 / 3.14);
 
- if (millis() - last > 100) {
+
+ // ENVÍA Y RECIBE DATOS POR BLUETOOTH //////////////////
+if (millis() - last > 100) {
    last = millis();
    BTserial.println(round(accel_ang_x));
  } else {
-
    String inString = "";
    while (BTserial.available()) {
      inString = BTserial.readStringUntil('\n');
@@ -564,22 +649,148 @@ void loop() {
    }
  }
 
- display.clearDisplay();  // Limpiar buffer
 
- display.setTextSize(2);               // Tamaño del texto
+
+ // DISPLAY /////////////////////////////////////////////
+ display.clearDisplay();               // Limpiar buffer
  display.setTextColor(SSD1306_WHITE);  // Color del texto
-
+ display.setTextSize(1);               // Tamaño del texto 
  display.setCursor(0, 0);              // Posición del texto
- display.println(round(accel_ang_x));  // Escribir texto
+ display.println( accel_ang_y );       // Escribir texto
+ display.setTextSize(2);               // Tamaño del texto 
+ display.setCursor(50, 20);            // Posición del texto
+ display.println( accel_ang_x );       // Escribir texto 
+ display.display();                    // Enviar a pantalla
+}
 
- display.setCursor(50, 20);         // Posición del texto
- display.println(stringDisplayed);  // Escribir texto
+```
 
- // Enviar a pantalla
- display.display();
+<br>
+<br>
 
- if (abs(stringDisplayed.toFloat() - round(accel_ang_x)) > 10) tone(3, 440);
- else noTone(3);
+## Giroscopio y bluetooth
+
+<br>
+
+Dos giroscopios conectados. Si el ángulo es distinto (supera un umbral), el altavoz pita y el led se enciende. Si no, están apagados.
+
+<br>
+
+```java
+#include <math.h>
+
+// pin A0 sensor sonido
+// pin 3 altavoz
+// pin 13 led
+// pines A4 A5 OLED
+// pines 10 11 RX,TX BLUETOOTH
+
+//BLUETOOTH
+#include <SoftwareSerial.h>
+SoftwareSerial BTserial(10, 11);  // RX | TX
+const long baudRate = 38400;
+
+
+// Display
+//GND - GND
+//VCC - VCC
+//SDA - Pin A4
+//SCL - Pin A5
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+#define ANCHO_PANTALLA 128  // ancho pantalla OLED
+#define ALTO_PANTALLA 64    // alto pantalla OLED
+Adafruit_SSD1306 display(ANCHO_PANTALLA, ALTO_PANTALLA, &Wire, -1);
+String stringDisplayed = "";
+
+// GIROSCOPIO
+#include <SPI.h>
+#include <Wire.h>
+#include "I2Cdev.h"
+#include "MPU6050.h"
+const int mpuAddress = 0x68;  // Puede ser 0x68 o 0x69
+MPU6050 mpu(mpuAddress);
+int ax, ay, az;
+int gx, gy, gz;
+
+
+int valor = 0;
+long last = 0;
+
+void setup() {
+ Serial.begin(9600);
+ 
+ // DISPLAY
+ Serial.println("Iniciando pantalla OLED");
+ if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
+   Serial.println("No se encuentra la pantalla OLED");
+ }
+
+ // MICROFONO, ALTAVOZ, LED
+ pinMode(A0, INPUT);
+ pinMode(3, OUTPUT);
+ pinMode(13, OUTPUT);
+
+ // BLUETOOTH
+ BTserial.begin(baudRate);
+ Serial.print("BTserial started at ");
+ Serial.println(baudRate);
+ Serial.println(" ");
+
+ // GIROSCOPIO
+ Wire.begin();
+ mpu.initialize();
+ Serial.println(mpu.testConnection() ? F("IMU iniciado correctamente") : F("Error al iniciar IMU"));
+
+}
+
+void loop() {
+
+  // GIROSCOPIO: lee las aceleraciones
+ mpu.getAcceleration(&ax, &ay, &az);
+
+ // GIROSCOPIO: Calcula los angulos de inclinacion
+ float accel_ang_x = atan(ax / sqrt(pow(ay, 2) + pow(az, 2))) * (180.0 / 3.14);
+ float accel_ang_y = atan(ay / sqrt(pow(ax, 2) + pow(az, 2))) * (180.0 / 3.14);
+
+
+ // RECIBE DATOS DE BLUETOOTH ///////////////////////////
+ while (BTserial.available()) {
+   stringDisplayed = BTserial.readStringUntil('\n');
+ }
+ if (inString != "") {
+   Serial.println(stringDisplayed);
+   int recibido = stringDisplayed.toInt();
+ }
+
+  if (recibido == 1) {
+   digitalWrite(13, HIGH);
+   tone(3,440);
+ } else {
+   digitalWrite(13, LOW);
+   noTone(3);
+ }
+
+ // DISPLAY /////////////////////////////////////////////
+ display.clearDisplay();               // Limpiar buffer
+ display.setTextColor(SSD1306_WHITE);  // Color del texto
+ display.setTextSize(1);               // Tamaño del texto 
+ display.setCursor(0, 0);              // Posición del texto
+ display.println( round(accel_ang_x) );       // Escribir texto
+ display.setTextSize(2);               // Tamaño del texto 
+ display.setCursor(50, 20);            // Posición del texto
+ display.println( stringDisplayed );       // Escribir texto 
+ display.display();                    // Enviar a pantalla
+}
+
+ if (abs(stringDisplayed.toFloat() - round(accel_ang_x)) > 10) { 
+  digitalWrite(13, HIGH);
+  tone(3, 440);
+ }
+ else {
+  digitalWrite(13, LOW);
+  noTone(3);
+ }
 
  delay(10);
 }
