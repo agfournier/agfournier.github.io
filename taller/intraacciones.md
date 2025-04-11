@@ -508,9 +508,10 @@ void loop() {
  while (BTserial.available()) {
    stringDisplayed = BTserial.readStringUntil('\n');
  }
+ int recibido = 0;
  if (stringDisplayed != "") {
    Serial.println(stringDisplayed);
-   int recibido = stringDisplayed.toInt();
+   recibido = stringDisplayed.toInt();
  }
 
   if (recibido == 1) {
