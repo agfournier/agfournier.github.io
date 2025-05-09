@@ -5,7 +5,7 @@ layout: talleres
 ---
 
 
-<br>
+<br>  
 <br>
 
 # INTRA-ACCIONES<br>Entrelazamientos y reconfiguraciones
@@ -508,6 +508,7 @@ void loop() {
  while (BTserial.available()) {
    stringDisplayed = BTserial.readStringUntil('\n');
  }
+ 
  int recibido = 0;
  if (stringDisplayed != "") {
    Serial.println(stringDisplayed);

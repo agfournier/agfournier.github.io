@@ -14,3 +14,6 @@ Lumi is a story of snow and luminance, of reflection and planetary light. The vi
 Lumi can be seen as a science and climate fiction about a collective intelligence of Artificial Agents that time travel from past photographic images to future programmed landscapes. This intelligence has grown out of those moments of light computing its path, together with the landscape computing its growth and preservation. 
 
 Lumi is a dataset of snow, ice, and light. It is a film about the reversal of time and the synthesis of landscapes: once made, then remade.
+
+Sound design: María Andueza Olmedo
+Sound engineering: Emil Thomsen
