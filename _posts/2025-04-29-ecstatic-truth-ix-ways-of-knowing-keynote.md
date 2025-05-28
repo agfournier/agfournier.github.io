@@ -10,3 +10,5 @@ Organising committee: Tereza Stehlikova @tereza_stehlikova, Birgitta Hosea, Pedr
 Keynote: Abelardo Gil-Fournier
 Participants: Dr Nadia Aghtaie, Dr Ladan Hashemi, prof Birgitta Hosea, Dr. Fatemeh Hosseini-Shakib, Yanqi Liang, Penny Woolcock, Carolina López Caballero, Christoph Steger, Kim Noce, Hugo Glover, Andrea Gudiño Sosa, Dominica Harrison, Jane Cheadle
 Venue: VSKK Prague School of Creative Communication, 29 April 2025
+
+(Photograph by Carolina López Caballero)
