@@ -5,7 +5,7 @@ year: 2025
 type: work
 media: "PDLC sheets, metal structures, tensile steel, electronics"
 main_image: "/images/Tabakalera_VisionesCuanticas_AbelardoGil-Fournier_La hojadeFermiyelefectoZenon_2.jpg"
-images: /images/Tabakalera_VisionesCuanticas_AbelardoGil-Fournier_La hojadeFermiyelefectoZenon_1.jpg, /images/Tabakalera_VisionesCuanticas_AbelardoGil-Fournier_La hojadeFermiyelefectoZenon_3.jpg, /images/unct_a_1927627_f0001_oc.jpg, /images/hoja-fermi--detalle-hoja-transparente.jpg, /images/hoja-fermi--composicion-con-secuencia.jpg, /images/hoja-fermi--composicion-con-observador.jpg
+images: /images/Tabakalera_VisionesCuanticas_AbelardoGil-Fournier_La hojadeFermiyelefectoZenon_1.jpg, /images/Tabakalera_VisionesCuanticas_AbelardoGil-Fournier_La hojadeFermiyelefectoZenon_3.jpg, /images/unct_a_1927627_f0001_oc.jpg, /images/hoja-fermi--detalle-hoja-transparente.jpg, /images/hoja-fermi--composicion-con-secuencia.jpg, /images/hoja-fermi--composicion-con-observador.jpg, /images/hoja-fermi--animacion.gif
 layout: default
 ---
 
@@ -22,7 +22,7 @@ layout: default
 The work presents the falling leaf as a succession of activations of liquid crystal sheets in sequences that react to the position of the people around it. The piece refers to the paradox of Zeno of Elea, who imagined an arrow whose fall seemed impossible because it was immobile at every instant of its flight. Although differential calculus disproved this idea in the 17th century, quantum physics has recently rethought the dilemma: the quantum Zeno effect, tested experimentally since 1990, shows that the evolution of a quantum system can be stopped if it is repeatedly observed. As if, in a certain sense, observation paused movement.
 </p>
 <p>
-To hold a fall in one’s gaze—whether in Zeno’s arrow paradox or a quantum experiment—implies a reciprocal relationship between motion and the act of observing it. It forms an invisible arc linking matter with the awareness of being part of it, a tension that shapes the formless. This intra-action, expressed as a fall and its effect on the world’s unfolding, is the focus of <em>The Fermi Sheet and the Zeno Effect</em>. Through the reconstruction of an apparently trivial gesture made during the design of the first nuclear bomb, the work re-imagines empty space as a site of continuous tension between matter, knowledge, and human responsibility."
+To hold a fall in one’s gaze—whether in Zeno’s arrow paradox or a quantum experiment—implies a reciprocal relationship between motion and the act of observing it. It forms an invisible arc linking matter with the awareness of being part of it, a tension that shapes the formless. This intra-action, expressed as a fall and its effect on the world’s unfolding, is the focus of <em>The Fermi Sheet and the Zeno Effect</em>. Through the reconstruction of an apparently trivial gesture made during the design of the first nuclear bomb, the work re-imagines empty space as a site of continuous tension between matter, knowledge, and human responsibility.
 </p>
 </div>
 
