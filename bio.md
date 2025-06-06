@@ -21,7 +21,7 @@ His practice addresses the entwining of media and matter. His projects involve d
 </p>
 
 <p>
-His work has been exhibited and discussed internationally, including venues such as Transmediale (Berlin), Fundación Cerezales Antonino y Cinia (León), IKKM (Weimar), Fotomuseum Winterthur (Switzerland), Design Museum (Shenzhen) and the Cultural Centers of Spain in Nicaragua and El Salvador.
+His work has been exhibited and discussed internationally, including venues such as Transmediale (Berlin), Fundación Cerezales Antonino y Cinia (León), IKKM (Weimar), Fotomuseum Winterthur (Switzerland), Design Museum (Shenzhen), Tabakalera (Donostia-San Sebastian), LeBal (Paris) and the Cultural Centers of Spain in Nicaragua and El Salvador.
 </p>
 
 <p>

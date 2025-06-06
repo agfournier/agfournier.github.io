@@ -22,7 +22,7 @@
 
 <body>
 
-<p><br />
+<p><br /><br />
 <br /></p>
 
 <h1 id="intra-accionesentrelazamientos-y-reconfiguraciones">INTRA-ACCIONES<br />Entrelazamientos y reconfiguraciones</h1>
@@ -338,7 +338,7 @@
 
 <p><br /></p>
 
-<p><img src="images/bluetooth-sonido-oled.jpg" alt="esquema bluetooth" /></p>
+<p><img src="/taller/images/bluetooth-sonido-oled.jpg" alt="esquema bluetooth" /></p>
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">math</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
 
@@ -517,6 +517,7 @@
  <span class="k">while</span> <span class="o">(</span><span class="nc">BTserial</span><span class="o">.</span><span class="na">available</span><span class="o">())</span> <span class="o">{</span>
    <span class="n">stringDisplayed</span> <span class="o">=</span> <span class="nc">BTserial</span><span class="o">.</span><span class="na">readStringUntil</span><span class="o">(</span><span class="sc">'\n'</span><span class="o">);</span>
  <span class="o">}</span>
+ 
  <span class="kt">int</span> <span class="n">recibido</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
  <span class="k">if</span> <span class="o">(</span><span class="n">stringDisplayed</span> <span class="o">!=</span> <span class="s">""</span><span class="o">)</span> <span class="o">{</span>
    <span class="nc">Serial</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">stringDisplayed</span><span class="o">);</span>
@@ -565,7 +566,7 @@
 
 <p><br /></p>
 
-<p><img src="images/giroscopio-bluetooth-oled.jpg" alt="esquema giroscopio" /></p>
+<p><img src="/taller/images/giroscopio-bluetooth-oled.jpg" alt="esquema giroscopio" /></p>
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">math</span><span class="o">.</span><span class="na">h</span><span class="o">&gt;</span>
 

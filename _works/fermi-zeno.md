@@ -5,7 +5,7 @@ year: 2025
 type: work
 media: "PDLC sheets, metal structures, tensile steel, electronics"
 main_image: "/images/Tabakalera_VisionesCuanticas_AbelardoGil-Fournier_La hojadeFermiyelefectoZenon_2.jpg"
-images: /images/Tabakalera_VisionesCuanticas_AbelardoGil-Fournier_La hojadeFermiyelefectoZenon_1.jpg, /images/Tabakalera_VisionesCuanticas_AbelardoGil-Fournier_La hojadeFermiyelefectoZenon_3.jpg, /images/unct_a_1927627_f0001_oc.jpg, /images/hoja-fermi--detalle-hoja-transparente.jpg, /images/hoja-fermi--composicion-con-secuencia.jpg, /images/hoja-fermi--composicion-con-observador.jpg, /images/hoja-fermi--animacion.gif
+images: /images/Tabakalera_VisionesCuanticas_AbelardoGil-Fournier_La hojadeFermiyelefectoZenon_1.jpg, /images/hoja-fermi--composicion-con-observador.jpg, /images/hoja-fermi--composicion-con-secuencia.jpg, /images/unct_a_1927627_f0001_oc.jpg, /images/hoja-fermi--animacion.gif, /images/hoja-fermi--detalle-hoja-transparente.jpg,/images/Tabakalera_VisionesCuanticas_AbelardoGil-Fournier_La hojadeFermiyelefectoZenon_3.jpg
 layout: default
 ---
 
