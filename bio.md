@@ -27,8 +27,18 @@ His work has been exhibited and discussed internationally, including venues such
 <p>
 He is the author, together with Jussi Parikka, of the book <em>Living Surfaces. Images, Plants and Environments of Media</em> (MIT Press 2024).      	
 </p>
-        </div>
+
+
+{% assign shows = site.data.shows | sort: 'year' | reverse %}
+
+    <h5 class="py-4">Selected exhibitions</h5>
+    {% for show in shows %}
+    {{ show.year }} <a href="{{ show.link }}" style="text-decoration:none; font-style:italic;">{{ show.name }}</a> {{ show.venue }}<br>
+    {% endfor %}
+
+  </div>
   </div>
 </article>
+
 
 </main>

@@ -1,6 +1,12 @@
 - year: 2025
+  venue: Galería Ángeles Baños
+  name: Por el aire se extiende, una verde ceniza
+  link: https://galeriaangelesb.com/Artistas/Colectivas/galeria_abelardo_dossier.pdf
+  work: quivering, seedimageground
+
+- year: 2025
   venue: Fundación Diaz-Caneja, Palencia 
-  name: ESPACIO VIDEO Abelardo Gil Fournier & Jussi Parikka - Seed, Image, Ground
+  name: NATURALEZA RURAL. Arte y cultura en el territorio
   link: https://diaz-caneja.org/fdc/abelardo-gil-fournier-jussi-parikka/
   work: seedimageground
 
@@ -16,6 +22,18 @@
   link: https://jhg.art/events/abelardo-gil-fournier-and-jussi-parikka-lumi/
   work: lumi
 
+- year: 2025
+  venue: Tabakalera Donostia-San Sebastián
+  name: Visiones cuánticas
+  link: https://www.tabakalera.eus/es/visiones-cuanticas/
+  work: fermi-zeno
+
+- year: 2024
+  venue: Kunsthal Aarhus
+  name: Lumi (screening)
+  link: https://www.kunsthalaarhus.dk/en/Events/2024-Living-Surfaces-Book-Launch-And-Discussion-On-Environmental-Humanities-Media-And-Art
+  work: lumi
+
 - year: 2024
   venue: Bòlit. Centre d'Art Contemporani de Girona
   name: Apories sobre l'aire
@@ -27,6 +45,18 @@
   name: La balsa. Tres actos para una intemperie
   link: https://fundacioncerezalesantoninoycinia.org/
   work: schlieren, codec, hacendera, horizontes
+
+- year: 2023
+  venue: Laboral Centro de Arte, Gijón
+  name: Motores del clima
+  link: https://laboralcentrodearte.org/es/exposiciones/motores-del-clima/
+  work: mawat
+
+- year: 2023
+  venue: RRADIUS CCA, Delft
+  name: The Glass City
+  link: https://www.radius-cca.org/en/exhibitions/naturecultures-chapter-2-the-glass-city
+  work: seedimageground
 
 - year: 2022
   venue: Onassis Stegi, Athens
@@ -47,6 +77,12 @@
   work: seedimageground
 
 - year: 2021
+  venue: Centro Cultural Universitario de la UNNE (Buenos Aires)
+  name: PLAY Festival de Video Arte 
+  link: https://ccuunne.ar/festival-play-videoarte-y-cine-experimental
+  work: seedimageground
+
+- year: 2021
   venue: Gallery AMU (Prague)
   name: Fotograf Festival / Earthlings / The Metabolic Perspective
   link: https://fotografestival.cz/2021/en/event/metabolic-view/
@@ -63,7 +99,6 @@
   name: Vibrating Clouds
   link: https://www.conversazione.org/vibrating-clouds
   work: seedimageground
-
 
 - year: 2020
   venue: NeMe Arts Center (Limassol, Cyprus)
