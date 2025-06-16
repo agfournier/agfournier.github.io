@@ -4,8 +4,8 @@ key: schlieren
 year: 2023
 type: work
 media: "Installation. Mixed media: bamboo, silk, support structures, modified spotlights, parabolic mirrors, optical lenses, nichrome wire and electronics. Variable dimensions."
-main_image: /images/la-balsa-3.jpg
-images: /images/FCAYC-2023-24--Photograph-by-Juan-Baraja--DSCF5041.jpg, /images/la-balsa-6.jpg, /images/FCAYC-2023-24--Photograph-by-Juan-Baraja--DSCF4964.jpg, /images/FCAYC-2023-24--Photograph-by-Juan-Baraja--DSCF4971.jpg, /images/FCAYC-2023-24--Photograph-by-Juan-Baraja--DSCF5169.jpg, /images/apories-4.jpg,  /images/apories-sobre-laire_53553445274_o.jpg
+main_image: /images/As-a-Mutely-Vibrating-Consonant-01.jpg
+images: /images/la-balsa-3.jpg, /images/As-a-Mutely-Vibrating-Consonant-03.jpg, /images/As-a-Mutely-Vibrating-Consonant-04.jpg, /images/As-a-Mutely-Vibrating-Consonant-05.jpg, /images/As-a-Mutely-Vibrating-Consonant-06.jpg, /images/As-a-Mutely-Vibrating-Consonant-07.jpg, /images/As-a-Mutely-Vibrating-Consonant-11.jpg, /images/As-a-Mutely-Vibrating-Consonant-12.jpg, /images/FCAYC-2023-24--Photograph-by-Juan-Baraja--DSCF5041.jpg, /images/la-balsa-6.jpg, /images/FCAYC-2023-24--Photograph-by-Juan-Baraja--DSCF4964.jpg, /images/FCAYC-2023-24--Photograph-by-Juan-Baraja--DSCF4971.jpg, /images/FCAYC-2023-24--Photograph-by-Juan-Baraja--DSCF5169.jpg, /images/apories-4.jpg,  /images/apories-sobre-laire_53553445274_o.jpg
 vimeo_id: 958376208, 958386165
 layout: default
 ---
