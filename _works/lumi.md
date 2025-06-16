@@ -17,3 +17,7 @@ layout: default
 
 <p>Sound design: María Andueza Olmedo</p>
 <p>Sound engineering: Emil Thomsen</p>
+
+<p><b>Abelardo Gil-Fournier</b> is an artist and researcher. Originally trained in Physics, he holds a PhD in Art from Winchester School of Art (UK) and has worked as a researcher at FAMU in Prague. He is currently a grantee of a Leonardo scholarship from the BBVA Foundation. His work has been exhibited and discussed internationally, including venues such as Transmediale (Berlin), Fundación Cerezales Antonino y Cinia (León), Fotomuseum Winterthur (Switzerland), Design Museum (Shenzhen) and Tabakalera (Basque Country). He is the author, together with Jussi Parikka, of the book Living Surfaces. Images, Plants and Environments of Media (MIT Press 2024).</p>
+
+<p><b>Jussi Parikka</b>, Finnish cultural historian, is professor of Digital Aesthetics and Culture at Aarhus University and visiting research professor at University of Southampton (UK). He has written and co-edited a number of books on media theory, history of digital culture, and environmental media. Some earlier work includes What is Media Archaeology? (2012) and Insect Media (2010). More recent work includes The Lab Book (with Lori Emerson and Darren Wershler, 2022), Operational Images (2023), and Living Surfaces: Images, Plants and Environments of Media (with Abelardo Gil-Fournier, 2024). He also works as curator, including such past projects as Weather Engines (2022) and Climate Engines (2023-204) with Daphne Dragona.</p>
