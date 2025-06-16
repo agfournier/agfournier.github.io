@@ -12,9 +12,12 @@ layout: default
 
 
 <div class="en">
-<p>Since the 19th century, the schlieren (German for "impurities") technique has made it possible to see and photograph minute optical disturbances such as those caused by temperature differences in the air in a room. Since then it has been used to visualise air currents and to trace their paths inside models of buildings, wind tunnels or in medical imaging. </p>
+<p>The schlieren technique names a diagram of analog components that brings to visibility minute optical disturbances—Schlieren meaning impurities in German—such as those caused by temperature differences in the air in a room. Since its definite development during the 19th century, it has been used to see and photograph otherwise invisible currents of air with the aim to trace their paths inside models of buildings, wind tunnels or in contexts such as medical imaging.</p>
 
-<p>Co-produced by the Foundation Cerezales Antonino y Cinia and the Academy of Musical and Performing Arts in Prague, the installation - which takes its name from the poem <em>Schliere im Aug</em> by Paul Celan - presents the elements that make up this mechanism (parabolic mirrors, spotlights, lenses and projection screens) in a space open to the wandering of visitors. While walking between the silk screens and bamboo tutors, the movement of the bodies generates currents that these same devices visualise. In between, like a sustained exhalation in time, gazes and air currents - body and image - dissolve, like a silent, vibrating consonant.</p>
+<p>The installation—which takes its name from the poem Schliere im Aug by Paul Celan—presents the elements that make up this mechanism in a space open to the wandering of visitors. The parabolic mirrors, spotlights, lenses and projection screens are arranged in space to allow the transit in between the material layers that make up the projected images. While walking between the silk screens and
+the bamboo tutors that hold the optical components, visitors walk through the layered visual circuit traced by light beams, grids and projection screens.</p>
+
+<p>Inside this space, the movements of the bodies generate the currents that these same components make visible. In this way, the air in the installation brings the bodies literally into contact with the visual circuit of images that generates the visualization of the air currents. In between, gazes, movements and air currents—body and image—dissolve in the material circuits of the image, as a silent, mutely vibrating consonant.</p>
 </div>
 
 <div class="es">
@@ -22,3 +25,6 @@ layout: default
 
 <p>Coproducida por la Fundación Cerezales Antonino y Cinia y la Academia de Artes Musicales y Escénicas de Praga, la instalación -que toma el nombre de unos versos del poema <em>Schliere im Aug</em> de Paul Celan- presenta los elementos que componen este mecanismo (espejos parabólicos, focos, lentes y pantallas de proyección) en un espacio abierto al deambular de los visitantes. Al caminar entre las pantallas de seda y los tutores de bambú, el movimiento de los cuerpos genera corrientes que estos mismos dispostivos visualizan. En medio, como una exhalación sostenida en el tiempo, miradas y corrientes de aire -cuerpo e imagen- se disuelven, como muda consonancia vibrante.</p>
 </div>
+
+<p>Co-produced by the Foundation Cerezales Antonino y Cinia and the Academy of Music and Performing Arts in Prague</p>
+<p>Collection FCAYC (Fundación Cerezales Antonino y Cinia)</p>
