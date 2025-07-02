@@ -2,6 +2,10 @@
     --font-family-serif:"Georgia";
 }
 
+.display-4 {
+    font-size:2rem !important;
+}
+
 body {
     font-family: "Hanken Grotesk", "Roboto";
     background-color: var(--white);/*#90b1a6; f0f0f0;*/

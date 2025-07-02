@@ -1,5 +1,5 @@
 <footer class="container-fluid  d-flex justify-content-center align-items-center mt-5" style="height:150px;">
-    <div class="mr-5 nav-item">croopier [at] gmail . com</div>
+    <div class="mr-5 nav-item">info [at] abelardogfournier . org</div>
     <div ><a href="http://instagram.com/abelardogfournier" style="text-decoration:none;">instagram</a></div>
 </footer>
 
@@ -25,16 +25,18 @@
             console.log(arrayOfPartenaires);
             var loaders = 0;
             var old_element = arrayOfPartenaires[0];
+            var old_caption = captions[0];
             function cycleImages() {
                 var element = arrayOfPartenaires[loaders];
                 var caption = captions[loaders];
                 $("#imagen-bg").css({ 'background-image': 'url(' + old_element + ')' });
                 $("#imagen").css({ 'background-image': 'url(' + element + ')' }).animate({ opacity: 1 }).hide();
-                $("#image-caption").text(caption).animate({ opacity: 1 });
+                $("#image-caption").text(old_caption).animate({ opacity: 1 });
                 //$("#imagen").css({ 'background-image': 'url(' + element + ')' }).animate({ opacity: 1 }).hide().fadeIn("slow");
                 //$("#image-caption").text(caption).animate({ opacity: 1 }).hide().fadeIn("slow");
+                old_element = element; 
+                old_caption = caption;               
                 if (loaders < arrayOfPartenaires.length) {
-                    old_element = element;
                     loaders = loaders + 1;
                     if (loaders >= arrayOfPartenaires.length) {                        
                         loaders = 0;
