@@ -58,11 +58,10 @@
 </section>
 -->
 
-<section class="container-fluid mt-4 d-flex flex-column align-items-center" style="background-color:#fff;">
+<section class="container-fluid mt-5 d-flex flex-column align-items-center" style="background-color:#fff;">
 	<section id="imagen-bg" class="container-fluid" style="background-image: url(/images/hoja-fermi--composicion-con-observador.jpg);	background-size:contain;background-position:center;height:75vh;">
-    </section>
-	<section id="imagen" class="container-fluid" style="background-image: url(/images/hoja-fermi--composicion-con-observador.jpg);background-size:contain;background-repeat:no-repeat;background-position:center;height:75vh;">      
-        
+    </section>  
+    <section id="imagen" class="container-fluid" style="background-image: url(/images/hoja-fermi--composicion-con-observador.jpg);background-size:contain;background-repeat:no-repeat;background-position:center;backdrop-filter: hue-rotate(120deg);height:75vh;position:absolute;">      
     </section>
 </section>
     
@@ -375,7 +374,7 @@
 </section>
 -->
 <section id="wrapper" class="container-fluid">
-<p id="image-caption" class="text-center" style="font-size:1rem;margin-top: -50px; margin-bottom:20px;"></p>  
+<p id="image-caption" class="text-right" style="font-size:1rem;margin-top: -50px; margin-bottom:50px;"></p>  
 <!--  <p class="text-center" style="color: #111;margin-top: -40px;">&#8595;</p>-->
 
 
@@ -1221,7 +1220,7 @@
                 var element = arrayOfPartenaires[loaders];
                 var caption = captions[loaders];
                 $("#imagen-bg").css({ 'background-image': 'url(' + old_element + ')' });
-                $("#imagen").css({ 'background-image': 'url(' + element + ')' }).animate({ opacity: 1 }).hide();
+                $("#imagen").css({ 'background-image': 'url(' + old_element + ')' });
                 $("#image-caption").text(old_caption).animate({ opacity: 1 });
                 //$("#imagen").css({ 'background-image': 'url(' + element + ')' }).animate({ opacity: 1 }).hide().fadeIn("slow");
                 //$("#image-caption").text(caption).animate({ opacity: 1 }).hide().fadeIn("slow");
