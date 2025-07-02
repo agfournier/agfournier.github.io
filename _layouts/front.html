@@ -85,21 +85,6 @@
                 <a href="{{ post.url }}" class="text-dark"><span class="display-4 d-none d-md-inline pt-5 pb-3">{{ post.title }}</span></a>
             </div>
         </div>
-        <!--
-        <div class="row" onMouseOver="this.style.display='none';">
-            <div class="col-2"><span class="display-4 pt-5 pb-3">{{ post.date | date: '%Y %m %d'}}</span></div>
-            <div class="col-10">
-                <a href="{{ post.url }}" class="text-dark"><span class="display-4 pt-5 pb-3">{{ post.title }}</span></a>
-                <p>{{ post.excerpt }}</p>
-                {% if post.excerpt != post.content %}
-                <p><a href="{{ site.baseurl }}{{ post.url }}">Read more</a></p>
-                {% endif %}
-                <img src="{{ post.main_image }}" class="w-25 py-3">   
-
-            </div>
-        </div>
--->            
-
 {% endfor %}
 
         <div class="row pb-2 align-items-end">
