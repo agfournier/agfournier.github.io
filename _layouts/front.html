@@ -21,9 +21,9 @@
 -->
 
 <section class="container-fluid mt-4 d-flex flex-column align-items-center" style="background-color:#fff;">
-	<section id="imagen-bg" class="container-fluid" style="background-image: url({{page.main_image}});	background-size:50%;background-position:center;height:75vh;">
+	<section id="imagen-bg" class="container-fluid" style="background-image: url({{page.main_image}});	background-size:contain;background-position:center;height:75vh;">
     </section>
-	<section id="imagen" class="container-fluid" style="background-image: url({{page.main_image}});background-size:50%;background-repeat:no-repeat;background-position:center;height:75vh;">      
+	<section id="imagen" class="container-fluid" style="background-image: url({{page.main_image}});background-size:contain;background-repeat:no-repeat;background-position:center;height:75vh;">      
         
     </section>
 </section>
@@ -80,9 +80,10 @@
 {% for post in site.posts limit:30 %}
 
         <div class="row pb-2 align-items-end">
-            <div class="col-2 text-right align-text-bottom"><span class="display-5 align-text-bottom">{{ post.date | date: '%Y %m %d'}}</span></div>
+            <div class="col-2 text-right align-text-bottom"><span class="d-none d-md-inline display-5 align-text-bottom">{{ post.date | date: '%Y %m %d'}}</span></div>
             <div class="col-10">
-                <a href="{{ post.url }}" class="text-dark"><span class="display-4 pt-5 pb-3">{{ post.title }}</span></a>
+                <a href="{{ post.url }}" class="text-dark"><span class="display-5 d-md-none pt-5 pb-3">{{ post.title }}</span></a>
+                <a href="{{ post.url }}" class="text-dark"><span class="display-4 d-none d-md-inline pt-5 pb-3">{{ post.title }}</span></a>
             </div>
         </div>
         <!--
