@@ -8,7 +8,7 @@
 
 body {
     font-family: "Hanken Grotesk", "Roboto";
-    background-color: var(--white);/*#90b1a6; f0f0f0;*/
+    background-color: rgba(250,250,250,1);/*#90b1a6; f0f0f0;*/
     color:  #111;
     font-size: 18px;
     padding-top:37px; /* para compensar el navbar con fixed-top */
@@ -16,6 +16,7 @@ body {
 
 footer a, footer {
     color: #111;
+    font-size:0.9rem;
 }
 
 .card {
