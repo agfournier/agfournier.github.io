@@ -87,3 +87,9 @@ h1 a, h2 a, h3 a, nav a {
         font-size: 1.4rem;
     }
 }
+
+@media (min-width: 992px) {
+    nav.navbar {
+        padding: 28px 11%;
+    }
+}
