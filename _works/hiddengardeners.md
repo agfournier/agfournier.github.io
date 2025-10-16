@@ -6,7 +6,7 @@ type: work
 media: UV printing on aluminium
 main_image: /images/AGF-triptico--plumeria-bougainvilla-caesalpina-low.jpg
 vimeo_id: 
-images: /images/AGF-R_102x136-Seaforthia elegans 70lt (RH)_jfif-low.jpg, /images/AGF-diptico---Abelia-Celtis-low.jpg, /images/AGF-R_19x25-ficus-benjamina-2969d17e432497452f3c8b9041ff066a-low.jpg, /images/AGF-R_26x35-Lemon eureka 125lt-low.jpg, /images/AGF-R_26x35-Platanus x acerfolia 125lt (G)-low.jpg, /images/AGF-R_102x136-Camellia jap_ Kramer's Supreme 70L (G)_j-low.jpg, /images/AGF-R_102x136-Celtis africana 250L (G)-low.jpg, /images/AGF-R_102x136-Seaforthia elegans 70lt (RH)_jfif-low.jpg, /images/AGF-triptico--cocos-cussonia-syzygium-low.jpg
+images: /images/AGF-R_102x136-Seaforthia elegans 70lt (RH)_jfif-low.jpg, /images/AGF-diptico---Abelia-Celtis-low.jpg, /images/AGF-R_19x25-ficus-benjamina-2969d17e432497452f3c8b9041ff066a-low.jpg, /images/AGF-R_26x35-Lemon eureka 125lt-low.jpg, /images/AGF-R_26x35-Platanus x acerfolia 125lt (G)-low.jpg, /images/AGF-R_102x136-Camellia jap_Kramer_s Supreme 70L (G)_j-low.jpg, /images/AGF-R_102x136-Celtis africana 250L (G)-low.jpg, /images/AGF-R_102x136-Seaforthia elegans 70lt (RH)_jfif-low.jpg, /images/AGF-triptico--cocos-cussonia-syzygium-low.jpg
 layout: default
 ---
 
