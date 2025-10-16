@@ -3,9 +3,9 @@ title: The Winds Codec
 key: codec
 year: 2023
 type: work
-media: "Video installation. 6-channel video with custom electronics for synchronisation. Variable dimensions."
+media: Video installation. 6-channel video with custom electronics for synchronisation. Variable dimensions.
 main_image: /images/the-winds-codec-single-video-still.jpg
-images: /images/apories-sobre-laire_53552249952_o.jpg, /images/apories-2.jpg, /images/maria-andueza-the-winds-codec-IMG_0255.JPG, /images/the-winds-codec-grabacion-esferas-proceso-0.jpg, /images/maria-andueza-the-winds-codec-IMG_0259.JPG, /images/maria-andueza-the-winds-codec-IMG_0260-recorte.JPG, /images/maria-andueza-the-winds-codec-IMG_0289.JPG, /images/maria-andueza-the-winds-codec-IMG_0291.JPG, /images/maria-andueza-the-winds-codec-IMG_0294.JPG
+images: /images/apories-sobre-laire_53552249952_o.jpg, /images/apories-2.jpg, /images/maria-andueza-the-winds-codec-IMG_0255.JPG, /images/the-winds-codec-grabacion-esferas-proceso-0.jpg, /images/maria-andueza-the-winds-codec-IMG_0259.JPG, /images/maria-andueza-the-winds-codec-IMG_0260-recorte.JPG, /images/maria-andueza-the-winds-codec-IMG_0289.JPG, /images/maria-andueza-the-winds-codec-IMG_0291.JPG, /images/maria-andueza-the-winds-codec-IMG_0294.JPG, /images/motion-vectors-per-tree-plotted-timeaxis.jpg, /images/fragment-of-tree--wind--as-motion-vectors.jpg
 layout: default
 ---
 
