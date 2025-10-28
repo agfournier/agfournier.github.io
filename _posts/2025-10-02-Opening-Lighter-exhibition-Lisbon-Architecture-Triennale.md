@@ -1,6 +1,6 @@
 ---
 title: "Opening Exhibition Lighter - MAC/CCB Lisbon Architecture Triennale"
-main_image: /images/lumi-opening-lighter-triennale-architecture-lisbon-october-2025.jpeg
+main_image: /images/lumi-opening-lighter-triennal-architecture-lisbon-october-2025.jpeg
 layout: post
 ---
 
