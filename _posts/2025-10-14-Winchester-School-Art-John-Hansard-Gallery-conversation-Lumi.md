@@ -1,6 +1,6 @@
 ---
 title: "Winchester School of Art: In Conversation with Abelardo Gil-Fournier and Jussi Parikka"
-main_image: /images/lumi-jhg.jpg
+main_image: /images/lumi-web.jpg
 layout: post
 ---
 
