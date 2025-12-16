@@ -1,4 +1,28 @@
 - year: 2025
+  title: "El signo de un sol azul"
+  author: Abelardo Gil-Fournier
+  publication: Blog de la Fundación Arquia
+  link: https://blogfundacion.arquia.es/2025/11/el-signo-de-un-sol-azul/
+  work: 
+  image: /images/blog-arquia-12-2025.jpg
+
+- year: 2025
+  title: "Open Forum Madrid de la redACTS en la Bienal Ciudad y Ciencia. Relatoría"
+  author: Red ACTS
+  publication: Red de Arte, Ciencia, Tecnología y Sociedad
+  link: https://dialnet.unirioja.es/servlet/ejemplar?codigo=704711&info=open_link_ejemplar
+  work: fermi-zeno
+  image: /images/relatoria-redacts.jpg
+
+- year: 2025
+  title: "Ecosofías de pueblo. Prácticas artísticas contemporáneas en el medio rural"
+  author: Juan Guardiola (ed.)
+  publication: Fundación Díaz-Caneja. Colección Tierra de Campos, n.2
+  link: https://diaz-caneja.org/publicaciones/tierra-de-campos/ecosofias-de-pueblo-practicas-artisticas-contemporaneas-en-el-medio-rural-juan-guardiola/
+  work: mawat
+  image: /images/Ecosofias-de-pueblo-1024x1024.png
+
+- year: 2025
   title: "Bienal climática, arte en transición ecológica"
   author: Héctor Barrios
   publication: Ambienta. La revista del Ministerio de Medio Ambiente, ISSN 1577-9491, n.143, 86-93
