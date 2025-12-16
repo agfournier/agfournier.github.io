@@ -40,6 +40,13 @@ h6 {
     font-size: 1.1rem;
 }
 
+q {
+    display:block;
+    padding-left:50px;
+    margin-bottom:20px;
+    font-style:italic;
+}
+
 .text-muted {
     color: #333 !important;
 }
