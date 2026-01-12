@@ -4,8 +4,8 @@ key: artificial-divination
 year: 2025
 type: work
 media: Series of three panels of ring binded laser-cut cards. Handmade Indian paper made from recycled cotton pulp dyed with tea, recycled kraft paper and handmade cotton paper from Annigoni in Italy,
-main_image: /images/icarus-y-el-caballo-de-turing-2.jpg
-images: /images/AGF-Adivinacion-Artificial-India-p.jpg, /images/panel-01-p.jpg, /images/panel-02-p.jpg, /images/panel-03-p.jpg, /images/paneles-detalle-escritura-p.jpg
+main_image: /images/AGF-artificial-divination-installation-view-cruce-madrid-4s.jpg
+images: /images/AGF-artificial-divination-installation-view-cruce-madrid-1s.jpg, /images/icarus-y-el-caballo-de-turing-2.jpg, /images/AGF-Adivinacion-Artificial-India-p.jpg, /images/AGF-Adivinacion-Artificial-Roma.jpg, /images/AGF-artificial-divination-installation-view-cruce-madrid-2s.jpg, /images/panel-01-p.jpg, /images/panel-02-p.jpg, /images/panel-03-p.jpg, /images/paneles-detalle-escritura-p.jpg
 layout: default
 ---
 

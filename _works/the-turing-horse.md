@@ -6,7 +6,7 @@ type: work
 media: Carousel of 80 digital slides
 main_image: /images/elcaballodeturing-caballos-aislados.jpg
 vimeo_id: 
-images: /images/caballos-de-turing-muestra.jpg, /images/the-turing-horse-1.jpg, /images/the-turing-horse-2.jpg, /images/the-turing-horse-3.jpg, /images/the-turing-horse-4.jpg, /images/the-turing-horse-5.jpg
+images: /images/caballos-de-turing-muestra.jpg, /images/AGF-Turing-Horse-1s.jpg, /images/AGF-Turing-Horse-2s.jpg, /images/AGF-Turing-Horse-3s.jpg, /images/the-turing-horse-1.jpg, /images/the-turing-horse-2.jpg, /images/the-turing-horse-3.jpg, /images/the-turing-horse-4.jpg, /images/the-turing-horse-5.jpg
 layout: default
 ---
 
