@@ -2,6 +2,7 @@
 title: The Raft of the Medusa
 key: horizontes
 year: 2023
+date: 01/11/2023
 type: work
 media: "Oil on canvas. Series"
 main_image: /images/w_the-raft-of-the-medusa-series-1.jpg

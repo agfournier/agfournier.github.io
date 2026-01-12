@@ -2,6 +2,7 @@
 title: Reading Stones
 key: reading-stones
 year: 2016
+date: 01/01/2016
 type: work
 media: Mixed media. Glass box, book, stones, paper labels.
 main_image: /images/matadero-detail.jpg

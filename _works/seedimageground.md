@@ -2,6 +2,7 @@
 title: Seed, Image, Ground (in collaboration with Jussi Parikka)
 key: seedimageground
 year: 2020
+date: 01/05/2020
 type: work
 media: Single channel video or two channel video installation
 main_image: /images/capture-seedbombs-2.png

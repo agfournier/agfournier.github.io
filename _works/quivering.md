@@ -2,6 +2,7 @@
 title: The Quivering of the Reed
 key: quivering
 year: 2019
+date: 01/09/2019
 type: work
 media: Installation. Plant or tree, beamer, DC motor, spot light and paper screen. Variable dimensions.
 main_image: /images/DSC_1187.JPG

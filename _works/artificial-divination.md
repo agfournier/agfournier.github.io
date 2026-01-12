@@ -2,6 +2,7 @@
 title: "Artificial Divination"
 key: artificial-divination
 year: 2025
+date: 01/12/2025
 type: work
 media: Series of three panels of ring binded laser-cut cards. Handmade Indian paper made from recycled cotton pulp dyed with tea, recycled kraft paper and handmade cotton paper from Annigoni in Italy,
 main_image: /images/AGF-artificial-divination-installation-view-cruce-madrid-4s.jpg

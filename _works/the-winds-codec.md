@@ -2,6 +2,7 @@
 title: The Winds Codec
 key: codec
 year: 2023
+date: 01/12/2023
 type: work
 media: Video installation. 6-channel video with custom electronics for synchronisation. Variable dimensions.
 main_image: /images/the-winds-codec-single-video-still.jpg

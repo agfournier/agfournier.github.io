@@ -2,6 +2,7 @@
 title: The Inner Colonisation / La colonización interior
 key: inner-colonisation
 year: 2015
+date: 01/12/2015
 type: work
 media: Installation, mixed media
 main_image: /images/lci-19.jpg

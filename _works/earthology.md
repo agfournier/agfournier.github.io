@@ -2,6 +2,7 @@
 title: "Landscape Prediction: An Earthology of Moving Landforms"
 key: earthology
 year: 2018
+date: 01/02/2018
 type: work
 main_image: /images/meanders-orig-pred-opt.gif
 vimeo_id: 334787159

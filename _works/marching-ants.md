@@ -2,6 +2,7 @@
 title: Instructions to give rise to marching ants around objects
 key: marching-ants
 year: 2017
+date: 01/09/2017
 type: work
 media: Mixed media. Screen, paper, rock. Variable dimensions.
 main_image: /images/composition-marching-ants.png

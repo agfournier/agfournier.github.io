@@ -2,6 +2,7 @@
 title: Hidden Gardeners
 key: hiddengardeners
 year: 2025
+date: 01/05/2025
 type: work
 media: UV printing on aluminium
 main_image: /images/AGF-triptico--plumeria-bougainvilla-caesalpina-low.jpg

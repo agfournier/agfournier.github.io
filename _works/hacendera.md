@@ -2,6 +2,7 @@
 title: Hacendera
 key: hacendera
 year: 2023
+date: 01/10/2023
 type: work
 media: "Installation. Mixed media: Terracotta pots, potter wheels, motors and electronics. Variable dimensions"
 main_image: /images/la-balsa-1.jpg

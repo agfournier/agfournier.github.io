@@ -2,6 +2,7 @@
 title: Vividness
 key: vividness
 year: 2013
+date: 01/01/2013
 type: work
 media: Installation. Flowers, table, mirror, digital beamer.
 main_image: /images/vividness-web.png

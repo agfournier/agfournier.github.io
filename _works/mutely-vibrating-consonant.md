@@ -2,6 +2,7 @@
 title: As a Mutely Vibrating Consonant
 key: schlieren
 year: 2023
+date: 01/11/2023
 type: work
 media: "Installation. Mixed media: bamboo, silk, support structures, modified spotlights, parabolic mirrors, optical lenses, nichrome wire and electronics. Variable dimensions."
 main_image: /images/As-a-Mutely-Vibrating-Consonant-01.jpg

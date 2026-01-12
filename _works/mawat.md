@@ -2,6 +2,7 @@
 title: Mawat
 key: mawat
 year: 2017
+date: 01/10/2017
 type: work
 media: Instalación. Ventiladores, aluminio, altavoces, madera, electrónica e impresión digital. Medidas variables
 main_image: /images/070_EXPO_DPH_LaMemoriadelTerritorio_fotoJavierBroto-w.jpg

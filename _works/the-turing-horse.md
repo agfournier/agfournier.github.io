@@ -2,6 +2,7 @@
 title: The Turing Horse
 key: turing-horse
 year: 2025
+date: 01/11/2025
 type: work
 media: Carousel of 80 digital slides
 main_image: /images/elcaballodeturing-caballos-aislados.jpg

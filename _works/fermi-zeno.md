@@ -2,6 +2,7 @@
 title: "The Fermi Sheet and the Zeno Effect"
 key: fermi-zeno
 year: 2025
+date: 01/02/2025
 type: work
 media: "PDLC sheets, metal structures, tensile steel, electronics"
 main_image: /images/hojafermi-tabakalera.jpg

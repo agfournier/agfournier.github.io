@@ -2,6 +2,7 @@
 title: Bildung (The Growth of the I)
 key: bildung
 year: 2019
+date: 01/08/2019
 type: work
 media: Single channel video loop
 main_image: /images/bildung-still-web.jpg

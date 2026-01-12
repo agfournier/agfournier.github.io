@@ -2,6 +2,7 @@
 title: Mineral Vision
 key: mineralvision
 year: 2015
+date: 01/03/2015
 type: work
 media: Mixed media. Copper powder, wood, methacrylate, electronics.
 main_image: /images/Vision-mineral-00.800x600_0.jpg

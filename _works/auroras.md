@@ -2,6 +2,7 @@
 title: When the Auroras Descended to the Earth
 key: auroras
 year: 2019
+date: 01/07/2019
 type: work
 media: Installation, mixed media
 main_image: /images/web-DSC_1442.JPG
