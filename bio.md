@@ -13,7 +13,7 @@ layout: list
         </div>   
         <div class="col-12 col-md-8" style="margin-top:50px">
 <p>
-Abelardo Gil-Fournier (Spain, 1979) is an artist and researcher, born in Rabat and based in Madrid. Originally trained in Physics, he holds a PhD in Art from Winchester School of Art (UK) and has worked as a researcher at FAMU in Prague. He is currently a grantee of a Leonardo scholarship from the BBVA Foundation.
+Abelardo Gil-Fournier is an artist and researcher. Originally trained in Physics, he holds a PhD in Art from the Winchester School of Art (UK) and has worked as a researcher at FAMU in Prague. He is currently a grantee of a Leonardo scholarship from the BBVA Foundation.
 </p>
 
 <p>
@@ -21,7 +21,7 @@ His practice addresses the entwining of media and matter. His projects involve d
 </p>
 
 <p>
-His work has been exhibited and discussed internationally, including venues such as Transmediale (Berlin), Fundación Cerezales Antonino y Cinia (León), IKKM (Weimar), Fotomuseum Winterthur (Switzerland), Design Museum (Shenzhen), Tabakalera (Donostia-San Sebastian), LeBal (Paris) and the Cultural Centers of Spain in Nicaragua and El Salvador.
+His work has been exhibited and discussed internationally, including venues such as Transmediale (Berlin), Fundación Cerezales Antonino y Cinia (León), IKKM (Weimar), Fotomuseum Winterthur (Switzerland), Onassis Stegi (Athens), MAC/CCB (Lisbon), Design Museum (Shenzhen), Tabakalera (Donostia-San Sebastian) and the Cultural Centers of Spain in Nicaragua and El Salvador.
 </p>
 
 <p>
