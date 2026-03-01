@@ -12,6 +12,20 @@ layout: default
 
 
 <div class="es">
+<p><em>Dunas / Micrografías</em> parte de la duna migrante de Råbjerg Mile, en el norte de Skagen, como figura para pensar las transformaciones de la imagen y la visualidad desde el siglo XIX hasta el presente. Formada tras la Pequeña Edad de Hielo y responsable de sepultar antiguos pueblos, la duna funciona hoy como un signo premonitorio leído desde el contexto del cambio climático. 
+</p>
+<p>
+<em>Dunas / Micrografías</em> conecta este paisaje con la colonia de pintores de Skagen, que exploró la atmósfera y la luz como problema estético, y contrapone esa mirada histórica a nuestra experiencia contemporánea de las imágenes, atravesada por dispositivos digitales, algoritmos y sistemas de inteligencia artificial. 
+</p>
+<p>
+A partir de un sistema de generación de imágenes diseñado específicamente para la obra, las composiciones fragmentan y redistribuyen imágenes históricas en capas y partículas, como arena arrastrada por el viento. El resultado se materializa en una serie de acetatos impresos digitalmente que presentan la imagen contemporánea como materia en suspensión, aludiendo tanto a la inestabilidad atmosférica del Antropoceno como a las mutaciones actuales en la producción, circulación y percepción de las imágenes. 
+</p>
+<p>
+El proyecto se inscribe en una investigación más amplia sobre visualidad en el Antropoceno, desarrollada con el apoyo de la Fundación BBVA.
+</p>
+
+<h3>Sobre el proyecto</h3>
+
 <p>
 	Este proyecto parte del hecho sorprendente de que la mayor duna migrante de Europa se encuentra en el norte de Dinamarca. Se formó en el siglo XVII, tras la pequeña edad de hielo, cuando los fuertes vientos de la región desplazaron grandes cantidades de arena que, en pocas décadas, sepultaron varios pueblos. Hoy, solo la torre de la iglesia más alta permanece visible como vestigio de ese proceso.
 </p>
