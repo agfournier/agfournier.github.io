@@ -6,7 +6,7 @@ date: 01/03/2026
 type: work
 media: Generative compositions. Acetates with digital printing mounted on Etruscan paper
 main_image: /images/AGF-Dunas-Micrografias-Terreno_Yermol-TRIPTICO-web.jpg
-images: /images/AGF-Dunas-Micrografias-La_colonia-I-web.jpg, /images/AGF-Dunas-Micrografias-La_hora_azul-web.jpg, /images/AGF-Dunas-Micrografias-La_colonia-I-web-web.jpg, /images/AGF-Dunas-Micrografias-La_colonia-II-web.jpg, /images/AGF-Dunas-Micrografias-La_colonia-III-web.jpg, /images/AGF-Dunas-Micrografias-Terreno_Yermol-I-web.jpg, /images/AGF-Dunas-Micrografias-La_colonia-TRIPTICO-web.jpg, /images/AGF-Dunas-Micrografias-La_habitacion_azul_I-detalle-1-web.jpg, /images/AGF-Dunas-Micrografias-La_habitacion_azul_I-detalle-2-web.jpg, /images/AGF-Dunas-Micrografias-La_habitacion_azul-III-web.jpg, /images/AGF-Dunas-Micrografias-La_habitacion_azul-II-web.jpg, /images/AGF-Dunas-Micrografias-La_habitacion_azul-I-web.jpg, /images/AGF-Dunas-Micrografias-La_habitacion_azul_TRIPTICO--web.jpg, /images/AGF-Dunas-Micrografias-La_hora_azul-detalle-2-web.jpg, /images/AGF-Dunas-Micrografias-La_hora_azul-detalle-web.jpg, /images/AGF-Dunas-Micrografias-Terreno_Yermol-I-detalle-web.jpg, /images/AGF-Dunas-Micrografias-Terreno_Yermol-III-web.jpg, /images/AGF-Dunas-Micrografias-Terreno_Yermol-II-web.jpg, /images/AGF-Dunas-Micrografias-Terreno_Yermol-TRIPTICO-web.jpg
+images: /images/AGF-Dunas-Micrografias-La_colonia-TRIPTICO-web.jpg, /images/AGF-Dunas-Micrografias-La_habitacion_azul_TRIPTICO--web.jpg, /images/AGF-Dunas-Micrografias-Terreno_Yermol-TRIPTICO-web.jpg, /images/AGF-Dunas-Micrografias-La_habitacion_azul-I.jpg
 layout: default
 ---
 
