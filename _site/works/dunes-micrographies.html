@@ -58,7 +58,7 @@
 
 
 <section id="imagen" class="container-fluid py-2">
-    <img src="/images/AGF-Dunas-Micrografias-La_habitacion_azul_TRIPTICO-blanco-web.jpg" class="w-100">
+    <img src="/images/Dunes-Micrographies-ARCO2026.jpeg" class="w-100">
 </section>
 
 <section id="texto" class="container py-3 my-5">
@@ -77,7 +77,25 @@ A partir de un sistema de generación de imágenes diseñado específicamente pa
 El proyecto se inscribe en una investigación más amplia sobre visualidad en el Antropoceno, desarrollada con el apoyo de la Fundación BBVA.
 </p>
 
-<h3>Notas adicionales sobre el proyecto</h3>
+<h3>El algoritmo</h3>
+<p>
+	Las composiciones son creaciones generativas automáticas creadas por un algoritmo basado sobre la función de ruido Perlin, noise(). Esta función, creada por Ken Perlin en 1982, es la base de gran parte de la generación contemporánea de texturas y superficies digitales.
+</p>
+<img src="/images/dunes_micrographies_process.gif" style="width:100%;" />
+<p class="my-5">
+	El algoritmo recorre las imágenes de la colonia de Skagen y su contexto. Para ello, distribuye en la superficie un conjunto de rectángulos centrados en puntos proporcionados por la función noise().
+</p>
+<img src="/images/dunes_micrographies-rectangle_map.jpg" style="width:100%;" />
+<p class="my-5">
+	Entre otras caraterísticas, la función noise() es también habitualmente empleada en contextos generativos como generadora de vientos. Los rectángulos son orientados según un ángulo proporcionado por esta función, como si hubieran sido movidos por una suerte de viento virtual.
+</p>
+<img src="/images/Dunes-Micrographies-Noise-as-Wind-Simulation-1.jpg" style="width:100%;" />
+<img src="/images/Dunes-Micrographies-Noise-as-Wind-Simulation-2.jpg" style="width:100%;" />
+<p class="my-5">
+Finalmente, la función de ruido Perlin noise() es empleada una vez más a la hora de escoger los fragmentos de la imagen que pasan a la composición general. Aquellos regiones de la imagen donde el valor de la función supere un umbral, permanecen en la composición final, el resto es eliminado. Detalle de las regiones generadas de este modo:</p>
+<img src="/images/dunes_micrographies-detalle_regiones_recortadas.jpg" style="width:100%;" />
+
+<h3 class="mt-5">Notas adicionales sobre el proyecto</h3>
 
 <p>
 	Este proyecto parte del hecho sorprendente de que la mayor duna migrante de Europa se encuentra en el norte de Dinamarca. Se formó en el siglo XVII, tras la pequeña edad de hielo, cuando los fuertes vientos de la región desplazaron grandes cantidades de arena que, en pocas décadas, sepultaron varios pueblos. Hoy, solo la torre de la iglesia más alta permanece visible como vestigio de ese proceso.
