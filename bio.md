@@ -36,6 +36,13 @@ He is the author, together with Jussi Parikka, of the book <em>Living Surfaces. 
     {{ show.year }} <a href="{{ show.link }}" style="text-decoration:none; font-style:italic;">{{ show.name }}</a> {{ show.venue }}<br>
     {% endfor %}
 
+{% assign talks = site.data.talks | sort: 'year' | reverse %}
+
+    <h5 class="py-4">Selected talks</h5>
+    {% for talk in talks %}
+    {{ talk.year }} <a href="{{ talk.link }}" style="text-decoration:none; font-style:italic;">{{ talk.name }}</a> - {{ talk.venue }}<br>
+    {% endfor %}
+
   </div>
   </div>
 </article>
