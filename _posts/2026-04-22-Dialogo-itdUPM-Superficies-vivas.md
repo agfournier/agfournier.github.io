@@ -1,6 +1,6 @@
 ---
 title: "Diálogo itdUPM: Superficies Vivas"
-main_image: /images/living-surfaces-cover.jpg
+main_image: /images/itdupm-dialogos-improbables-superficies-vivas.jpg
 layout: post
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Mesa redonda: “Imágenes operativas, de lo visual a lo invisual"
-main_image: /images/unsam-mesa-redonda-imagenes-operativas.jpg
+main_image: /images/unsam-mesa-redonda-imagenes-operativas-2.jpg
 layout: post
 ---
 
