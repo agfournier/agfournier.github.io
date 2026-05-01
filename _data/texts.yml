@@ -140,6 +140,17 @@
   image: /images/earthscapes-book-cover.jpg
 
 - year: 2023
+  title: "La vida de las plantas bajo otra luz. De la ceguera al giro vegetal"
+  author: Sergio Martínez Luna
+  publication: "Mira, una planta: Arte y ceguera vegetal (eds. Antonio Collados y Santiago Morilla)"
+  link: https://editorial.ugr.es/libro/mira-una-planta-arte-y-ceguera-vegetal_139432/
+  file:
+  work: quivering
+  image: /images/mira-una-planta.jpeg
+
+
+
+- year: 2023
   title: "Operational Images: From the Visual to the Invisual"
   author: Jussi Parikka 
   publication: University of Minnesota Press
