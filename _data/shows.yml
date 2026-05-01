@@ -11,6 +11,18 @@
   work: mawat
 
 - year: 2026
+  venue: Royal College of Art, London
+  name: "Immersive Acts 2026 (Screening)"
+  link: https://www.rca.ac.uk/news-and-events/immersive-acts-information-for-attendees/
+  work: lumi
+
+- year: 2026
+  venue: City University of Hong Kong
+  name: "LASER HONG KONG:  AI Hyperrealism and LUMI (Screening)"
+  link: https://www.scm.cityu.edu.hk/events/laser_hk_2026
+  work: lumi
+
+- year: 2026
   venue: ARCO 2026
   name: Galería Ángeles Baños
   link: 
@@ -29,10 +41,22 @@
   work: lumi
 
 - year: 2025
+  venue: Hangar (Barcelona)
+  name: Operaciones. All the way down (Screening)
+  link: https://hangar.org/es/agenda-hangar/a-conversation-on-operational-images-with-jussi-parikka/
+  work: lumi
+
+- year: 2025
   venue: Galería Ángeles Baños
   name: Por el aire se extiende, una verde ceniza
   link: https://galeriaangelesb.com/Artistas/Colectivas/galeria_abelardo_dossier.pdf
   work: quivering, seedimageground, hiddengardeners
+
+- year: 2025
+  venue: Silent Green Kulturquartier (Berlin)
+  name: Matters of Activity. Out of Hand (Screening)
+  link: https://hangar.org/es/agenda-hangar/a-conversation-on-operational-images-with-jussi-parikka/
+  work: lumi
 
 - year: 2025
   venue: Fundación Diaz-Caneja, Palencia 
