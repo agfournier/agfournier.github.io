@@ -7,12 +7,28 @@
   image: /images/ig-Gran-duna-migrante-1-Peder_Severin_Krøyer_-_Fra_Skagen_Sønderstrand_-_1883.jpg
 
 - year: 2025
+  title: "Wind: An Environmental Data Stack"
+  author: Jussi Parikka
+  publication: "Reckoning with Everything. The Becoming-Environmental of Computing (eds. Benedikt Merkle, Bernhard Siegert) Lüneburg: meson press"
+  link: https://meson.press/books/reckoning-with-everything/
+  work: codec
+  image: /images/blog-arquia-12-2025.jpg
+
+- year: 2025
   title: "El signo de un sol azul"
   author: Abelardo Gil-Fournier
   publication: Blog de la Fundación Arquia
   link: https://blogfundacion.arquia.es/2025/11/el-signo-de-un-sol-azul/
   work: 
   image: /images/blog-arquia-12-2025.jpg
+
+- year: 2025
+  title: "An Ecoaesthetic of Vegetal Surfaces: On Seed, Image, Ground as Soft Montage"
+  author: Jussi Parikka, Abelardo Gil-Fournier. 
+  publication: Confronting the Climate Crisis. Activism, Technology and Ecoaesthetics, ed. Daniel Binns, Rebecca Najdowski. Springer Nature
+  link: https://link.springer.com/book/10.1007/978-3-031-89606-4#toc
+  work: seedimageground
+  image: /images/confronting-the-climate-crisis-book-cover.jpg
 
 - year: 2025
   title: "Open Forum Madrid de la redACTS en la Bienal Ciudad y Ciencia. Relatoría"
@@ -97,6 +113,15 @@
   image: /images/revista-concreta-23-portada.jpg
 
 - year: 2024
+  title: "Staub: Mineral Vision (Abelardo Gil-Fournier)"
+  author: Léa Perraudin
+  publication: Elementare Ekstasen
+  link: https://meson.press/books/elementare-ekstasen/
+  file: 
+  work: mineralvision
+  image: /images/Perraudin-Elementare-Ekstasen-Cover-72dpi-405x608.jpg
+
+- year: 2024
   title: "Living Surfaces. Images, Plants and Environments of Media"
   author: Abelardo Gil-Fournier, Jussi Parikka 
   publication: The MIT Press (Cambridge, Massachusetts / London, England)
@@ -163,7 +188,7 @@
   title: "Soil, Water, and Light: Aerial Photography and Agriculture in Spain"
   author: Tatjana Gajić
   publication: "Companion to Spanish Environmental Cultural Studies (Suffolk: Tamesis) edited by Luis I Prádanos"
-  link: https://boydellandbrewer.com/9781800108684/a-companion-to-spanish-environmental-cultural-studies/
+  link: https://doi.org/10.1017/9781800108677.006
   file:
   work: inner-colonisation, seedimageground
   image: /images/companion-spanish-environmental-studies-2022-cover.jpg
