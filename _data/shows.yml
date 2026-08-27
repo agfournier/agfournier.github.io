@@ -1,26 +1,8 @@
 - year: 2026
-  venue: Palacio de Valdecarzana
-  name: Bienal Climática. Duelos y júbilos
-  link: https://bienalclimatica.org/ast/participantes/abelardo-gil-fournier/
-  work: hacendera
-
-- year: 2026
-  venue: Goethe Institut Athens
-  name: Ecological Translation (Screening)
-  link: https://www.ecologicaltranslation.com/
-  work: lumi
-
-- year: 2026
   venue: Sala Provincia. Instituto Leónes de Cultura (ILC, León)
   name: El tiempo de la interferencia
   link: https://interfacestudio.org/
   work: mawat
-
-- year: 2026
-  venue: Royal College of Art, London
-  name: "Immersive Acts 2026 (Screening)"
-  link: https://www.rca.ac.uk/news-and-events/immersive-acts-information-for-attendees/
-  work: lumi
 
 - year: 2026
   venue: City University of Hong Kong
@@ -33,6 +15,24 @@
   name: Galería Ángeles Baños
   link: 
   work: dunes-micrographies, artificial-divination
+
+- year: 2026
+  venue: Royal College of Art, London
+  name: "Immersive Acts 2026 (Screening)"
+  link: https://www.rca.ac.uk/news-and-events/immersive-acts-information-for-attendees/
+  work: lumi
+
+- year: 2026
+  venue: Goethe Institut Athens
+  name: Ecological Translation (Screening)
+  link: https://www.ecologicaltranslation.com/
+  work: lumi
+
+- year: 2026
+  venue: Palacio de Valdecarzana
+  name: Bienal Climática. Duelos y júbilos
+  link: https://bienalclimatica.org/ast/participantes/abelardo-gil-fournier/
+  work: hacendera
 
 - year: 2025
   venue: Cruce Arte y Pensamiento
