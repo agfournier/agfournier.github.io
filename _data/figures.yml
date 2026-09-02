@@ -1,32 +1,34 @@
-- image: /images/la-balsa-1.jpg
+- image: /images/la-balsa-1-front.jpg
+  caption: "La balsa. Tres actos para una intemperie - Fundación Cerezales Antonino y Cinia. Image credits: Juan Baraja"
+
+- image: /images/adivinacion-artificial-galeria-angeles-banos-1.jpg
+  caption: "El signo y la calima. Galería Ángeles Baños"
+
+- image: /images/mawat_fotoJavierBroto-recorte-front.jpg
+  caption: "La memoria del territorio. VISIONA / Diputación de Huesca. Image credits: Javier Broto"
+
+- image: /images/w_the-raft-of-the-medusa-series-1-front.jpg
   caption: "La balsa. Tres actos para una intemperie - Fundación Cerezales Antonino y Cinia. Image credits: Juan Baraja"
 
 - image: /images/lumi-web-2.jpg
   caption: "LUMI (2024) with Jussi Parikka, single video / 3-channel video installation"
 
-- image: /images/AGF-artificial-divination-installation-view-cruce-madrid-3s.jpg
-  caption: "Icarus y el caballo de Turing. Cruce Arte y Pensamiento"
+- image: /images/dunas-micrografias-en-galeria-angeles-banos-front.jpg
+  caption: "El signo y la calima. Galería Ángeles Baños"
 
-- image: /images/exposicion-galeria-angeles-banos-w.jpg
-  caption: "En el aire se extiende, una verde ceniza. Galería Ángeles Baños"
-
-- image: /images/hojafermi-tabakalera-2.jpg
-  caption: "La hoja de Fermi y el efecto Zenon. Visiones cuánticas, Tabakalera Donostia-San Sebastián (2025)"
-
-- image: /images/valle-lobineras-web.jpg
-  caption: "La balsa. Tres actos para una intemperie - Fundación Cerezales Antonino y Cinia. Image credits: Juan Baraja"
-
-- image: /images/IMG_0284-niveles-web.JPG
-  caption: "La balsa. Tres actos para una intemperie - Fundación Cerezales Antonino y Cinia. Image credits: María Andueza"
+- image: /images/the-quivering-of-the-reed-el-instante-fundacion-maria-andueza.JPG
+  caption: "The Quivering of the Reed (2019). Fundación El Instante. Image credits: María Andueza"
 
 - image: /images/the-winds-codec-grabacion-esferas-proceso-0-front.jpg
   caption: "The Winds Codec. Image during the filming, 2023"
 
-- image: /images/w_the-raft-of-the-medusa-series-1.jpg
-  caption: "La balsa. Tres actos para una intemperie - Fundación Cerezales Antonino y Cinia. Image credits: Juan Baraja"
-
-- image: /images/mawat-musac-region-web-0.jpg
-  caption: "Región (Los relatos). MUSAC Museo de Arte Contemporáneo de Castilla y León. Image credits: Javier Broto"
-
 - image: /images/la-balsa-6.jpg
   caption: "La balsa. Tres actos para una intemperie - Fundación Cerezales Antonino y Cinia. Image credits: Juan Baraja"
+
+- image: /images/IMG_0284-niveles-web.JPG
+  caption: "La balsa. Tres actos para una intemperie - Fundación Cerezales Antonino y Cinia. Image credits: María Andueza"
+  
+- image: /images/valle-lobineras-web.jpg
+  caption: "La balsa. Tres actos para una intemperie - Fundación Cerezales Antonino y Cinia. Image credits: Juan Baraja"
+
+

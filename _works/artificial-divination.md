@@ -4,9 +4,9 @@ key: artificial-divination
 year: 2025
 date: 01/12/2025
 type: work
-media: Series of three panels of ring binded laser-cut cards. Handmade Indian paper made from recycled cotton pulp dyed with tea, recycled kraft paper and handmade cotton paper from Annigoni in Italy,
-main_image: /images/AGF-artificial-divination-installation-view-cruce-madrid-1s.jpg
-images: /images/AGF-artificial-divination-installation-view-cruce-madrid-1s.jpg, /images/icarus-y-el-caballo-de-turing-2.jpg, /images/AGF-Adivinacion-Artificial-India-p.jpg, /images/AGF-Adivinacion-Artificial-Roma.jpg, /images/AGF-artificial-divination-installation-view-cruce-madrid-2s.jpg, /images/panel-01-p.jpg, /images/panel-02-p.jpg, /images/panel-03-p.jpg, /images/paneles-detalle-escritura-p.jpg
+media: Series of three panels of ring binded laser-cut cards. Handmade Indian paper made from recycled cotton pulp dyed with tea, recycled kraft paper and handmade cotton paper from Annigoni in Italy
+main_image: /images/adivinacion-artificial-galeria-angeles-banos-1.jpg
+images: /images/adivinacion-artificial-galeria-angeles-banos-7-w.jpg, /images/adivinacion-artificial-galeria-angeles-banos-2.jpg, /images/adivinacion-artificial-galeria-angeles-banos-3-w.jpg, /images/adivinacion-artificial-galeria-angeles-banos-4.jpg, /images/adivinacion-artificial-galeria-angeles-banos-5-w.jpg, /images/adivinacion-artificial-galeria-angeles-banos-6.jpg, /images/AGF-artificial-divination-installation-view-cruce-madrid-1s.jpg, /images/paneles-detalle-escritura-p.jpg
 layout: default
 ---
 

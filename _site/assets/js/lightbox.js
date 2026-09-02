@@ -38,42 +38,63 @@ function is_vimeolink(url,el) {
     xmlhttp.send();
 }
 function setGallery(el) {
-    var elements = document.body.querySelectorAll(".gallery");
-    elements.forEach(element => {
-        element.classList.remove('gallery');
-	});
-	if(el.closest('ul, p')) {
-		var link_elements = el.closest('ul, p').querySelectorAll("a[class*='lightbox-']");
-		link_elements.forEach(link_element => {
-			link_element.classList.remove('current');
-		});
-		link_elements.forEach(link_element => {
-			if(el.getAttribute('href') == link_element.getAttribute('href')) {
-				link_element.classList.add('current');
-			}
-		});
-		if(link_elements.length>1) {
-			document.getElementById('lightbox').classList.add('gallery');
-			link_elements.forEach(link_element => {
-				link_element.classList.add('gallery');
-			});
-		}
-		var currentkey;
-		var gallery_elements = document.querySelectorAll('a.gallery');
-		Object.keys(gallery_elements).forEach(function (k) {
-			if(gallery_elements[k].classList.contains('current')) currentkey = k;
-		});
-		if(currentkey==(gallery_elements.length-1)) var nextkey = 0;
-		else var nextkey = parseInt(currentkey)+1;
-		if(currentkey==0) var prevkey = parseInt(gallery_elements.length-1);
-		else var prevkey = parseInt(currentkey)-1;
-		document.getElementById('next').addEventListener("click", function() {
-			gallery_elements[nextkey].click();
-		});
-		document.getElementById('prev').addEventListener("click", function() {
-			gallery_elements[prevkey].click();
-		});
-	}
+
+    var lightbox = document.getElementById('lightbox');
+    var galleryName = el.getAttribute('data-gallery');
+
+    // Si esta imagen no pertenece a ninguna galería, no hacemos nada
+    if (!galleryName) {
+        lightbox.classList.remove('gallery');
+        return;
+    }
+
+    // Todas las imágenes que pertenecen a esta galería
+    var gallery_elements = Array.from(
+        document.querySelectorAll(
+            'a.lightbox-image[data-gallery="' + galleryName + '"]'
+        )
+    );
+
+    // Si solo hay una imagen, no mostramos navegación
+    if (gallery_elements.length <= 1) {
+        lightbox.classList.remove('gallery');
+        return;
+    }
+
+    lightbox.classList.add('gallery');
+
+    // Posición de la imagen actualmente abierta
+    var currentkey = gallery_elements.indexOf(el);
+
+    if (currentkey === -1) return;
+
+    var nextkey =
+        (currentkey + 1) % gallery_elements.length;
+
+    var prevkey =
+        (currentkey - 1 + gallery_elements.length)
+        % gallery_elements.length;
+
+    var next = document.getElementById('next');
+    var prev = document.getElementById('prev');
+
+    if (next) {
+        next.addEventListener("click", function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            gallery_elements[nextkey].click();
+        });
+    }
+
+    if (prev) {
+        prev.addEventListener("click", function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            gallery_elements[prevkey].click();
+        });
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -137,5 +158,28 @@ document.addEventListener("DOMContentLoaded", function() {
             setGallery(this);
         });
     });
+
+});
+
+document.addEventListener("keydown", function(event) {
+
+    var lightbox = document.getElementById('lightbox');
+
+    if (lightbox.style.display !== 'block') return;
+
+    if (event.key === "ArrowRight") {
+        var next = document.getElementById('next');
+        if (next) next.click();
+    }
+
+    if (event.key === "ArrowLeft") {
+        var prev = document.getElementById('prev');
+        if (prev) prev.click();
+    }
+
+    if (event.key === "Escape") {
+        lightbox.innerHTML = '';
+        lightbox.style.display = 'none';
+    }    
 
 });

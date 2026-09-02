@@ -17,8 +17,8 @@
 </section>
 {% endif %}
 
-<section id="imagen" class="container-fluid py-2">
-    <img src="{{page.main_image}}" class="w-100">
+<section class="lightbox-gallery container-fluid py-2">
+    <a href="{{page.main_image}}" data-gallery="article"><img src="{{page.main_image}}" class="w-100"></a>
 </section>
 
 <section id="texto" class="container py-3 my-5">
@@ -116,7 +116,7 @@
 {% if page.images %}
 <section id="carousel-imgs" class="container py-3">
     
-<section class="masonry-box container">
+<section class="masonry-box lightbox-gallery container">
     
     {% assign imgs = page.images | split: "," %}
     
@@ -131,7 +131,7 @@
         {% if i == n2 %}
         {% break %}
         {% else %}
-        <a href="{{ imgs[i] }}"><img src="{{ imgs[i] }}" class="d-block w-100 p-1 lightbox-image" alt="..."></a>
+        <a href="{{ imgs[i] }}" data-gallery="article"><img src="{{ imgs[i] }}" class="d-block w-100 p-1 " alt="..."></a>
         {% endif %}
     {% endfor %} 
         
@@ -146,7 +146,7 @@
         {% if i == n2 %}
         {% break %}
         {% else %}    
-        <a href="{{ imgs[i] }}"><img src="{{ imgs[i] }}" class="d-block w-100 p-1 lightbox-image" alt="..."></a>
+        <a href="{{ imgs[i] }}" data-gallery="article"><img src="{{ imgs[i] }}" class="d-block w-100 p-1 " alt="..."></a>
         {% endif %}
     {% endfor %} 
         
@@ -162,7 +162,7 @@
         {% if i == imgs.size %}
         {% break %}
         {% else %}
-        <a href="{{ imgs[i] }}"><img src="{{ imgs[i] }}" class="d-block w-100 p-1 lightbox-image" alt="..."></a>
+        <a href="{{ imgs[i] }}" data-gallery="article"><img src="{{ imgs[i] }}" class="d-block w-100 p-1 " alt="..."></a>
        {% endif %}
     
     {% endfor %} 

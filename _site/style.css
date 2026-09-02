@@ -51,7 +51,22 @@ q {
     color: #333 !important;
 }
 
+.fade-layer {
+    height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: opacity 1.5s ease-in-out;
+}
+
+#imagen-bg {
+    opacity: 1;
+}
+
 #imagen {
+    position: absolute;
+    opacity: 0;
 }
 
 #wrapper {
