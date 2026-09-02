@@ -1,11 +1,26 @@
 - year: 2026
+  title: "Four-Dimensional Reading of Virtual Photography: A Case Study of LUMI"
+  author:  Yin-Hua Chu 
+  publication: Mass Communication Research
+  link: https://mcr.nccu.edu.tw/web/backissues/backissues_in.jsp?pp_no=PP1785475978468
+  work: lumi
+  image: /images/yin-hua-chu-lumi-case-study-168_.png
+
+- year: 2026
+  title: "The Raft of Crossed Historicities: A Conversation on Imaging the Planetary"
+  author: Dustin Breitling
+  publication: Diffractions Collective
+  link: https://diffractionscollective.com/2026/07/05/abelardo-gil-fournier/
+  work: hacendera, seedimageground, lumi, mawat
+  image: /images/diffractions-collective.jpg
+
+- year: 2026
   title: "Hacendera: la fuerza del roce"
   author: 
   publication: Mirada Ecléctica, 09/08/2026
   link: https://miradaeclectica.com/hacendera-la-fuerza-del-roce/
   work: hacendera
   image: /images/mirada-electica---portada-edicion-numero-7-1.jpg
-
 
 - year: 2026
   title: "La gran duna migrante"
@@ -14,6 +29,15 @@
   link: https://archivoorsini.com/2026/03/18/la-gran-duna-migrante/
   work: dunes-micrographies
   image: /images/ig-Gran-duna-migrante-1-Peder_Severin_Krøyer_-_Fra_Skagen_Sønderstrand_-_1883.jpg
+
+- year: 2026
+  title: "Cryospheric Landscapes: On Light, Media, and Coldness"
+  author: Abelardo Gil-Fournier, Jussi Parikka
+  publication: LA+ Journal
+  link: https://laplusjournal.com/23-MEDIA-1
+  work: lumi
+  image: /images/LA-MEDIA_00.jpg
+
 
 - year: 2025
   title: "Wind: An Environmental Data Stack"
