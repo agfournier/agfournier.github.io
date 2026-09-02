@@ -4,7 +4,7 @@ main_image: /images/imitacion_a_la_vida.png
 layout: post
 ---
 	
-<a href="http://www.abelardogfournier.org/works/quivering">La vibración de los juncos</a> (2019) is now on view as part of <a href="https://ccemontevideo.aecid.es/-/imitación-a-la-vida">Imitación a la vida</a>, a group exhibition curated by <a href="https://www.instagram.com/mario.gutierrez.cru/">Mario Gutiérrez Cru</a> at the Centro Cultural de España in Montevideo and organised in collaboration with PROYECTOR. Plataforma de Imagen en Movimiento.
+<a href="http://www.abelardogfournier.org/works/quivering">The Quivering of the Reed</a> (2019) is now on view as part of <a href="https://ccemontevideo.aecid.es/-/imitación-a-la-vida">Imitación a la vida</a>, a group exhibition curated by <a href="https://www.instagram.com/mario.gutierrez.cru/">Mario Gutiérrez Cru</a> at the Centro Cultural de España in Montevideo and organised in collaboration with PROYECTOR. Plataforma de Imagen en Movimiento.
 
 Bringing together works by Juan Carlos Bracho, Abelardo Gil-Fournier, Lois Patiño, Eugenio Ampudia, Enar de Dios Rodríguez and Bárbara Fluxá, the exhibition explores the unstable boundaries between nature and its representation: between living environments and the images, technologies and gestures through which we attempt to register, reproduce or recreate them.
 
