@@ -5,8 +5,8 @@ year: 2026
 date: 01/03/2026
 type: work
 media: Generative compositions. Acetates with digital printing. Etrusca Magnani paper, aluminium frame and museum glass. 
-main_image: /images/Dunes-Micrographies-ARCO2026.jpeg
-images: /images/AGF-Dunas-Micrografias-La_colonia-TRIPTICO-blanco-web.jpg, /images/AGF-Dunas-Micrografias-La_colonia-I-web.jpg, /images/AGF-Dunas-Micrografias-La_habitacion_azul-I-web.jpg, /images/AGF-Dunas-Micrografias-Terreno_Yermol-I-web.jpg, /images/AGF-Dunas-Micrografias-La_habitacion_azul_TRIPTICO-blanco-web.jpg, /images/AGF-Dunas-Micrografias-La_colonia-II-web.jpg, /images/AGF-Dunas-Micrografias-La_habitacion_azul-II-web.jpg, /images/AGF-Dunas-Micrografias-Terreno_Yermol-II-web.jpg, /images/AGF-Dunas-Micrografias-Terreno_Yermol-TRIPTICO-blanco-web.jpg, /images/AGF-Dunas-Micrografias-La_colonia-III-web.jpg, /images/AGF-Dunas-Micrografias-La_habitacion_azul-III-web.jpg, /images/AGF-Dunas-Micrografias-Terreno_Yermol-III-web.jpg
+main_image: /images/dunas-micrografias-en-galeria-angeles-banos-1.jpg
+images: /images/dunas-micrografias-en-galeria-angeles-banos-2.jpg, /images/dunas-micrografias-en-galeria-angeles-banos-3.jpg, /images/dunas-micrografias-en-galeria-angeles-banos-4.jpg
 layout: default
 ---
 
