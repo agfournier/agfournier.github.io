@@ -1,5 +1,5 @@
 ---
-title: "Entre el signo y la calima. Galería Ángeles Baños"
+title: "El signo y la calima. Galería Ángeles Baños"
 main_image: /images/retrato-entrevista-diario-HOY-1200x840.jpg
 layout: post
 ---
