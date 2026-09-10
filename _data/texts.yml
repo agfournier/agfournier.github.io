@@ -1,10 +1,11 @@
 - year: 2026
   title: "Abelardo Gil-Fournier. Dunas/Micrografías"
-  author:  Laminal Studio. Diseño María Andueza
-  publication: 
+  author: Laminal
+  publication: "Ed. Laminal Studio. Diseño: María Andueza"
   link: https://abelardogfournier.org/docs/Dunas-Micrografías_Abelardo-GilFournier.pdf
   work: dunes-micrographies
   image: /images/AGF-Dunas_Micrografias.jpg
+  type: publications
 
 - year: 2026
   title: "Four-Dimensional Reading of Virtual Photography: A Case Study of LUMI"
@@ -13,6 +14,7 @@
   link: https://mcr.nccu.edu.tw/web/backissues/backissues_in.jsp?pp_no=PP1785475978468
   work: lumi
   image: /images/yin-hua-chu-lumi-case-study-168_.png
+  type: publications
 
 - year: 2026
   title: "Feathered Data. Birds and Other Aerial Computations "
@@ -21,14 +23,16 @@
   link: https://parole.cc/compendiums/ecology/feathered-data-birds-and-other-aerial-computations/
   work: artificial-divination
   image: /images/parole-compendiums-feathered-data.jpg
+  type: writing
 
 - year: 2026
-  title: "The Raft of Crossed Historicities: A Conversation on Imaging the Planetary"
+  title: "Interview: The Raft of Crossed Historicities: A Conversation on Imaging the Planetary"
   author: Dustin Breitling
   publication: Diffractions Collective
   link: https://diffractionscollective.com/2026/07/05/abelardo-gil-fournier/
   work: hacendera, seedimageground, lumi, mawat
   image: /images/diffractions-collective.jpg
+  type: publications
 
 - year: 2026
   title: "Hacendera: la fuerza del roce"
@@ -37,6 +41,7 @@
   link: https://miradaeclectica.com/hacendera-la-fuerza-del-roce/
   work: hacendera
   image: /images/mirada-electica---portada-edicion-numero-7-1.jpg
+  type: publications
 
 - year: 2026
   title: "La gran duna migrante"
@@ -45,6 +50,7 @@
   link: https://archivoorsini.com/2026/03/18/la-gran-duna-migrante/
   work: dunes-micrographies
   image: /images/ig-Gran-duna-migrante-1-Peder_Severin_Krøyer_-_Fra_Skagen_Sønderstrand_-_1883.jpg
+  type: writing
 
 - year: 2026
   title: "Cryospheric Landscapes: On Light, Media, and Coldness"
@@ -53,7 +59,7 @@
   link: https://laplusjournal.com/23-MEDIA-1
   work: lumi
   image: /images/LA-MEDIA_00.jpg
-
+  type: writing
 
 - year: 2025
   title: "Wind: An Environmental Data Stack"
@@ -62,6 +68,7 @@
   link: https://meson.press/books/reckoning-with-everything/
   work: codec
   image: /images/reckoning-with-everything_FC-768x1152.jpg
+  type: publications
 
 - year: 2025
   title: "El signo de un sol azul"
@@ -70,6 +77,7 @@
   link: https://blogfundacion.arquia.es/2025/11/el-signo-de-un-sol-azul/
   work: 
   image: /images/blog-arquia-12-2025.jpg
+  type: writing
 
 - year: 2025
   title: "An Ecoaesthetic of Vegetal Surfaces: On Seed, Image, Ground as Soft Montage"
@@ -78,6 +86,7 @@
   link: https://link.springer.com/book/10.1007/978-3-031-89606-4#toc
   work: seedimageground
   image: /images/confronting-the-climate-crisis-book-cover.jpg
+  type: writing
 
 - year: 2025
   title: "Open Forum Madrid de la redACTS en la Bienal Ciudad y Ciencia. Relatoría"
@@ -86,6 +95,7 @@
   link: https://dialnet.unirioja.es/servlet/ejemplar?codigo=704711&info=open_link_ejemplar
   work: fermi-zeno
   image: /images/relatoria-redacts.jpg
+  type: publications
 
 - year: 2025
   title: "Ecosofías de pueblo. Prácticas artísticas contemporáneas en el medio rural"
@@ -94,6 +104,7 @@
   link: https://diaz-caneja.org/publicaciones/tierra-de-campos/ecosofias-de-pueblo-practicas-artisticas-contemporaneas-en-el-medio-rural-juan-guardiola/
   work: mawat
   image: /images/Ecosofias-de-pueblo-1024x1024.png
+  type: publications
 
 - year: 2025
   title: "Bienal climática, arte en transición ecológica"
@@ -102,6 +113,7 @@
   link: https://dialnet.unirioja.es/servlet/ejemplar?codigo=704711&info=open_link_ejemplar
   work: hacendera
   image: /images/revista-ambienta-143-bienal-climatica.jpg
+  type: publications
 
 - year: 2024
   title: "Enclosures of Wind: Practice-Led Methods for Visualization of Elemental Media"
@@ -110,6 +122,7 @@
   link: https://mediaenviron.org/article/124525-enclosures-of-wind-practice-led-methods-for-visualization-of-elemental-media
   work: schlieren, codec
   image: /images/media-environment-article-wind.jpg
+  type: writing
 
 - year: 2024
   title: "Machines of Articulation: Reading Politics through Aesthetic Operations"
@@ -118,6 +131,7 @@
   link: https://tidsskrift.dk/nja/article/view/152367
   work: seedimageground, lumi
   image: /images/nordicjournalaesthetics-cover_issue_11803_en_US.png
+  type: publications
 
 - year: 2024
   title: "Videoarte, no cinemanormativo"
@@ -126,6 +140,7 @@
   link: https://revistas.untref.edu.ar/index.php/rec/article/view/2310
   work: quivering
   image: /images/articulo-mario-estudios-curatoriales-2024.jpg
+  type: publications
 
 - year: 2024
   title: "Sobre imágenes y superficies vegetales: una reseña"
@@ -134,6 +149,7 @@
   link: https://arquicontable.nam42.cc/sobre-imagenes-y-superficies-vegetales-una-resena/
   work:
   image: /images/resena-joseperezdelama.jpg
+  type: publications
 
 - year: 2024
   title: "Scientists as “Specialist Audience” for Art that Addresses Climate Change: Weather Engines at Onassis, Athens, 2022 "
@@ -142,6 +158,7 @@
   link: https://doi.org/10.1162/leon_a_02630
   work: seedimageground
   image: /images/leonardo_6_2024_cover.png
+  type: publications
 
 - year: 2024
   title: "Abelardo Gil-Fournier. Fundación Cerezales Antonino y Cinia"
@@ -151,6 +168,7 @@
   file:
   work: schlieren, codec, hacendera, horizontes 
   image: /images/Artforum-March2024_1_800px-p-cover.jpg
+  type: publications
 
 - year: 2024
   title: "La balsa. Abelardo Gil-Fournier en conversación con Alfredo Puente"
@@ -160,6 +178,7 @@
   file:
   work: schlieren, codec, hacendera, horizontes
   image: /images/revista-concreta-23-portada.jpg
+  type: writing
 
 - year: 2024
   title: Elementare Ekstasen
@@ -169,6 +188,7 @@
   file: 
   work: mineralvision
   image: /images/Perraudin-Elementare-Ekstasen-Cover-72dpi-405x608.jpg
+  type: publications
 
 - year: 2024
   title: "Living Surfaces. Images, Plants and Environments of Media"
@@ -178,6 +198,7 @@
   file:
   work: 
   image: /images/living-surfaces-cover.jpg
+  type: writing
 
 - year: 2023
   title: "Dalla verità di terra alle geografie false: visione artificiale e apprendimento nelle pratiche visive"
@@ -187,6 +208,7 @@
   file:
   work: 
   image: /images/earthscapes-book-cover.jpg
+  type: writing
 
 - year: 2023
   title: "La vida de las plantas bajo otra luz. De la ceguera al giro vegetal"
@@ -196,6 +218,7 @@
   file:
   work: quivering
   image: /images/mira-una-planta.jpeg
+  type: publications
 
 - year: 2023
   title: "Operational Images: From the Visual to the Invisual"
@@ -205,6 +228,7 @@
   file: 
   work: earthology
   image: /images/parikka-operational-images-book-cover.jpeg
+  type: publications
 
 - year: 2023
   title: "La superficie vegetal de la imagen"
@@ -214,24 +238,27 @@
   file: 
   work: seedimageground
   image: /images/anuario-ace-2023-cover.png
+  type: writing
 
 - year: 2023
   title: "The Raft. Three Acts for an Exposure to the Elements"
   author: Pilar Adón, Ana Andrés, María Andueza, Marc Badal, Nerea Calvillo, Luis Martínez Campo, Rafael Martínez del Pozo, Jussi Parikka, José María Parreño, Alfredo Puente
-  publication: FCAYC
+  publication: FCAYC, ed. Abelardo Gil-Fournier
   link: https://fundacioncerezalesantoninoycinia.org/wp-content/uploads/La-balsa-Tres-Actos-maqueta-en.pdf
   file:
   work:
   image: /images/libreto-la-balsa-cover-en.jpg
+  type: publications
 
 - year: 2023
   title: "La balsa. Tres actos para una intemperie"
   author: Pilar Adón, Ana Andrés, María Andueza, Marc Badal, Nerea Calvillo, Luis Martínez Campo, Rafael Martínez del Pozo, Jussi Parikka, José María Parreño, Alfredo Puente
-  publication: FCAYC
+  publication: FCAYC, ed. Abelardo Gil-Founier
   link: https://fundacioncerezalesantoninoycinia.org/wp-content/uploads/La-balsa-Tres-Actos-maqueta-es.pdf
   file:
   work:    
   image: /images/libreto-la-balsa-cover.jpg
+  type: publications
 
 - year: 2022
   title: "Volumetric Regimes: material cultures of quantified presence"
@@ -241,6 +268,7 @@
   file:
   work: inner-colonisation
   image: /images/volumetric-regimes_cover_200x300.png
+  type: publications
  
 - year: 2022
   title: "Soil, Water, and Light: Aerial Photography and Agriculture in Spain"
@@ -250,6 +278,7 @@
   file:
   work: inner-colonisation, seedimageground
   image: /images/companion-spanish-environmental-studies-2022-cover.jpg
+  type: publications
 
 - year: 2022
   title: "Fundir el espejo y esculpir la imagen. Tarkovsky, agricultura y la transformación del paisaje"
@@ -259,6 +288,7 @@
   file:
   work: inner-colonisation, seedimageground, mawat
   image: /images/aisthesis-72-cover.jpg
+  type: writing
 
 - year: 2021
   title: Photography Off the Scale. Technologies and Theories of the Mass Image
@@ -268,6 +298,7 @@
   file: 
   work: bildung
   image: /images/photography-off-the-scale-cover.jpg
+  type: publications
 
 - year: 2021
   title: Data is Beautiful. From data visualisation to data poetry
@@ -277,6 +308,7 @@
   file: 
   work: earthology
   image: /images/image-and-imagery-2021-cover.jpg
+  type: publications
 
 - year: 2021
   title: "Eine Ökoästhetik pflanzlicher Oberflächen. Über den Videoessay Seed, Image, Ground und digitale Ökologie"
@@ -285,6 +317,7 @@
   link: https://www.springerin.at/130/
   file: 
   work: seedimageground  
+  type: writing
   image: /images/Cover_Kapusta_3.21.large.jpg
 
 - year: 2021
@@ -295,6 +328,7 @@
   file: 
   work: earthology
   image: /images/deep-mediations-book-cover.jpg
+  type: publications
 
 - year: 2021
   title: "Vibrating Clouds. Exhibition Catalogue"
@@ -304,6 +338,7 @@
   file: 
   work: seedimageground
   image: /images/vibrating-clouds-exhibition-catalogue-cover.jpg
+  type: publications
 
 - year: 2021
   title: "Transferencias del software libre a la esfera cultural"
@@ -313,6 +348,7 @@
   file: 
   work: 
   image: /images/laboratorios-ciudadanos-medialab-prado-cover.png
+  type: writing
 
 - year: 2021
   title: "An ecoaesthetic of vegetal surfaces: on Seed, Image, Ground as soft montage"
@@ -322,6 +358,7 @@
   file: 
   work: seedimageground
   image: /images/jvap-2.jpg
+  type: writing
 
 - year: 2020
   title: Ground truth to fake geographies. Machine vision and learning in visual practices
@@ -331,6 +368,7 @@
   file: 
   work: 
   image: /images/ai-and-society-2020-cover.jpg
+  type: writing
 
 - year: 2020
   title: La vibración de los juncos. Imagen, tiempo y terraformación
@@ -340,6 +378,7 @@
   file: 
   work: quivering
   image: /images/accesos-3-cover.jpg
+  type: writing
 
 - year: 2020
   title: The Arts, Environmental Justice, and the Ecological Crisis
@@ -349,6 +388,7 @@
   file: 
   work: seedimageground
   image: /images/british-art-studies-2020-cover.jpg
+  type: publications
 
 - year: 2020
   title: “Visual Hallucination of Probable Events”. On Environments of Images, Data, and Machine Learning
@@ -358,6 +398,7 @@
   file: 
   work: earthology
   image: /images/bigdata-a-new-medium-book.jpg
+  type: writing
 
 - year: 2020
   title: Digging Deep—Mud as Medium. Playful Encounters with the Soil
@@ -367,6 +408,7 @@
   file: 
   work: mineralvision
   image: /images/playful-participatory-practices-book-cover.jpg
+  type: publications
 
 - year: 2020
   title: Media Theory for The Terraforming
@@ -376,8 +418,8 @@
   file: 
   work: mawat
   image: /images/strelka-mag-logo.jpg
+  type: publications
   
-
 - year: 2019
   title: El Instituto Nacional de la Colonización y la violencia infraestructural
   author: Abelardo Gil-Fournier
@@ -386,6 +428,7 @@
   file: 
   work: colonos
   image: /images/sabc_36-portada.jpg
+  type: writing
 
 - year: 2019
   title: Visuelle Halluzination von möglischen Ereignissen oder Über Umweltbilder und Maschinelles Lernen
@@ -395,6 +438,7 @@
   file: 
   work: earthology
   image: /images/9783770564170.jpg
+  type: writing
 
 - year: 2018
   title: La memoria del territorio
@@ -403,6 +447,7 @@
   link: https://www.dphuesca.es/publicaciones/-/asset_publisher/Wz1IU6ehMoSr/content/la-memoria-del-territor-2
   file: 
   work: mawat
+  type: publications
 
 - year: 2018
   title: Earth Constellations. Agrarian Units and the Topological Partition of Space
@@ -411,6 +456,7 @@
   link: http://journalcontent.mediatheoryjournal.org/index.php/mt/article/view/50
   file: 
   work: inner-colonisation
+  type: writing
 
 - year: 2018
   title: Paisajes solares. Metabolismo, agricultura y cultura visual
@@ -419,6 +465,7 @@
   link: https://inland.org/wp-content/uploads/GE_extremadura_saqueada_WEB.pdf
   file: 
   work: reading-stones
+  type: writing
 
 - year: 2018
   title: Solar Landscapes. Soil, Image and The Interventions of Vision, an inquiry into machine vision
@@ -427,6 +474,7 @@
   link: https://www.researchgate.net/publication/330485498_machines_will_watch_us_die_Exhibition_catalogue_Manchester_The_Holden_Gallery_5_April-11May_2018
   file: 
   work: reading-stones
+  type: writing
 
 - year: 2018
   title: Reconstitute the world
@@ -435,6 +483,7 @@
   link: http://nowviskie.org/2018/reconstitute-the-world/
   file: 
   work: earthology
+  type: publications
 
 - year: 2017
   title: Seeding and Seeing. The inner colonisation of land and vision
@@ -443,6 +492,7 @@
   link: http://www.aprja.net/seeding-and-seeing-the-inner-colonisation-of-land-and-vision/
   file: 
   work: inner-colonisation
+  type: writing
 
 - year: 2016
   title:  A Slow, Contemporary Violence. Damaged Environments of Technological Culture 
@@ -451,6 +501,7 @@
   link: https://www.sternberg-press.com/product/a-slow-contemporary-violence-damaged-environments-of-technological-culture/
   file: 
   work: mineralvision
+  type: publications
 
 - year: 2016
   title: ​Unspoken dialogues​
@@ -459,6 +510,7 @@
   link: https://www.academia.edu/32995817/Unspoken_Dialogues
   file:
   work: mineralvision
+  type: publications
 
 - year: 2016
   title: ​Colonizaciones interiores
@@ -467,6 +519,7 @@
   link: http://laberintodelaidentidad.blogspot.com/2016/01/colonizaciones-interiores.html
   file:
   work: reading-stones
+  type: publications
 
 - year: 2015
   title: The Alchemic Digital, The Planetary Elemental
@@ -475,6 +528,7 @@
   link: http://supercommunity.e-flux.com/texts/the-alchemic-digital-the-planetary-elemental/
   file: 
   work: mineralvision
+  type: publications
 
 - year: 2015
   title: The Constitution of Worlds
@@ -483,6 +537,7 @@
   link: https://kunstkritikk.com/the-constitution-of-worlds/
   file: 
   work: mineralvision
+  type: publications
 
 - year: 2013
   title: Hello World! A documentary series on open creative programming languages. Interview with Abelardo Gil-Fournier and Raul Alaejos. 
@@ -491,6 +546,7 @@
   link: https://we-make-money-not-art.com/hello_world/
   file: 
   work: helloworld
+  type: publications
 
 - year: 2009
   title: News games. The Croopier's weekly experimental Processing mini-games
@@ -499,6 +555,7 @@
   link: https://boingboing.net/2009/04/-the-croopier-weekly-opensourc.html
   file: 
   work: thecroopier
+  type: publications
 
 - year: 2009
   title: The Croopier. Weekly Open-Source Mini-Game in Processing
@@ -507,7 +564,5 @@
   link: http://digitaltools.node3000.com/blog/760-the-croopier-weekly-open-source-mini-game-in-processing
   file: 
   work: thecroopier    
+  type: publications
 
-
-
-  

@@ -7,6 +7,7 @@ type: work
 media: "Oil on canvas. Series"
 main_image: /images/w_the-raft-of-the-medusa-series-1.jpg
 images: /images/w_the-raft-of-the-medusa-2.jpg, /images/w_the-raft-of-the-medusa-3.jpg, /images/w_the-raft-of-the-medusa-4.jpg, /images/w_the-raft-of-the-medusa-6.jpg, /images/w_the-raft-of-the-medusa-series-2.jpg, /images/w_the-raft-of-the-medusa-series-3.jpg, /images/w_the-raft-of-the-medusa-series-4.jpg
+contributors: María Andueza
 layout: default
 ---
 

@@ -7,6 +7,7 @@ type: work
 media: "Single channel video with stereo sound. Available as well as 3-channel video"
 main_image: /images/01-LUMI.jpg
 images: /images/02-LUMI.jpg, /images/03-LUMI.jpg,/images/04-LUMI.jpg,/images/05-LUMI.jpg,/images/06-LUMI.jpg,/images/07-LUMI.jpg,/images/08-LUMI.jpg,/images/09-LUMI.JPG,/images/10-LUMI.jpg
+contributors: María Andueza (sound design)
 layout: default
 ---
 

@@ -8,6 +8,7 @@ media: "Installation. Mixed media: Terracotta pots, potter wheels, motors and el
 main_image: /images/la-balsa-1.jpg
 images: /images/w-DSCF4609.jpg, /images/w-hacendera-04.jpg,/images/w-hacendera-05.jpg,/images/w-DSCF5137.jpg,/images/w-HACENDERA-01.jpg,/images/w-HACENDERA-02.jpg,/images/w-DSCF5135.jpg,/images/w-HACENDERA-03.JPG,/images/hacendera-desmontaje.jpeg
 vimeo_id: 1008367453, 1008367433
+contributors: Hacendera Abierta (Mónica Castro de Lera, Javier Rodríguez, Almudena López, Carlos María Rodríguez Trigueros, Miguel Ángel Llamas, Iván Valbuena, Alipio Muñiz de Gorostiza, Amado Nogueras), JuanMa Villanueva
 layout: default
 ---
 
