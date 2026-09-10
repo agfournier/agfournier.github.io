@@ -36,73 +36,64 @@
 
 </section>    
 
+<section id="wrapper" class="container-fluid pb-5">
+<p id="image-caption" class="text-right" style="font-size:1rem;margin-top: -50px; margin-bottom:50px;"></p>  
+<!--  <p class="text-center" style="color: #111;margin-top: -40px;">&#8595;</p>-->
+</section>
+
 <!--
 <section id="imagen-bg" class="container-fluid mx-0 px-0" style="background-image: url({{page.main_image}});background-size:cover;background-position:center;height:100vh;">
 <section id="imagen" class="container-fluid mx-0 px-0" style="background-image: url({{page.main_image}});background-size:cover;background-position:center;height:100vh;">
 </section>
 -->
 
-<!--
-<section id="wrapper" class="container-fluid">
-  <p class="text-center" style="color: #111;margin-top: -40px;">&#8595;</p>
-
-{% assign items = site.works | sort: 'year' | reverse %}
-{% assign cuenta = 0 %}
-<main class="py-2 mt-5">
-{% for item in items %}
-{% assign calc = cuenta | modulo: 2 %}
-<article class="container py-1">
-    <div class="row align-items-end my-4">        
-    {% if calc >= 0 %}
-        <div class="pt-5  col-12 col-md-4 text-center text-md-right">
-            <h4 class="font-weight-light"><a href="{{ item.url }}" class="text-dark">{{ item.title }}</a></h4>
-            <p class="font-weight-light font-smaller">{{ item.year }}</p>
-            <div class="py-md-3"></div>
-        </div>   
-        <div class="col-12 col-md-8">
-            <a href="{{ item.url }}"><img src="{{ item.main_image }}" class="w-100"></a>
+<section class="container pb-5 ">
+    <div class="row">
+        <div class="col-12 col-md-9 display-4" style="line-height:1.35em;">
+            <p>
+            Abelardo Gil-Fournier is an artist and researcher. His practice explores the relationships between matter, images, and knowledge through an ecological poetics in which notions such as visual culture or computation extend beyond the human realm.
+            </p>
+            <p>
+            His work often starts from historical cases and environmental processes, understanding images as traces of how matter, perception, and planetary change become entangled. His practice across different formats and contexts, from exhibitions and publications to lectures and collaborative research.
+            </p>
+            <p>
+            Read an <a href="bio">expanded bio here</a>.
+            </p>
         </div>
-    {% else %}
-        <div class="col-12 col-md-8">
-            <a href="{{ item.url }}"><img src="{{ item.main_image }}" class="w-100"></a>
-        </div>    
-        <div class="pt-5  col-12 col-md-4 text-center text-md-right">
-            <h4 class="font-weight-light"><a href="{{ item.url }}" class="text-dark">{{ item.title }}/a></h4>
-            <p class="font-weight-light font-smaller">{{ item.year }}</p>
-            <div class="py-md-3"></div>
-        </div>   
-    {% endif %}
-  </div>
-</article>
-{% assign cuenta = cuenta | plus:'1' %}
-{% endfor %}
-</main>
+    </div>
+</section>    
 
-</section>
--->
-<section id="wrapper" class="container-fluid pb-5">
-<p id="image-caption" class="text-right" style="font-size:1rem;margin-top: -50px; margin-bottom:50px;"></p>  
-<!--  <p class="text-center" style="color: #111;margin-top: -40px;">&#8595;</p>-->
+<section class="container pb-5 ">    
+    <div class="row">
+        <div class="col-12 col-md-4">        
+            {% assign shows = site.data.shows | sort: 'year' | reverse %}
+            <h5 class="py-4">Recent exhibitions</h5>
+            {% for show in shows limit:10 %}
+                {{ show.year }} <a href="{{ show.link }}" style="text-decoration:none; font-style:italic;">{{ show.name }}</a> {{ show.venue }}<br>
+            {% endfor %}
+        </div>
+        <div class="col-12 col-md-4">        
+            {% assign talks = site.data.talks | sort: 'year' | reverse %}
+            <h5 class="py-4">Last talks</h5>
+                {% for talk in talks limit:10 %}
+                {{ talk.year }} <a href="{{ talk.link }}" style="text-decoration:none; font-style:italic;">{{ talk.name }}</a> - {{ talk.venue }}<br>
+                {% endfor %}
+        </div>
+        <div class="col-12 col-md-4"> 
+            <h5 class="py-4">News</h5>
+            {% for post in site.posts limit:10 %}
+                {{ post.date | date: '%Y %m %d'}} 
+                <a href="{{ site.baseurl }}{{ post.url }}" class="text-dark">{{ post.title }}</a>
+                <br>
+            {% endfor %}
 
-{% for post in site.posts limit:30 %}
-
-        <div class="row pb-2 align-items-end">
-            <div class="d-none d-md-block col-md-2 text-left text-md-right align-text-bottom"><span class="display-5 align-text-bottom">{{ post.date | date: '%Y %m %d'}}</span></div>
-            <div class="col-12 col-md-10">
-                <span class="d-md-none">{{ post.date | date: '%Y %m %d'}}</span>
-                <a href="{{ site.baseurl }}{{ post.url }}" class="text-dark"><span class="display-5 d-md-none">{{ post.title }}</span></a>
-                <a href="{{ site.baseurl }}{{ post.url }}" class="text-dark"><span class="display-4 d-none d-md-inline">{{ post.title }}</span></a>
+            <div class="row pb-2 align-items-end">
+                <div class="col-2 text-right align-text-bottom"><span class="align-text-bottom"></span></div>
+                <div class="col-10">
+                    <a href="/posts" class="text-dark text-decoration-none"><span class="pt-5 pb-3">>> continue to news here</span></a>
+                </div>
             </div>
         </div>
-{% endfor %}
-
-        <div class="row pb-2 align-items-end">
-            <div class="col-2 text-right align-text-bottom"><span class="display-5 align-text-bottom"></span></div>
-            <div class="col-10">
-                <a href="/posts" class="text-dark text-decoration-none"><span class="display-4 pt-5 pb-3">>></span></a>
-            </div>
-        </div>
-
-</section>
+    </div>
 
 {% include footer-front.html %}
