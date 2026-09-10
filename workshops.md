@@ -11,6 +11,7 @@ layout: list
     <div class="row align-items-end">
         <div class="pt-5  col-12 col-md-4 text-center text-md-right">
             <h4 class="font-weight-light"><a href="{{ item.url }}" class="text-dark">{{ item.title }}</a></h4>
+            <p class="font-weight-light font-smaller">{{ item.venue }}<br>{{ item.when }}</p>
             <div class="py-md-3"></div>
         </div>   
     <div class="col-12 col-md-8">

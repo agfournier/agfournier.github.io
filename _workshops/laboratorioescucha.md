@@ -5,6 +5,8 @@ year: 2017
 type: workshop
 main_image: /images/out-of-the-sediment-title.jpg
 layout: default
+venue: Goldsmiths University of London
+when: 15 May 2017
 ---
 Presentations and workshop by members of Archaeologies of Media and Technology Research Group (Winchester School of Art / University of Southampton): Jussi Parikka, Mihaela Brebenel and Yigit Soncul, Abelardo Gil-Fournier 
 

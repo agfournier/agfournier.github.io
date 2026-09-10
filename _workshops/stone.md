@@ -6,6 +6,8 @@ type: workshop
 main_image: /images/fabricacion.800x600_0.jpg
 images: /images/modifier.800x600_0.jpg
 layout: default
+venue: Arteleku, Donostia/San Sebastián
+when: 20-21 October 2013
 ---
 In collaboration with artist Dario Urzay, coordinated by Daniel Artamendi.
 

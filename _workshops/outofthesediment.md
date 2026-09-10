@@ -5,6 +5,8 @@ year: 2019
 type: workshop
 main_image: /images/workshop-laboratorio-de-la-escucha.png
 layout: default
+venue: C.E.I.P Jaime Sanz / Resistències artístiques. Producción artística en entornos educativos
+when: 10-14 mayo 2019
 ---
 Entre el 10 y el 14 de mayo estuve en Peñíscola trabajando con María Andueza en un taller, “El sonido del que eres cable”, en el C.E.I.P Jaime Sanz con alumando de 3º de Educación Primaria. Esta actividad se inscribía en los [Laboratorios de la escucha](https://eduescuchactiva.net/) coordinados por [Weekend Proms](https://weekendproms.org/) como parte del proyecto “Resistències artístiques. Producción artística en entornos educativos” financiado por el Consorci de Museus de la Comunitat Valenciana.
 

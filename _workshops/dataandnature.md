@@ -5,6 +5,8 @@ year: 2021
 type: workshop
 main_image: /images/Duempelmannfig2.06_manner-of-using-the-dendroscope.jpg
 layout: default
+venue: Elisava, Barcelona
+when: 9-10 December 2021
 ---
 
 In this workshop forests are explored as sites where two of the most pressing contemporary concerns, environmental crisis and mass surveillance, meet and feed each other back. The notion of the invisual, conceptualised recently in the context of media theory, will be proposed as the methodological framework of the workshop. Through it, the proposed conflation of forests and the invisual seeks to instigate speculative practices where "working in the middle of concrete ecological formations", in Olga Goriounova and Matthew Fuller's words, "means to work with politics as matter and poetics as a condition of possibility."

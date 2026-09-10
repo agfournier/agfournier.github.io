@@ -5,6 +5,8 @@ year: 2024
 type: workshop
 main_image: /images/scalar-fields.png
 layout: default
+venue: Aarhus University, Denmark
+when: 25 September 2024
 ---
 
 Examining images as data is a starting point for a deeper understanding of computer vision techniques. Images as data surfaces include any digital image, but also measurement tools such as depth fields, heat maps and image segmentations - commonly used in domains as varied as video games, medical imaging and machine learning.
