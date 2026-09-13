@@ -13,7 +13,7 @@ layout: list
         </div>   
         <div class="col-12 col-md-8" style="margin-top:50px">
 <p>
-Abelardo Gil-Fournier is an artist and researcher. Originally trained in Physics, he holds a PhD in Art from the Winchester School of Art (UK) and has worked as a researcher at FAMU in Prague. He is currently a grantee of a Leonardo scholarship from the BBVA Foundation.
+Abelardo Gil-Fournier is an artist and researcher. Originally trained in Physics, he holds a PhD in Art from the Winchester School of Art (UK) and has worked as a researcher at FAMU in Prague. After receiving a Leonardo grant from the BBVA Foundation, he  
 </p>
 
 <p>
@@ -31,14 +31,14 @@ He is the author, together with Jussi Parikka, of the book <em>Living Surfaces. 
 
 {% assign shows = site.data.shows | sort: 'year' | reverse %}
 
-    <h5 class="py-4">Selected exhibitions</h5>
+    <h5 class="py-4">Last exhibitions</h5>
     {% for show in shows %}
     {{ show.year }} <a href="{{ show.link }}" style="text-decoration:none; font-style:italic;">{{ show.name }}</a> {{ show.venue }}<br>
     {% endfor %}
 
 {% assign talks = site.data.talks | sort: 'year' | reverse %}
 
-    <h5 class="py-4">Selected talks</h5>
+    <h5 class="py-4">Last talks</h5>
     {% for talk in talks %}
     {{ talk.year }} <a href="{{ talk.link }}" style="text-decoration:none; font-style:italic;">{{ talk.name }}</a> - {{ talk.venue }}<br>
     {% endfor %}

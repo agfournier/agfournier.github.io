@@ -23,7 +23,7 @@ layout: list
 		    </a>
 		</p>
 
-		<h2 class="h6 text-uppercase mb-3">Sales inquiries</h2>
+		<p class="mb-3">Sales inquiries</p>
 
 		<p>
 		    <a href="https://galeriaangelesb.com/">Galería Ángeles Baños</a><br>
