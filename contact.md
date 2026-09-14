@@ -23,7 +23,7 @@ layout: list
 		    </a>
 		</p>
 
-		<p class="mb-3">Sales inquiries</p>
+		<p class="mb-3">Sales inquiries:</p>
 
 		<p>
 		    <a href="https://galeriaangelesb.com/">Galería Ángeles Baños</a><br>
