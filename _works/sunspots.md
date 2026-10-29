@@ -7,6 +7,7 @@ type: work
 media: "Audiovisual triptych. 1:1-format monitors, camera, closed-circuit image system, and real-time computational image analysis."
 main_image: /images/The-Sunspots-Project--ongoing-sim-preview.jpg
 images:
+vimeo_id: 1240725450
 contributors:
 layout: default
 ---
