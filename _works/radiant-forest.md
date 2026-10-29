@@ -7,6 +7,7 @@ type: work
 media: "Large-scale light installation composed of 18 custom-built modules. Aluminium structures, Kitakata paper, resin, led strips, and custom electronics. Variable dimensions"
 main_image: /images/simulacion-instalalion-bosque-a-partir-de-prototipo-5.jpg
 images:
+vimeo_id: 1240731901
 contributors:
 layout: default
 ---
