@@ -9,7 +9,15 @@
                 <p class="text-lg-right"> {{ item.content | strip_html | truncatewords: 30 }}</p>
                 <div class="py-lg-3"></div>
                 <h4 class="font-weight-light"><a href="{{ item.url }}" class="text-dark">{{ item.title }}</a></h4>
-                <p class="font-weight-light font-smaller">{{ item.year }}</p>
+                {% assign current_year = site.time | date: "%Y" | plus: 0 %}
+                {% assign work_year = item.year | plus: 0 %}
+
+                <p class="font-weight-light font-smaller">
+                {% if work_year > current_year %}
+                <span class="font-weight-lighter font-smaller  text-primary">FORTHCOMING</span>
+                {% endif %}
+                {{ item.year }}
+                </p>
                 <div class="py-lg-3"></div>                
             </div>   
             <div class="col-md-12 col-lg-8">

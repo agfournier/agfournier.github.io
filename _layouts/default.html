@@ -14,7 +14,14 @@
           {{page.venue}}
         {% endif %}<br>
         {% if page.type == "work" %}
-        {{page.year}}
+          {% assign current_year = site.time | date: "%Y" | plus: 0 %}
+          {% assign work_year = page.year | plus: 0 %}
+
+          {% if work_year > current_year %}
+            <span class="text-primary font-weight-lighter mr-2">FORTHCOMING</span>
+          {% endif %}
+
+          {{ page.year }}
         {% endif %}
         {% if page.type == "workshop" %}
         {{page.when}}

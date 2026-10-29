@@ -1,4 +1,5 @@
 encoding: UTF-8
+future: true
 collections:
   works:
     output: true

@@ -104,6 +104,50 @@ document.addEventListener("DOMContentLoaded", function() {
     newdiv.setAttribute('id',"lightbox");
     document.body.appendChild(newdiv);
 
+    // SWIPE MOBILE
+
+    var lightbox = document.getElementById('lightbox');
+
+    var touchStartX = 0;
+    var touchStartY = 0;
+
+    lightbox.addEventListener('touchstart', function(event) {
+
+        touchStartX = event.changedTouches[0].clientX;
+        touchStartY = event.changedTouches[0].clientY;
+
+    }, { passive: true });
+
+    lightbox.addEventListener('touchend', function(event) {
+
+        var touchEndX = event.changedTouches[0].clientX;
+        var touchEndY = event.changedTouches[0].clientY;
+
+        var distanceX = touchEndX - touchStartX;
+        var distanceY = touchEndY - touchStartY;
+
+        var threshold = 50;
+
+        // Movimiento demasiado pequeño
+        if (Math.abs(distanceX) < threshold) return;
+
+        // Era principalmente scroll vertical
+        if (Math.abs(distanceY) > Math.abs(distanceX)) return;
+
+        // Swipe izquierda → siguiente
+        if (distanceX < 0) {
+            var next = document.getElementById('next');
+            if (next) next.click();
+        }
+
+        // Swipe derecha → anterior
+        if (distanceX > 0) {
+            var prev = document.getElementById('prev');
+            if (prev) prev.click();
+        }
+
+    }, { passive: true });
+
     //add classes to links to be able to initiate lightboxes
     var elements = document.querySelectorAll('a');
     elements.forEach(element => {
