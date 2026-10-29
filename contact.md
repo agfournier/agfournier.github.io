@@ -23,13 +23,10 @@ layout: list
 		    </a>
 		</p>
 
-		<p class="mb-3">Sales inquiries:</p>
+		<p class="mb-3">Currently working with:</p>
 
 		<p>
-		    <a href="https://galeriaangelesb.com/">Galería Ángeles Baños</a><br>
-		    <a href="mailto:info@galeriaangelesb.com">
-		        info@galeriaangelesb.com
-		    </a>
+		    <a href="https://galeriaangelesb.com/">Galería Ángeles Baños</a>
 		</p>
 
 		</div>
