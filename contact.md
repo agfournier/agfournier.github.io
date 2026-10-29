@@ -18,8 +18,8 @@ layout: list
 		</p>
 
 		<p class="mb-5">
-		    <a href="mailto:info@abelardogfournier.org">
-		        info@abelardogfournier.org
+		    <a href="mailto:contact@laminal.studio">
+		        contact@laminal.studio
 		    </a>
 		</p>
 
